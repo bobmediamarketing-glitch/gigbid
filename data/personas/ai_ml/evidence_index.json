@@ -1,0 +1,3577 @@
+[
+  {
+    "id": "ai_ml-cs-01",
+    "type": "case_study",
+    "title": "Policy Q&A assistant for a logistics client",
+    "category": "RAG chatbot",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "huggingface",
+      "python",
+      "rag"
+    ],
+    "industry": "logistics",
+    "date": "2025-08-26",
+    "metric": "served 86k users in the first quarter",
+    "source": "case_studies/ai_ml-cs-01.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-01"
+  },
+  {
+    "id": "ai_ml-repo-01",
+    "type": "repo",
+    "title": "policy-q&a-assistant",
+    "category": "RAG chatbot",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "huggingface",
+      "python",
+      "rag"
+    ],
+    "industry": "logistics",
+    "date": "2025-08-26",
+    "project": "ai_ml-cs-01",
+    "source": "repos/ai_ml-repo-01",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-02",
+    "type": "case_study",
+    "title": "Recruiting screener agent for a insurance client",
+    "category": "LLM agent",
+    "skills": [
+      "langgraph",
+      "fastapi",
+      "celery"
+    ],
+    "industry": "insurance",
+    "date": "2024-03-17",
+    "metric": "reached 91% accuracy on a held-out set",
+    "source": "case_studies/ai_ml-cs-02.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-02"
+  },
+  {
+    "id": "ai_ml-repo-02",
+    "type": "repo",
+    "title": "recruiting-screener-agent",
+    "category": "LLM agent",
+    "skills": [
+      "langgraph",
+      "fastapi",
+      "celery"
+    ],
+    "industry": "insurance",
+    "date": "2024-03-17",
+    "project": "ai_ml-cs-02",
+    "source": "repos/ai_ml-repo-02",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-03",
+    "type": "case_study",
+    "title": "Parking occupancy counter for a saas client",
+    "category": "Computer vision",
+    "skills": [
+      "opencv",
+      "computer vision",
+      "aws",
+      "pytorch",
+      "docker"
+    ],
+    "industry": "saas",
+    "date": "2026-03-24",
+    "metric": "lifted conversion by 22%",
+    "source": "case_studies/ai_ml-cs-03.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-04",
+    "type": "case_study",
+    "title": "Demand forecast pipeline for a saas client",
+    "category": "ML deployment",
+    "skills": [
+      "celery",
+      "aws",
+      "mlops",
+      "mlflow",
+      "python"
+    ],
+    "industry": "saas",
+    "date": "2025-01-26",
+    "metric": "cut manual effort by 65%",
+    "source": "case_studies/ai_ml-cs-04.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-05",
+    "type": "case_study",
+    "title": "Resume entity extractor for a education client",
+    "category": "NLP pipeline",
+    "skills": [
+      "fine-tuning",
+      "huggingface",
+      "pytorch",
+      "nlp",
+      "python"
+    ],
+    "industry": "education",
+    "date": "2026-05-27",
+    "metric": "cut manual effort by 74%",
+    "source": "case_studies/ai_ml-cs-05.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-06",
+    "type": "case_study",
+    "title": "Contract search copilot for a e-commerce client",
+    "category": "RAG chatbot",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "nlp",
+      "fastapi",
+      "huggingface"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-02-10",
+    "metric": "cut manual effort by 73%",
+    "source": "case_studies/ai_ml-cs-06.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-07",
+    "type": "case_study",
+    "title": "Sales research agent for a media client",
+    "category": "LLM agent",
+    "skills": [
+      "redis",
+      "fastapi",
+      "celery",
+      "langgraph"
+    ],
+    "industry": "media",
+    "date": "2024-11-15",
+    "metric": "reached 90% accuracy on a held-out set",
+    "source": "case_studies/ai_ml-cs-07.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-07"
+  },
+  {
+    "id": "ai_ml-repo-07",
+    "type": "repo",
+    "title": "sales-research-agent",
+    "category": "LLM agent",
+    "skills": [
+      "redis",
+      "fastapi",
+      "celery",
+      "langgraph"
+    ],
+    "industry": "media",
+    "date": "2024-11-15",
+    "project": "ai_ml-cs-07",
+    "source": "repos/ai_ml-repo-07",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-08",
+    "type": "case_study",
+    "title": "Defect inspection model for a travel client",
+    "category": "Computer vision",
+    "skills": [
+      "pytorch",
+      "aws",
+      "opencv",
+      "docker",
+      "python"
+    ],
+    "industry": "travel",
+    "date": "2023-06-04",
+    "metric": "reached 88% accuracy on a held-out set",
+    "source": "case_studies/ai_ml-cs-08.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-09",
+    "type": "case_study",
+    "title": "Model registry rollout for a fintech client",
+    "category": "ML deployment",
+    "skills": [
+      "mlflow",
+      "mlops",
+      "celery"
+    ],
+    "industry": "fintech",
+    "date": "2023-12-01",
+    "metric": "saved the client $2k per month",
+    "source": "case_studies/ai_ml-cs-09.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-09"
+  },
+  {
+    "id": "ai_ml-repo-09",
+    "type": "repo",
+    "title": "model-registry-rollout",
+    "category": "ML deployment",
+    "skills": [
+      "mlflow",
+      "mlops",
+      "celery"
+    ],
+    "industry": "fintech",
+    "date": "2023-12-01",
+    "project": "ai_ml-cs-09",
+    "source": "repos/ai_ml-repo-09",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-10",
+    "type": "case_study",
+    "title": "Ticket intent classifier for a real estate client",
+    "category": "NLP pipeline",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "industry": "real estate",
+    "date": "2023-04-03",
+    "metric": "reached 97% accuracy on a held-out set",
+    "source": "case_studies/ai_ml-cs-10.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-10"
+  },
+  {
+    "id": "ai_ml-repo-10",
+    "type": "repo",
+    "title": "ticket-intent-classifier",
+    "category": "NLP pipeline",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "industry": "real estate",
+    "date": "2023-04-03",
+    "project": "ai_ml-cs-10",
+    "source": "repos/ai_ml-repo-10",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-11",
+    "type": "case_study",
+    "title": "Contract search copilot for a e-commerce client",
+    "category": "RAG chatbot",
+    "skills": [
+      "python",
+      "fastapi",
+      "qdrant",
+      "nlp",
+      "rag"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-08-01",
+    "metric": "reduced latency from 8s to 850ms",
+    "source": "case_studies/ai_ml-cs-11.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-12",
+    "type": "case_study",
+    "title": "Claims processing agent for a legal client",
+    "category": "LLM agent",
+    "skills": [
+      "docker",
+      "rag",
+      "fastapi"
+    ],
+    "industry": "legal",
+    "date": "2025-08-10",
+    "metric": "reached 92% accuracy on a held-out set",
+    "source": "case_studies/ai_ml-cs-12.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-13",
+    "type": "case_study",
+    "title": "Parking occupancy counter for a logistics client",
+    "category": "Computer vision",
+    "skills": [
+      "python",
+      "aws",
+      "computer vision",
+      "pytorch"
+    ],
+    "industry": "logistics",
+    "date": "2024-05-30",
+    "metric": "reached 91% accuracy on a held-out set",
+    "source": "case_studies/ai_ml-cs-13.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-14",
+    "type": "case_study",
+    "title": "Demand forecast pipeline for a insurance client",
+    "category": "ML deployment",
+    "skills": [
+      "mlops",
+      "mlflow",
+      "fastapi",
+      "python",
+      "docker"
+    ],
+    "industry": "insurance",
+    "date": "2024-01-19",
+    "metric": "saved the client $4k per month",
+    "source": "case_studies/ai_ml-cs-14.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-14"
+  },
+  {
+    "id": "ai_ml-repo-14",
+    "type": "repo",
+    "title": "demand-forecast-pipeline",
+    "category": "ML deployment",
+    "skills": [
+      "mlops",
+      "mlflow",
+      "fastapi",
+      "python",
+      "docker"
+    ],
+    "industry": "insurance",
+    "date": "2024-01-19",
+    "project": "ai_ml-cs-14",
+    "source": "repos/ai_ml-repo-14",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-15",
+    "type": "case_study",
+    "title": "Resume entity extractor for a marketing client",
+    "category": "NLP pipeline",
+    "skills": [
+      "pytorch",
+      "nlp",
+      "fine-tuning",
+      "python",
+      "huggingface"
+    ],
+    "industry": "marketing",
+    "date": "2026-01-11",
+    "metric": "reached 92% accuracy on a held-out set",
+    "source": "case_studies/ai_ml-cs-15.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-16",
+    "type": "case_study",
+    "title": "Contract search copilot for a marketing client",
+    "category": "RAG chatbot",
+    "skills": [
+      "nlp",
+      "langchain",
+      "fastapi",
+      "huggingface",
+      "rag"
+    ],
+    "industry": "marketing",
+    "date": "2024-02-11",
+    "metric": "reduced latency from 8s to 780ms",
+    "source": "case_studies/ai_ml-cs-16.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-17",
+    "type": "case_study",
+    "title": "Claims processing agent for a real estate client",
+    "category": "LLM agent",
+    "skills": [
+      "langgraph",
+      "langchain",
+      "redis",
+      "celery"
+    ],
+    "industry": "real estate",
+    "date": "2023-09-15",
+    "metric": "served 2k users in the first quarter",
+    "source": "case_studies/ai_ml-cs-17.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-17"
+  },
+  {
+    "id": "ai_ml-repo-17",
+    "type": "repo",
+    "title": "claims-processing-agent",
+    "category": "LLM agent",
+    "skills": [
+      "langgraph",
+      "langchain",
+      "redis",
+      "celery"
+    ],
+    "industry": "real estate",
+    "date": "2023-09-15",
+    "project": "ai_ml-cs-17",
+    "source": "repos/ai_ml-repo-17",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-18",
+    "type": "case_study",
+    "title": "PPE compliance camera for a legal client",
+    "category": "Computer vision",
+    "skills": [
+      "python",
+      "computer vision",
+      "opencv"
+    ],
+    "industry": "legal",
+    "date": "2024-07-28",
+    "metric": "reduced latency from 5s to 611ms",
+    "source": "case_studies/ai_ml-cs-18.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-18"
+  },
+  {
+    "id": "ai_ml-repo-18",
+    "type": "repo",
+    "title": "ppe-compliance-camera",
+    "category": "Computer vision",
+    "skills": [
+      "python",
+      "computer vision",
+      "opencv"
+    ],
+    "industry": "legal",
+    "date": "2024-07-28",
+    "project": "ai_ml-cs-18",
+    "source": "repos/ai_ml-repo-18",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-19",
+    "type": "case_study",
+    "title": "Churn model serving platform for a e-commerce client",
+    "category": "ML deployment",
+    "skills": [
+      "mlflow",
+      "celery",
+      "fastapi"
+    ],
+    "industry": "e-commerce",
+    "date": "2026-08-02",
+    "metric": "served 57k users in the first quarter",
+    "source": "case_studies/ai_ml-cs-19.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-20",
+    "type": "case_study",
+    "title": "Resume entity extractor for a travel client",
+    "category": "NLP pipeline",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "huggingface",
+      "fine-tuning"
+    ],
+    "industry": "travel",
+    "date": "2023-08-19",
+    "metric": "saved the client $31k per month",
+    "source": "case_studies/ai_ml-cs-20.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-21",
+    "type": "case_study",
+    "title": "Contract search copilot for a healthcare client",
+    "category": "RAG chatbot",
+    "skills": [
+      "python",
+      "rag",
+      "qdrant"
+    ],
+    "industry": "healthcare",
+    "date": "2026-08-27",
+    "metric": "saved the client $24k per month",
+    "source": "case_studies/ai_ml-cs-21.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-21"
+  },
+  {
+    "id": "ai_ml-repo-21",
+    "type": "repo",
+    "title": "contract-search-copilot",
+    "category": "RAG chatbot",
+    "skills": [
+      "python",
+      "rag",
+      "qdrant"
+    ],
+    "industry": "healthcare",
+    "date": "2026-08-27",
+    "project": "ai_ml-cs-21",
+    "source": "repos/ai_ml-repo-21",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-22",
+    "type": "case_study",
+    "title": "Claims processing agent for a healthcare client",
+    "category": "LLM agent",
+    "skills": [
+      "langchain",
+      "celery",
+      "docker",
+      "fastapi"
+    ],
+    "industry": "healthcare",
+    "date": "2026-08-03",
+    "metric": "saved the client $30k per month",
+    "source": "case_studies/ai_ml-cs-22.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-23",
+    "type": "case_study",
+    "title": "Parking occupancy counter for a saas client",
+    "category": "Computer vision",
+    "skills": [
+      "docker",
+      "opencv",
+      "aws"
+    ],
+    "industry": "saas",
+    "date": "2024-06-15",
+    "metric": "reached 90% accuracy on a held-out set",
+    "source": "case_studies/ai_ml-cs-23.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-23"
+  },
+  {
+    "id": "ai_ml-repo-23",
+    "type": "repo",
+    "title": "parking-occupancy-counter",
+    "category": "Computer vision",
+    "skills": [
+      "docker",
+      "opencv",
+      "aws"
+    ],
+    "industry": "saas",
+    "date": "2024-06-15",
+    "project": "ai_ml-cs-23",
+    "source": "repos/ai_ml-repo-23",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-24",
+    "type": "case_study",
+    "title": "Demand forecast pipeline for a legal client",
+    "category": "ML deployment",
+    "skills": [
+      "fastapi",
+      "mlops",
+      "docker"
+    ],
+    "industry": "legal",
+    "date": "2024-11-16",
+    "metric": "reached 96% accuracy on a held-out set",
+    "source": "case_studies/ai_ml-cs-24.md",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cs-25",
+    "type": "case_study",
+    "title": "Medical note de-identifier for a insurance client",
+    "category": "NLP pipeline",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "industry": "insurance",
+    "date": "2024-04-04",
+    "metric": "lifted conversion by 22%",
+    "source": "case_studies/ai_ml-cs-25.md",
+    "outcome": null,
+    "repo": "ai_ml-repo-25"
+  },
+  {
+    "id": "ai_ml-repo-25",
+    "type": "repo",
+    "title": "medical-note-de-identifier",
+    "category": "NLP pipeline",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "industry": "insurance",
+    "date": "2024-04-04",
+    "project": "ai_ml-cs-25",
+    "source": "repos/ai_ml-repo-25",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-01",
+    "type": "review",
+    "project": "ai_ml-cs-16",
+    "stars": 5,
+    "skills": [
+      "nlp",
+      "langchain"
+    ],
+    "industry": "marketing",
+    "date": "2024-02-11",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-02",
+    "type": "review",
+    "project": "ai_ml-cs-25",
+    "stars": 4,
+    "skills": [
+      "nlp",
+      "huggingface"
+    ],
+    "industry": "insurance",
+    "date": "2024-04-04",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-03",
+    "type": "review",
+    "project": "ai_ml-cs-05",
+    "stars": 5,
+    "skills": [
+      "fine-tuning",
+      "huggingface"
+    ],
+    "industry": "education",
+    "date": "2026-05-27",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-04",
+    "type": "review",
+    "project": "ai_ml-cs-10",
+    "stars": 4,
+    "skills": [
+      "python",
+      "nlp"
+    ],
+    "industry": "real estate",
+    "date": "2023-04-03",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-05",
+    "type": "review",
+    "project": "ai_ml-cs-20",
+    "stars": 3,
+    "skills": [
+      "python",
+      "nlp"
+    ],
+    "industry": "travel",
+    "date": "2023-08-19",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-06",
+    "type": "review",
+    "project": "ai_ml-cs-07",
+    "stars": 4,
+    "skills": [
+      "redis",
+      "fastapi"
+    ],
+    "industry": "media",
+    "date": "2024-11-15",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-07",
+    "type": "review",
+    "project": "ai_ml-cs-04",
+    "stars": 5,
+    "skills": [
+      "celery",
+      "aws"
+    ],
+    "industry": "saas",
+    "date": "2025-01-26",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-08",
+    "type": "review",
+    "project": "ai_ml-cs-18",
+    "stars": 5,
+    "skills": [
+      "python",
+      "computer vision"
+    ],
+    "industry": "legal",
+    "date": "2024-07-28",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-09",
+    "type": "review",
+    "project": "ai_ml-cs-21",
+    "stars": 3,
+    "skills": [
+      "python",
+      "rag"
+    ],
+    "industry": "healthcare",
+    "date": "2026-08-27",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-10",
+    "type": "review",
+    "project": "ai_ml-cs-11",
+    "stars": 5,
+    "skills": [
+      "python",
+      "fastapi"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-08-01",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-11",
+    "type": "review",
+    "project": "ai_ml-cs-06",
+    "stars": 5,
+    "skills": [
+      "langchain",
+      "pinecone"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-02-10",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-12",
+    "type": "review",
+    "project": "ai_ml-cs-09",
+    "stars": 4,
+    "skills": [
+      "mlflow",
+      "mlops"
+    ],
+    "industry": "fintech",
+    "date": "2023-12-01",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-cv",
+    "type": "cv",
+    "title": "CV",
+    "skills": [
+      "python",
+      "pytorch",
+      "langchain",
+      "langgraph",
+      "rag",
+      "pinecone",
+      "qdrant",
+      "huggingface",
+      "fine-tuning",
+      "computer vision",
+      "opencv",
+      "nlp",
+      "mlflow",
+      "mlops",
+      "fastapi",
+      "docker",
+      "aws",
+      "celery",
+      "redis"
+    ],
+    "date": "2026-11-01",
+    "source": "cv.pdf",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-prop-001",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a education company",
+    "skills": [
+      "fine-tuning",
+      "huggingface",
+      "pytorch",
+      "nlp",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-03-08",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-002",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a legal company",
+    "skills": [
+      "fastapi",
+      "mlops",
+      "docker"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-04-26",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-003",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a saas company",
+    "skills": [
+      "celery",
+      "aws",
+      "mlops",
+      "mlflow",
+      "python"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-04"
+    ],
+    "date": "2024-12-28",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-004",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "opencv",
+      "computer vision",
+      "aws",
+      "pytorch",
+      "docker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-03"
+    ],
+    "date": "2024-12-13",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-005",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2025-02-25",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-006",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a insurance company",
+    "skills": [
+      "mlops",
+      "mlflow",
+      "fastapi",
+      "python",
+      "docker"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-01-20",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-007",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a fintech company",
+    "skills": [
+      "mlflow",
+      "mlops",
+      "celery"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-08-31",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-008",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2025-08-17",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-009",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a e-commerce company",
+    "skills": [
+      "mlflow",
+      "celery",
+      "fastapi"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-19"
+    ],
+    "date": "2025-04-17",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-010",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a legal company",
+    "skills": [
+      "fastapi",
+      "mlops",
+      "docker"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-12-05",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-011",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a marketing company",
+    "skills": [
+      "nlp",
+      "langchain",
+      "fastapi",
+      "huggingface",
+      "rag"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-11-29",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-012",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a healthcare company",
+    "skills": [
+      "langchain",
+      "celery",
+      "docker",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-04-10",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-013",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a travel company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "huggingface",
+      "fine-tuning"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-20"
+    ],
+    "date": "2024-08-06",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-014",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a real estate company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-10"
+    ],
+    "date": "2025-11-06",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-015",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a education company",
+    "skills": [
+      "fine-tuning",
+      "huggingface",
+      "pytorch",
+      "nlp",
+      "python"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-05"
+    ],
+    "date": "2024-05-22",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-016",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a legal company",
+    "skills": [
+      "python",
+      "computer vision",
+      "opencv"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-18"
+    ],
+    "date": "2026-07-23",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-017",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a fintech company",
+    "skills": [
+      "mlflow",
+      "mlops",
+      "celery"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-10-17",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-018",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a legal company",
+    "skills": [
+      "fastapi",
+      "mlops",
+      "docker"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-24"
+    ],
+    "date": "2025-01-19",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-019",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2025-12-31",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-020",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a legal company",
+    "skills": [
+      "python",
+      "computer vision",
+      "opencv"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-18"
+    ],
+    "date": "2026-01-21",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-021",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a travel company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "huggingface",
+      "fine-tuning"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-08-23",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-022",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a legal company",
+    "skills": [
+      "python",
+      "computer vision",
+      "opencv"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-18"
+    ],
+    "date": "2024-12-15",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-023",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "nlp",
+      "fastapi",
+      "huggingface"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-06"
+    ],
+    "date": "2025-05-18",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-024",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "nlp",
+      "fastapi",
+      "huggingface"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-06"
+    ],
+    "date": "2025-10-06",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-025",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a legal company",
+    "skills": [
+      "python",
+      "computer vision",
+      "opencv"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-18"
+    ],
+    "date": "2025-11-27",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-026",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-02-27",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-027",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2024-08-09",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-028",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a saas company",
+    "skills": [
+      "celery",
+      "aws",
+      "mlops",
+      "mlflow",
+      "python"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-08-16",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-029",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a travel company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "huggingface",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-07-09",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-030",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a healthcare company",
+    "skills": [
+      "python",
+      "rag",
+      "qdrant"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-21"
+    ],
+    "date": "2024-09-22",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-031",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a media company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "celery",
+      "langgraph"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-07"
+    ],
+    "date": "2024-11-25",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-032",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a healthcare company",
+    "skills": [
+      "python",
+      "rag",
+      "qdrant"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-08-19",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-033",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a insurance company",
+    "skills": [
+      "mlops",
+      "mlflow",
+      "fastapi",
+      "python",
+      "docker"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-14"
+    ],
+    "date": "2025-10-13",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-034",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a travel company",
+    "skills": [
+      "pytorch",
+      "aws",
+      "opencv",
+      "docker",
+      "python"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-08"
+    ],
+    "date": "2026-09-29",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-035",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a insurance company",
+    "skills": [
+      "mlops",
+      "mlflow",
+      "fastapi",
+      "python",
+      "docker"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-09-06",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-036",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a real estate company",
+    "skills": [
+      "langgraph",
+      "langchain",
+      "redis",
+      "celery"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-17"
+    ],
+    "date": "2026-07-10",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-037",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a logistics company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "huggingface",
+      "python",
+      "rag"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-07-13",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-038",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a insurance company",
+    "skills": [
+      "langgraph",
+      "fastapi",
+      "celery"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-02"
+    ],
+    "date": "2025-05-04",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-039",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "opencv",
+      "computer vision",
+      "aws",
+      "pytorch",
+      "docker"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-03"
+    ],
+    "date": "2024-11-20",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-040",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a media company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "celery",
+      "langgraph"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-02-09",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-041",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2025-05-10",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-042",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "nlp",
+      "fastapi",
+      "huggingface"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-11-27",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-043",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a legal company",
+    "skills": [
+      "python",
+      "computer vision",
+      "opencv"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-09-13",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-044",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a logistics company",
+    "skills": [
+      "python",
+      "aws",
+      "computer vision",
+      "pytorch"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-13"
+    ],
+    "date": "2025-02-21",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-045",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "opencv",
+      "computer vision",
+      "aws",
+      "pytorch",
+      "docker"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-03"
+    ],
+    "date": "2026-03-24",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-046",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a travel company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "huggingface",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-05-16",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-047",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a logistics company",
+    "skills": [
+      "python",
+      "aws",
+      "computer vision",
+      "pytorch"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-13"
+    ],
+    "date": "2025-11-29",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-048",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2024-06-24",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-049",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "opencv",
+      "computer vision",
+      "aws",
+      "pytorch",
+      "docker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-03"
+    ],
+    "date": "2024-11-27",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-050",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2024-10-17",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-051",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "nlp",
+      "fastapi",
+      "huggingface"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-06"
+    ],
+    "date": "2025-08-07",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-052",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a fintech company",
+    "skills": [
+      "mlflow",
+      "mlops",
+      "celery"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-09"
+    ],
+    "date": "2024-07-01",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-053",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a healthcare company",
+    "skills": [
+      "langchain",
+      "celery",
+      "docker",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-22"
+    ],
+    "date": "2025-09-15",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-054",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a healthcare company",
+    "skills": [
+      "python",
+      "rag",
+      "qdrant"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-10-12",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-055",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a travel company",
+    "skills": [
+      "pytorch",
+      "aws",
+      "opencv",
+      "docker",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-08"
+    ],
+    "date": "2024-09-27",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-056",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a media company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "celery",
+      "langgraph"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-07"
+    ],
+    "date": "2026-10-17",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-057",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2025-07-17",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-058",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a marketing company",
+    "skills": [
+      "pytorch",
+      "nlp",
+      "fine-tuning",
+      "python",
+      "huggingface"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-15"
+    ],
+    "date": "2026-06-17",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-059",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "opencv",
+      "computer vision",
+      "aws",
+      "pytorch",
+      "docker"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-03"
+    ],
+    "date": "2024-10-29",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-060",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a legal company",
+    "skills": [
+      "docker",
+      "rag",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-09-26",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-061",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a healthcare company",
+    "skills": [
+      "python",
+      "rag",
+      "qdrant"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-21"
+    ],
+    "date": "2024-12-07",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-062",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "docker",
+      "opencv",
+      "aws"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-04-06",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-063",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a travel company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "huggingface",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-03-05",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-064",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a logistics company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "huggingface",
+      "python",
+      "rag"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-03-12",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-065",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a insurance company",
+    "skills": [
+      "mlops",
+      "mlflow",
+      "fastapi",
+      "python",
+      "docker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-14"
+    ],
+    "date": "2025-03-01",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-066",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a real estate company",
+    "skills": [
+      "langgraph",
+      "langchain",
+      "redis",
+      "celery"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-12-07",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-067",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a real estate company",
+    "skills": [
+      "langgraph",
+      "langchain",
+      "redis",
+      "celery"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-17"
+    ],
+    "date": "2024-09-21",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-068",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a legal company",
+    "skills": [
+      "docker",
+      "rag",
+      "fastapi"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-12"
+    ],
+    "date": "2026-07-29",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-069",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a travel company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "huggingface",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-07-16",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-070",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a insurance company",
+    "skills": [
+      "mlops",
+      "mlflow",
+      "fastapi",
+      "python",
+      "docker"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-06-24",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-071",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a logistics company",
+    "skills": [
+      "python",
+      "aws",
+      "computer vision",
+      "pytorch"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-13"
+    ],
+    "date": "2026-05-14",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-072",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2026-05-23",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-073",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a healthcare company",
+    "skills": [
+      "langchain",
+      "celery",
+      "docker",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-07-20",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-074",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a legal company",
+    "skills": [
+      "docker",
+      "rag",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-01-14",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-075",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a healthcare company",
+    "skills": [
+      "langchain",
+      "celery",
+      "docker",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-06-24",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-076",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "docker",
+      "opencv",
+      "aws"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-23"
+    ],
+    "date": "2026-10-22",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-077",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "nlp",
+      "fastapi",
+      "huggingface"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-07-06",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-078",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "nlp",
+      "fastapi",
+      "huggingface"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-06"
+    ],
+    "date": "2026-03-03",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-079",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a education company",
+    "skills": [
+      "fine-tuning",
+      "huggingface",
+      "pytorch",
+      "nlp",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-11-26",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-080",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a real estate company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-10"
+    ],
+    "date": "2026-06-18",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-081",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a healthcare company",
+    "skills": [
+      "langchain",
+      "celery",
+      "docker",
+      "fastapi"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-22"
+    ],
+    "date": "2024-12-10",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-082",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2025-11-08",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-083",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a media company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "celery",
+      "langgraph"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-07"
+    ],
+    "date": "2024-10-09",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-084",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a saas company",
+    "skills": [
+      "celery",
+      "aws",
+      "mlops",
+      "mlflow",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-04"
+    ],
+    "date": "2024-07-05",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-085",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a education company",
+    "skills": [
+      "fine-tuning",
+      "huggingface",
+      "pytorch",
+      "nlp",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-01-19",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-086",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a logistics company",
+    "skills": [
+      "python",
+      "aws",
+      "computer vision",
+      "pytorch"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-13"
+    ],
+    "date": "2025-12-02",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-087",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a legal company",
+    "skills": [
+      "python",
+      "computer vision",
+      "opencv"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-06-16",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-088",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a logistics company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "huggingface",
+      "python",
+      "rag"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-01"
+    ],
+    "date": "2024-09-30",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-089",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a insurance company",
+    "skills": [
+      "langgraph",
+      "fastapi",
+      "celery"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-07-24",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-090",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a legal company",
+    "skills": [
+      "docker",
+      "rag",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-09-16",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-091",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a travel company",
+    "skills": [
+      "pytorch",
+      "aws",
+      "opencv",
+      "docker",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-08"
+    ],
+    "date": "2025-08-21",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-092",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a logistics company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "huggingface",
+      "python",
+      "rag"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-01"
+    ],
+    "date": "2025-03-29",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-093",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a insurance company",
+    "skills": [
+      "langgraph",
+      "fastapi",
+      "celery"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-09-04",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-094",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "opencv",
+      "computer vision",
+      "aws",
+      "pytorch",
+      "docker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-03"
+    ],
+    "date": "2025-01-19",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-095",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a insurance company",
+    "skills": [
+      "mlops",
+      "mlflow",
+      "fastapi",
+      "python",
+      "docker"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-06-05",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-096",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a saas company",
+    "skills": [
+      "celery",
+      "aws",
+      "mlops",
+      "mlflow",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-04"
+    ],
+    "date": "2026-05-01",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-097",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a real estate company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-01-04",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-098",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a travel company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "huggingface",
+      "fine-tuning"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-20"
+    ],
+    "date": "2025-06-28",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-099",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a insurance company",
+    "skills": [
+      "langgraph",
+      "fastapi",
+      "celery"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-01-02",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-100",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a education company",
+    "skills": [
+      "fine-tuning",
+      "huggingface",
+      "pytorch",
+      "nlp",
+      "python"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-05"
+    ],
+    "date": "2025-01-13",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-101",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "python",
+      "fastapi",
+      "qdrant",
+      "nlp",
+      "rag"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-11"
+    ],
+    "date": "2024-11-10",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-102",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a marketing company",
+    "skills": [
+      "nlp",
+      "langchain",
+      "fastapi",
+      "huggingface",
+      "rag"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-01-22",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-103",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2025-03-26",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-104",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a insurance company",
+    "skills": [
+      "nlp",
+      "huggingface",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-25"
+    ],
+    "date": "2024-06-06",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-105",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a marketing company",
+    "skills": [
+      "nlp",
+      "langchain",
+      "fastapi",
+      "huggingface",
+      "rag"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-11-02",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-106",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a healthcare company",
+    "skills": [
+      "python",
+      "rag",
+      "qdrant"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-21"
+    ],
+    "date": "2025-04-04",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-107",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a real estate company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-02-06",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-108",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "opencv",
+      "computer vision",
+      "aws",
+      "pytorch",
+      "docker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-03"
+    ],
+    "date": "2025-08-07",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-109",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a fintech company",
+    "skills": [
+      "mlflow",
+      "mlops",
+      "celery"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-03-20",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-110",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a real estate company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-11-05",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-111",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a education company",
+    "skills": [
+      "fine-tuning",
+      "huggingface",
+      "pytorch",
+      "nlp",
+      "python"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-06-11",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-112",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a media company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "celery",
+      "langgraph"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-07"
+    ],
+    "date": "2026-03-02",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-113",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a healthcare company",
+    "skills": [
+      "python",
+      "rag",
+      "qdrant"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-21"
+    ],
+    "date": "2024-08-21",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-114",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a insurance company",
+    "skills": [
+      "langgraph",
+      "fastapi",
+      "celery"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-10-22",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-115",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "nlp",
+      "fastapi",
+      "huggingface"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-06"
+    ],
+    "date": "2025-05-10",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-116",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a education company",
+    "skills": [
+      "fine-tuning",
+      "huggingface",
+      "pytorch",
+      "nlp",
+      "python"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-05"
+    ],
+    "date": "2026-04-14",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-117",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "opencv",
+      "computer vision",
+      "aws",
+      "pytorch",
+      "docker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-03"
+    ],
+    "date": "2026-07-08",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-118",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a legal company",
+    "skills": [
+      "fastapi",
+      "mlops",
+      "docker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-24"
+    ],
+    "date": "2025-04-26",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-119",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a education company",
+    "skills": [
+      "fine-tuning",
+      "huggingface",
+      "pytorch",
+      "nlp",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-05"
+    ],
+    "date": "2026-10-16",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-120",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a healthcare company",
+    "skills": [
+      "langchain",
+      "celery",
+      "docker",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-06-27",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-121",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "nlp",
+      "fastapi",
+      "huggingface"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-06"
+    ],
+    "date": "2025-09-18",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-122",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a legal company",
+    "skills": [
+      "docker",
+      "rag",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-07-20",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-123",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a travel company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "huggingface",
+      "fine-tuning"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-04-15",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-124",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a marketing company",
+    "skills": [
+      "pytorch",
+      "nlp",
+      "fine-tuning",
+      "python",
+      "huggingface"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-06-19",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-125",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a legal company",
+    "skills": [
+      "docker",
+      "rag",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-12"
+    ],
+    "date": "2026-01-25",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-126",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a legal company",
+    "skills": [
+      "docker",
+      "rag",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-12"
+    ],
+    "date": "2025-08-06",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-127",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a healthcare company",
+    "skills": [
+      "langchain",
+      "celery",
+      "docker",
+      "fastapi"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-22"
+    ],
+    "date": "2026-09-08",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-128",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "nlp",
+      "fastapi",
+      "huggingface"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-06"
+    ],
+    "date": "2024-06-15",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-129",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a marketing company",
+    "skills": [
+      "nlp",
+      "langchain",
+      "fastapi",
+      "huggingface",
+      "rag"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-03-07",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-130",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a marketing company",
+    "skills": [
+      "nlp",
+      "langchain",
+      "fastapi",
+      "huggingface",
+      "rag"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-09-12",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-131",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a healthcare company",
+    "skills": [
+      "python",
+      "rag",
+      "qdrant"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-21"
+    ],
+    "date": "2025-01-11",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-132",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a legal company",
+    "skills": [
+      "python",
+      "computer vision",
+      "opencv"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-18"
+    ],
+    "date": "2025-12-29",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-133",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a marketing company",
+    "skills": [
+      "nlp",
+      "langchain",
+      "fastapi",
+      "huggingface",
+      "rag"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-06-17",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-134",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a travel company",
+    "skills": [
+      "pytorch",
+      "aws",
+      "opencv",
+      "docker",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-08"
+    ],
+    "date": "2025-03-05",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-135",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a fintech company",
+    "skills": [
+      "mlflow",
+      "mlops",
+      "celery"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-01-11",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-136",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a insurance company",
+    "skills": [
+      "mlops",
+      "mlflow",
+      "fastapi",
+      "python",
+      "docker"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-14"
+    ],
+    "date": "2024-08-26",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-137",
+    "type": "past_proposal",
+    "category": "NLP pipeline",
+    "job_title": "NLP pipeline for a travel company",
+    "skills": [
+      "python",
+      "nlp",
+      "pytorch",
+      "huggingface",
+      "fine-tuning"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-03-09",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-138",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a marketing company",
+    "skills": [
+      "nlp",
+      "langchain",
+      "fastapi",
+      "huggingface",
+      "rag"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-16"
+    ],
+    "date": "2024-05-19",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-139",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a media company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "celery",
+      "langgraph"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "ai_ml-cs-07"
+    ],
+    "date": "2024-11-23",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-140",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a e-commerce company",
+    "skills": [
+      "python",
+      "fastapi",
+      "qdrant",
+      "nlp",
+      "rag"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-11"
+    ],
+    "date": "2026-02-22",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-141",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a saas company",
+    "skills": [
+      "celery",
+      "aws",
+      "mlops",
+      "mlflow",
+      "python"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-03-15",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-142",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a legal company",
+    "skills": [
+      "docker",
+      "rag",
+      "fastapi"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-12"
+    ],
+    "date": "2026-09-11",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-143",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a real estate company",
+    "skills": [
+      "langgraph",
+      "langchain",
+      "redis",
+      "celery"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-10-13",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-144",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a real estate company",
+    "skills": [
+      "langgraph",
+      "langchain",
+      "redis",
+      "celery"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "ai_ml-cs-17"
+    ],
+    "date": "2024-11-30",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-145",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a logistics company",
+    "skills": [
+      "langchain",
+      "pinecone",
+      "huggingface",
+      "python",
+      "rag"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-12-24",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-146",
+    "type": "past_proposal",
+    "category": "RAG chatbot",
+    "job_title": "RAG chatbot for a marketing company",
+    "skills": [
+      "nlp",
+      "langchain",
+      "fastapi",
+      "huggingface",
+      "rag"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-16"
+    ],
+    "date": "2026-01-28",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-147",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a travel company",
+    "skills": [
+      "pytorch",
+      "aws",
+      "opencv",
+      "docker",
+      "python"
+    ],
+    "outcome": "won",
+    "cites": [
+      "ai_ml-cs-08"
+    ],
+    "date": "2026-10-06",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-148",
+    "type": "past_proposal",
+    "category": "LLM agent",
+    "job_title": "LLM agent for a media company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "celery",
+      "langgraph"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-08-09",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-149",
+    "type": "past_proposal",
+    "category": "ML deployment",
+    "job_title": "ML deployment for a fintech company",
+    "skills": [
+      "mlflow",
+      "mlops",
+      "celery"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-07-27",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "ai_ml-prop-150",
+    "type": "past_proposal",
+    "category": "Computer vision",
+    "job_title": "Computer vision for a saas company",
+    "skills": [
+      "opencv",
+      "computer vision",
+      "aws",
+      "pytorch",
+      "docker"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-05-23",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  }
+]

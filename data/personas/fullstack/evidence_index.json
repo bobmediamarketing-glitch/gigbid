@@ -1,0 +1,3557 @@
+[
+  {
+    "id": "fullstack-cs-01",
+    "type": "case_study",
+    "title": "Clinic booking SaaS for a fintech client",
+    "category": "SaaS web app",
+    "skills": [
+      "aws",
+      "prisma",
+      "react",
+      "tailwind",
+      "next.js"
+    ],
+    "industry": "fintech",
+    "date": "2023-04-06",
+    "metric": "served 35k users in the first quarter",
+    "source": "case_studies/fullstack-cs-01.md",
+    "outcome": null,
+    "repo": "fullstack-repo-01"
+  },
+  {
+    "id": "fullstack-repo-01",
+    "type": "repo",
+    "title": "clinic-booking-saas",
+    "category": "SaaS web app",
+    "skills": [
+      "aws",
+      "prisma",
+      "react",
+      "tailwind",
+      "next.js"
+    ],
+    "industry": "fintech",
+    "date": "2023-04-06",
+    "project": "fullstack-cs-01",
+    "source": "repos/fullstack-repo-01",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-02",
+    "type": "case_study",
+    "title": "Headless sneaker store for a education client",
+    "category": "E-commerce site",
+    "skills": [
+      "react",
+      "postgres",
+      "tailwind"
+    ],
+    "industry": "education",
+    "date": "2026-06-08",
+    "metric": "lifted conversion by 11%",
+    "source": "case_studies/fullstack-cs-02.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-03",
+    "type": "case_study",
+    "title": "Logistics tracking API for a fintech client",
+    "category": "API backend",
+    "skills": [
+      "node.js",
+      "docker",
+      "graphql",
+      "postgres",
+      "fastapi"
+    ],
+    "industry": "fintech",
+    "date": "2025-07-09",
+    "metric": "reached 91% accuracy on a held-out set",
+    "source": "case_studies/fullstack-cs-03.md",
+    "outcome": null,
+    "repo": "fullstack-repo-03"
+  },
+  {
+    "id": "fullstack-repo-03",
+    "type": "repo",
+    "title": "logistics-tracking-api",
+    "category": "API backend",
+    "skills": [
+      "node.js",
+      "docker",
+      "graphql",
+      "postgres",
+      "fastapi"
+    ],
+    "industry": "fintech",
+    "date": "2025-07-09",
+    "project": "fullstack-cs-03",
+    "source": "repos/fullstack-repo-03",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-04",
+    "type": "case_study",
+    "title": "Invoice auto-pay for a fintech client",
+    "category": "Payment integration",
+    "skills": [
+      "node.js",
+      "react",
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "industry": "fintech",
+    "date": "2023-07-12",
+    "metric": "served 5k users in the first quarter",
+    "source": "case_studies/fullstack-cs-04.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-05",
+    "type": "case_study",
+    "title": "Collaborative whiteboard for a real estate client",
+    "category": "Real-time app",
+    "skills": [
+      "websockets",
+      "redis",
+      "postgres"
+    ],
+    "industry": "real estate",
+    "date": "2023-07-28",
+    "metric": "reduced latency from 7s to 302ms",
+    "source": "case_studies/fullstack-cs-05.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-06",
+    "type": "case_study",
+    "title": "Course creator platform for a media client",
+    "category": "SaaS web app",
+    "skills": [
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "industry": "media",
+    "date": "2026-01-14",
+    "metric": "cut manual effort by 73%",
+    "source": "case_studies/fullstack-cs-06.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-07",
+    "type": "case_study",
+    "title": "Headless sneaker store for a legal client",
+    "category": "E-commerce site",
+    "skills": [
+      "stripe",
+      "react",
+      "tailwind",
+      "postgres"
+    ],
+    "industry": "legal",
+    "date": "2025-11-20",
+    "metric": "reached 96% accuracy on a held-out set",
+    "source": "case_studies/fullstack-cs-07.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-08",
+    "type": "case_study",
+    "title": "Logistics tracking API for a education client",
+    "category": "API backend",
+    "skills": [
+      "django",
+      "postgres",
+      "redis",
+      "node.js",
+      "graphql"
+    ],
+    "industry": "education",
+    "date": "2024-09-26",
+    "metric": "cut manual effort by 58%",
+    "source": "case_studies/fullstack-cs-08.md",
+    "outcome": null,
+    "repo": "fullstack-repo-08"
+  },
+  {
+    "id": "fullstack-repo-08",
+    "type": "repo",
+    "title": "logistics-tracking-api",
+    "category": "API backend",
+    "skills": [
+      "django",
+      "postgres",
+      "redis",
+      "node.js",
+      "graphql"
+    ],
+    "industry": "education",
+    "date": "2024-09-26",
+    "project": "fullstack-cs-08",
+    "source": "repos/fullstack-repo-08",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-09",
+    "type": "case_study",
+    "title": "Marketplace payouts for a legal client",
+    "category": "Payment integration",
+    "skills": [
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js",
+      "react"
+    ],
+    "industry": "legal",
+    "date": "2023-05-06",
+    "metric": "reduced latency from 8s to 630ms",
+    "source": "case_studies/fullstack-cs-09.md",
+    "outcome": null,
+    "repo": "fullstack-repo-09"
+  },
+  {
+    "id": "fullstack-repo-09",
+    "type": "repo",
+    "title": "marketplace-payouts",
+    "category": "Payment integration",
+    "skills": [
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js",
+      "react"
+    ],
+    "industry": "legal",
+    "date": "2023-05-06",
+    "project": "fullstack-cs-09",
+    "source": "repos/fullstack-repo-09",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-10",
+    "type": "case_study",
+    "title": "Collaborative whiteboard for a fintech client",
+    "category": "Real-time app",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "industry": "fintech",
+    "date": "2025-09-10",
+    "metric": "saved the client $21k per month",
+    "source": "case_studies/fullstack-cs-10.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-11",
+    "type": "case_study",
+    "title": "Team OKR tracker for a fintech client",
+    "category": "SaaS web app",
+    "skills": [
+      "react",
+      "stripe",
+      "next.js",
+      "postgres"
+    ],
+    "industry": "fintech",
+    "date": "2025-04-22",
+    "metric": "lifted conversion by 4%",
+    "source": "case_studies/fullstack-cs-11.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-12",
+    "type": "case_study",
+    "title": "Print-on-demand storefront for a logistics client",
+    "category": "E-commerce site",
+    "skills": [
+      "next.js",
+      "postgres",
+      "react",
+      "node.js",
+      "stripe"
+    ],
+    "industry": "logistics",
+    "date": "2026-04-21",
+    "metric": "reached 94% accuracy on a held-out set",
+    "source": "case_studies/fullstack-cs-12.md",
+    "outcome": null,
+    "repo": "fullstack-repo-12"
+  },
+  {
+    "id": "fullstack-repo-12",
+    "type": "repo",
+    "title": "print-on-demand-storefront",
+    "category": "E-commerce site",
+    "skills": [
+      "next.js",
+      "postgres",
+      "react",
+      "node.js",
+      "stripe"
+    ],
+    "industry": "logistics",
+    "date": "2026-04-21",
+    "project": "fullstack-cs-12",
+    "source": "repos/fullstack-repo-12",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-13",
+    "type": "case_study",
+    "title": "Telehealth scheduling API for a insurance client",
+    "category": "API backend",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "industry": "insurance",
+    "date": "2023-11-03",
+    "metric": "saved the client $5k per month",
+    "source": "case_studies/fullstack-cs-13.md",
+    "outcome": null,
+    "repo": "fullstack-repo-13"
+  },
+  {
+    "id": "fullstack-repo-13",
+    "type": "repo",
+    "title": "telehealth-scheduling-api",
+    "category": "API backend",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "industry": "insurance",
+    "date": "2023-11-03",
+    "project": "fullstack-cs-13",
+    "source": "repos/fullstack-repo-13",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-14",
+    "type": "case_study",
+    "title": "Donation checkout for a healthcare client",
+    "category": "Payment integration",
+    "skills": [
+      "stripe",
+      "typescript",
+      "react"
+    ],
+    "industry": "healthcare",
+    "date": "2026-08-22",
+    "metric": "cut manual effort by 44%",
+    "source": "case_studies/fullstack-cs-14.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-15",
+    "type": "case_study",
+    "title": "Trading alerts feed for a e-commerce client",
+    "category": "Real-time app",
+    "skills": [
+      "postgres",
+      "websockets",
+      "react",
+      "node.js",
+      "redis"
+    ],
+    "industry": "e-commerce",
+    "date": "2026-03-07",
+    "metric": "reduced latency from 6s to 557ms",
+    "source": "case_studies/fullstack-cs-15.md",
+    "outcome": null,
+    "repo": "fullstack-repo-15"
+  },
+  {
+    "id": "fullstack-repo-15",
+    "type": "repo",
+    "title": "trading-alerts-feed",
+    "category": "Real-time app",
+    "skills": [
+      "postgres",
+      "websockets",
+      "react",
+      "node.js",
+      "redis"
+    ],
+    "industry": "e-commerce",
+    "date": "2026-03-07",
+    "project": "fullstack-cs-15",
+    "source": "repos/fullstack-repo-15",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-16",
+    "type": "case_study",
+    "title": "Clinic booking SaaS for a real estate client",
+    "category": "SaaS web app",
+    "skills": [
+      "next.js",
+      "postgres",
+      "typescript",
+      "prisma"
+    ],
+    "industry": "real estate",
+    "date": "2024-03-05",
+    "metric": "reduced latency from 7s to 367ms",
+    "source": "case_studies/fullstack-cs-16.md",
+    "outcome": null,
+    "repo": "fullstack-repo-16"
+  },
+  {
+    "id": "fullstack-repo-16",
+    "type": "repo",
+    "title": "clinic-booking-saas",
+    "category": "SaaS web app",
+    "skills": [
+      "next.js",
+      "postgres",
+      "typescript",
+      "prisma"
+    ],
+    "industry": "real estate",
+    "date": "2024-03-05",
+    "project": "fullstack-cs-16",
+    "source": "repos/fullstack-repo-16",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-17",
+    "type": "case_study",
+    "title": "Headless sneaker store for a education client",
+    "category": "E-commerce site",
+    "skills": [
+      "tailwind",
+      "node.js",
+      "react",
+      "next.js",
+      "stripe"
+    ],
+    "industry": "education",
+    "date": "2024-09-14",
+    "metric": "lifted conversion by 12%",
+    "source": "case_studies/fullstack-cs-17.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-18",
+    "type": "case_study",
+    "title": "Telehealth scheduling API for a media client",
+    "category": "API backend",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "industry": "media",
+    "date": "2026-04-11",
+    "metric": "reduced latency from 9s to 889ms",
+    "source": "case_studies/fullstack-cs-18.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-19",
+    "type": "case_study",
+    "title": "Usage-based billing for a media client",
+    "category": "Payment integration",
+    "skills": [
+      "node.js",
+      "postgres",
+      "stripe"
+    ],
+    "industry": "media",
+    "date": "2025-11-06",
+    "metric": "cut manual effort by 69%",
+    "source": "case_studies/fullstack-cs-19.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-20",
+    "type": "case_study",
+    "title": "Live auction dashboard for a marketing client",
+    "category": "Real-time app",
+    "skills": [
+      "node.js",
+      "redis",
+      "typescript",
+      "websockets",
+      "postgres"
+    ],
+    "industry": "marketing",
+    "date": "2024-03-02",
+    "metric": "served 47k users in the first quarter",
+    "source": "case_studies/fullstack-cs-20.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-21",
+    "type": "case_study",
+    "title": "Team OKR tracker for a travel client",
+    "category": "SaaS web app",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "industry": "travel",
+    "date": "2023-01-04",
+    "metric": "lifted conversion by 11%",
+    "source": "case_studies/fullstack-cs-21.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-22",
+    "type": "case_study",
+    "title": "Print-on-demand storefront for a e-commerce client",
+    "category": "E-commerce site",
+    "skills": [
+      "next.js",
+      "stripe",
+      "node.js"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-08-08",
+    "metric": "saved the client $15k per month",
+    "source": "case_studies/fullstack-cs-22.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-23",
+    "type": "case_study",
+    "title": "Multi-tenant CRM backend for a travel client",
+    "category": "API backend",
+    "skills": [
+      "fastapi",
+      "node.js",
+      "graphql",
+      "redis",
+      "django"
+    ],
+    "industry": "travel",
+    "date": "2023-11-14",
+    "metric": "reached 93% accuracy on a held-out set",
+    "source": "case_studies/fullstack-cs-23.md",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cs-24",
+    "type": "case_study",
+    "title": "Donation checkout for a logistics client",
+    "category": "Payment integration",
+    "skills": [
+      "react",
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js"
+    ],
+    "industry": "logistics",
+    "date": "2023-05-02",
+    "metric": "cut manual effort by 57%",
+    "source": "case_studies/fullstack-cs-24.md",
+    "outcome": null,
+    "repo": "fullstack-repo-24"
+  },
+  {
+    "id": "fullstack-repo-24",
+    "type": "repo",
+    "title": "donation-checkout",
+    "category": "Payment integration",
+    "skills": [
+      "react",
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js"
+    ],
+    "industry": "logistics",
+    "date": "2023-05-02",
+    "project": "fullstack-cs-24",
+    "source": "repos/fullstack-repo-24",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-01",
+    "type": "review",
+    "project": "fullstack-cs-14",
+    "stars": 5,
+    "skills": [
+      "stripe",
+      "typescript"
+    ],
+    "industry": "healthcare",
+    "date": "2026-08-22",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-02",
+    "type": "review",
+    "project": "fullstack-cs-10",
+    "stars": 4,
+    "skills": [
+      "react",
+      "typescript"
+    ],
+    "industry": "fintech",
+    "date": "2025-09-10",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-03",
+    "type": "review",
+    "project": "fullstack-cs-22",
+    "stars": 5,
+    "skills": [
+      "next.js",
+      "stripe"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-08-08",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-04",
+    "type": "review",
+    "project": "fullstack-cs-03",
+    "stars": 3,
+    "skills": [
+      "node.js",
+      "docker"
+    ],
+    "industry": "fintech",
+    "date": "2025-07-09",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-05",
+    "type": "review",
+    "project": "fullstack-cs-23",
+    "stars": 5,
+    "skills": [
+      "fastapi",
+      "node.js"
+    ],
+    "industry": "travel",
+    "date": "2023-11-14",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-06",
+    "type": "review",
+    "project": "fullstack-cs-20",
+    "stars": 5,
+    "skills": [
+      "node.js",
+      "redis"
+    ],
+    "industry": "marketing",
+    "date": "2024-03-02",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-07",
+    "type": "review",
+    "project": "fullstack-cs-21",
+    "stars": 4,
+    "skills": [
+      "postgres",
+      "next.js"
+    ],
+    "industry": "travel",
+    "date": "2023-01-04",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-08",
+    "type": "review",
+    "project": "fullstack-cs-09",
+    "stars": 5,
+    "skills": [
+      "postgres",
+      "stripe"
+    ],
+    "industry": "legal",
+    "date": "2023-05-06",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-09",
+    "type": "review",
+    "project": "fullstack-cs-16",
+    "stars": 4,
+    "skills": [
+      "next.js",
+      "postgres"
+    ],
+    "industry": "real estate",
+    "date": "2024-03-05",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-10",
+    "type": "review",
+    "project": "fullstack-cs-08",
+    "stars": 5,
+    "skills": [
+      "django",
+      "postgres"
+    ],
+    "industry": "education",
+    "date": "2024-09-26",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-11",
+    "type": "review",
+    "project": "fullstack-cs-12",
+    "stars": 4,
+    "skills": [
+      "next.js",
+      "postgres"
+    ],
+    "industry": "logistics",
+    "date": "2026-04-21",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-12",
+    "type": "review",
+    "project": "fullstack-cs-04",
+    "stars": 5,
+    "skills": [
+      "node.js",
+      "react"
+    ],
+    "industry": "fintech",
+    "date": "2023-07-12",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-cv",
+    "type": "cv",
+    "title": "CV",
+    "skills": [
+      "react",
+      "next.js",
+      "typescript",
+      "node.js",
+      "express",
+      "postgres",
+      "prisma",
+      "tailwind",
+      "stripe",
+      "graphql",
+      "websockets",
+      "django",
+      "fastapi",
+      "python",
+      "docker",
+      "aws",
+      "redis",
+      "celery"
+    ],
+    "date": "2026-11-01",
+    "source": "cv.pdf",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-prop-001",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a education company",
+    "skills": [
+      "react",
+      "postgres",
+      "tailwind"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-02"
+    ],
+    "date": "2025-09-10",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-002",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a real estate company",
+    "skills": [
+      "next.js",
+      "postgres",
+      "typescript",
+      "prisma"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-02-24",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-003",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a e-commerce company",
+    "skills": [
+      "next.js",
+      "stripe",
+      "node.js"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-22"
+    ],
+    "date": "2025-07-18",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-004",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a insurance company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-13"
+    ],
+    "date": "2025-08-21",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-005",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a fintech company",
+    "skills": [
+      "node.js",
+      "docker",
+      "graphql",
+      "postgres",
+      "fastapi"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-06-05",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-006",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a media company",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-18"
+    ],
+    "date": "2026-09-12",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-007",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a real estate company",
+    "skills": [
+      "next.js",
+      "postgres",
+      "typescript",
+      "prisma"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-16"
+    ],
+    "date": "2026-07-07",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-008",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-08-19",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-009",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a legal company",
+    "skills": [
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js",
+      "react"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-02-15",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-010",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a insurance company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-13"
+    ],
+    "date": "2024-10-08",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-011",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a real estate company",
+    "skills": [
+      "next.js",
+      "postgres",
+      "typescript",
+      "prisma"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-16"
+    ],
+    "date": "2024-12-27",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-012",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a education company",
+    "skills": [
+      "django",
+      "postgres",
+      "redis",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-08"
+    ],
+    "date": "2025-06-16",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-013",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a media company",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-04-04",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-014",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a media company",
+    "skills": [
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-06"
+    ],
+    "date": "2025-07-08",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-015",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a fintech company",
+    "skills": [
+      "node.js",
+      "react",
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-04"
+    ],
+    "date": "2024-06-11",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-016",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a logistics company",
+    "skills": [
+      "next.js",
+      "postgres",
+      "react",
+      "node.js",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-06-07",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-017",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a media company",
+    "skills": [
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-11-14",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-018",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a real estate company",
+    "skills": [
+      "websockets",
+      "redis",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-05"
+    ],
+    "date": "2024-10-02",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-019",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a media company",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-18"
+    ],
+    "date": "2025-07-11",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-020",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a logistics company",
+    "skills": [
+      "react",
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-06-08",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-021",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-21"
+    ],
+    "date": "2026-01-25",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-022",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a e-commerce company",
+    "skills": [
+      "next.js",
+      "stripe",
+      "node.js"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-04-18",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-023",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a legal company",
+    "skills": [
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js",
+      "react"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-09"
+    ],
+    "date": "2024-12-03",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-024",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a legal company",
+    "skills": [
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js",
+      "react"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-06-22",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-025",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a insurance company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-13"
+    ],
+    "date": "2026-06-25",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-026",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "react",
+      "stripe",
+      "next.js",
+      "postgres"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-11"
+    ],
+    "date": "2026-01-10",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-027",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a travel company",
+    "skills": [
+      "fastapi",
+      "node.js",
+      "graphql",
+      "redis",
+      "django"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-23"
+    ],
+    "date": "2025-07-15",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-028",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a healthcare company",
+    "skills": [
+      "stripe",
+      "typescript",
+      "react"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-07-27",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-029",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "aws",
+      "prisma",
+      "react",
+      "tailwind",
+      "next.js"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-01"
+    ],
+    "date": "2026-07-18",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-030",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a fintech company",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-10"
+    ],
+    "date": "2026-03-12",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-031",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a travel company",
+    "skills": [
+      "fastapi",
+      "node.js",
+      "graphql",
+      "redis",
+      "django"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-04-28",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-032",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a legal company",
+    "skills": [
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js",
+      "react"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-09"
+    ],
+    "date": "2025-12-30",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-033",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a marketing company",
+    "skills": [
+      "node.js",
+      "redis",
+      "typescript",
+      "websockets",
+      "postgres"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-20"
+    ],
+    "date": "2025-03-31",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-034",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a fintech company",
+    "skills": [
+      "node.js",
+      "docker",
+      "graphql",
+      "postgres",
+      "fastapi"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-03"
+    ],
+    "date": "2025-01-06",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-035",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a legal company",
+    "skills": [
+      "stripe",
+      "react",
+      "tailwind",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-04-08",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-036",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a education company",
+    "skills": [
+      "django",
+      "postgres",
+      "redis",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-10-10",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-037",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a fintech company",
+    "skills": [
+      "node.js",
+      "docker",
+      "graphql",
+      "postgres",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-11-09",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-038",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a media company",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-18"
+    ],
+    "date": "2026-02-17",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-039",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a media company",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-11-13",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-040",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-08-01",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-041",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a legal company",
+    "skills": [
+      "stripe",
+      "react",
+      "tailwind",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-06-08",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-042",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a fintech company",
+    "skills": [
+      "node.js",
+      "react",
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-04-03",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-043",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a real estate company",
+    "skills": [
+      "next.js",
+      "postgres",
+      "typescript",
+      "prisma"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-16"
+    ],
+    "date": "2025-11-26",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-044",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a legal company",
+    "skills": [
+      "stripe",
+      "react",
+      "tailwind",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-10-15",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-045",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a fintech company",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-05-15",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-046",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-21"
+    ],
+    "date": "2025-06-14",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-047",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a marketing company",
+    "skills": [
+      "node.js",
+      "redis",
+      "typescript",
+      "websockets",
+      "postgres"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-20"
+    ],
+    "date": "2024-08-03",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-048",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a fintech company",
+    "skills": [
+      "node.js",
+      "react",
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-09-25",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-049",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a media company",
+    "skills": [
+      "node.js",
+      "postgres",
+      "stripe"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-11-21",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-050",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a education company",
+    "skills": [
+      "tailwind",
+      "node.js",
+      "react",
+      "next.js",
+      "stripe"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-17"
+    ],
+    "date": "2024-07-01",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-051",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a marketing company",
+    "skills": [
+      "node.js",
+      "redis",
+      "typescript",
+      "websockets",
+      "postgres"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-20"
+    ],
+    "date": "2025-03-17",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-052",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a marketing company",
+    "skills": [
+      "node.js",
+      "redis",
+      "typescript",
+      "websockets",
+      "postgres"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-01-16",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-053",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a healthcare company",
+    "skills": [
+      "stripe",
+      "typescript",
+      "react"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-07-27",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-054",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a logistics company",
+    "skills": [
+      "react",
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-01-10",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-055",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a media company",
+    "skills": [
+      "node.js",
+      "postgres",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-12-30",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-056",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a education company",
+    "skills": [
+      "django",
+      "postgres",
+      "redis",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-08"
+    ],
+    "date": "2026-06-18",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-057",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a education company",
+    "skills": [
+      "tailwind",
+      "node.js",
+      "react",
+      "next.js",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-02-28",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-058",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a travel company",
+    "skills": [
+      "fastapi",
+      "node.js",
+      "graphql",
+      "redis",
+      "django"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-23"
+    ],
+    "date": "2025-12-20",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-059",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a fintech company",
+    "skills": [
+      "node.js",
+      "docker",
+      "graphql",
+      "postgres",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-07-28",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-060",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "aws",
+      "prisma",
+      "react",
+      "tailwind",
+      "next.js"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-01"
+    ],
+    "date": "2024-10-12",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-061",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "aws",
+      "prisma",
+      "react",
+      "tailwind",
+      "next.js"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-10-24",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-062",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "aws",
+      "prisma",
+      "react",
+      "tailwind",
+      "next.js"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-01"
+    ],
+    "date": "2024-07-26",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-063",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a logistics company",
+    "skills": [
+      "react",
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-24"
+    ],
+    "date": "2024-06-01",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-064",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a media company",
+    "skills": [
+      "node.js",
+      "postgres",
+      "stripe"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-19"
+    ],
+    "date": "2024-06-06",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-065",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a healthcare company",
+    "skills": [
+      "stripe",
+      "typescript",
+      "react"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-14"
+    ],
+    "date": "2026-08-02",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-066",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a healthcare company",
+    "skills": [
+      "stripe",
+      "typescript",
+      "react"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-14"
+    ],
+    "date": "2024-06-25",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-067",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a insurance company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-13"
+    ],
+    "date": "2025-10-05",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-068",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "react",
+      "stripe",
+      "next.js",
+      "postgres"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-12-22",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-069",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a healthcare company",
+    "skills": [
+      "stripe",
+      "typescript",
+      "react"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-14"
+    ],
+    "date": "2026-04-14",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-070",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a education company",
+    "skills": [
+      "tailwind",
+      "node.js",
+      "react",
+      "next.js",
+      "stripe"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-17"
+    ],
+    "date": "2025-09-26",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-071",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "react",
+      "stripe",
+      "next.js",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-08-24",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-072",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a e-commerce company",
+    "skills": [
+      "next.js",
+      "stripe",
+      "node.js"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-12-13",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-073",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a logistics company",
+    "skills": [
+      "react",
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-24"
+    ],
+    "date": "2025-02-05",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-074",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a fintech company",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-10"
+    ],
+    "date": "2025-10-28",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-075",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a media company",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-18"
+    ],
+    "date": "2026-01-11",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-076",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a marketing company",
+    "skills": [
+      "node.js",
+      "redis",
+      "typescript",
+      "websockets",
+      "postgres"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-01-15",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-077",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a fintech company",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-02-10",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-078",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a media company",
+    "skills": [
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-10-05",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-079",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a media company",
+    "skills": [
+      "node.js",
+      "postgres",
+      "stripe"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-19"
+    ],
+    "date": "2026-09-05",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-080",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a healthcare company",
+    "skills": [
+      "stripe",
+      "typescript",
+      "react"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-14"
+    ],
+    "date": "2025-03-29",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-081",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a e-commerce company",
+    "skills": [
+      "postgres",
+      "websockets",
+      "react",
+      "node.js",
+      "redis"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-15"
+    ],
+    "date": "2025-12-04",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-082",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a legal company",
+    "skills": [
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js",
+      "react"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-12-06",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-083",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a real estate company",
+    "skills": [
+      "next.js",
+      "postgres",
+      "typescript",
+      "prisma"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-10-14",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-084",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a real estate company",
+    "skills": [
+      "next.js",
+      "postgres",
+      "typescript",
+      "prisma"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-02-21",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-085",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a legal company",
+    "skills": [
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js",
+      "react"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-09"
+    ],
+    "date": "2026-01-12",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-086",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "aws",
+      "prisma",
+      "react",
+      "tailwind",
+      "next.js"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-11-14",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-087",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a e-commerce company",
+    "skills": [
+      "postgres",
+      "websockets",
+      "react",
+      "node.js",
+      "redis"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-08-08",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-088",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a real estate company",
+    "skills": [
+      "websockets",
+      "redis",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-05-23",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-089",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a fintech company",
+    "skills": [
+      "node.js",
+      "docker",
+      "graphql",
+      "postgres",
+      "fastapi"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-03"
+    ],
+    "date": "2025-05-28",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-090",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a media company",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-11-06",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-091",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-21"
+    ],
+    "date": "2026-09-17",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-092",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a media company",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-18"
+    ],
+    "date": "2024-10-10",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-093",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a legal company",
+    "skills": [
+      "stripe",
+      "react",
+      "tailwind",
+      "postgres"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-07"
+    ],
+    "date": "2026-08-06",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-094",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a marketing company",
+    "skills": [
+      "node.js",
+      "redis",
+      "typescript",
+      "websockets",
+      "postgres"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-04-16",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-095",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a media company",
+    "skills": [
+      "node.js",
+      "postgres",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-09-08",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-096",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a insurance company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-13"
+    ],
+    "date": "2024-05-30",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-097",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a insurance company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-13"
+    ],
+    "date": "2024-07-30",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-098",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a e-commerce company",
+    "skills": [
+      "postgres",
+      "websockets",
+      "react",
+      "node.js",
+      "redis"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-15"
+    ],
+    "date": "2025-03-16",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-099",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "react",
+      "stripe",
+      "next.js",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-02-05",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-100",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a insurance company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-13"
+    ],
+    "date": "2025-09-10",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-101",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a insurance company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-01-05",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-102",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a education company",
+    "skills": [
+      "tailwind",
+      "node.js",
+      "react",
+      "next.js",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-01-25",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-103",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-21"
+    ],
+    "date": "2025-11-21",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-104",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a marketing company",
+    "skills": [
+      "node.js",
+      "redis",
+      "typescript",
+      "websockets",
+      "postgres"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-20"
+    ],
+    "date": "2025-09-25",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-105",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a education company",
+    "skills": [
+      "react",
+      "postgres",
+      "tailwind"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-02"
+    ],
+    "date": "2026-04-16",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-106",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a marketing company",
+    "skills": [
+      "node.js",
+      "redis",
+      "typescript",
+      "websockets",
+      "postgres"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-20"
+    ],
+    "date": "2025-11-25",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-107",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-21"
+    ],
+    "date": "2024-09-23",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-108",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a fintech company",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-07-15",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-109",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-21"
+    ],
+    "date": "2024-10-21",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-110",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a travel company",
+    "skills": [
+      "fastapi",
+      "node.js",
+      "graphql",
+      "redis",
+      "django"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-23"
+    ],
+    "date": "2025-11-16",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-111",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "react",
+      "stripe",
+      "next.js",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-10-20",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-112",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a insurance company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-13"
+    ],
+    "date": "2026-04-22",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-113",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a media company",
+    "skills": [
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-06"
+    ],
+    "date": "2026-07-07",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-114",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a fintech company",
+    "skills": [
+      "node.js",
+      "react",
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-08-20",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-115",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "react",
+      "stripe",
+      "next.js",
+      "postgres"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-11"
+    ],
+    "date": "2025-06-20",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-116",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "aws",
+      "prisma",
+      "react",
+      "tailwind",
+      "next.js"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-05-06",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-117",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a fintech company",
+    "skills": [
+      "node.js",
+      "react",
+      "stripe",
+      "postgres",
+      "typescript"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-06-22",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-118",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a e-commerce company",
+    "skills": [
+      "next.js",
+      "stripe",
+      "node.js"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-22"
+    ],
+    "date": "2024-10-29",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-119",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a media company",
+    "skills": [
+      "node.js",
+      "postgres",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-19"
+    ],
+    "date": "2025-12-24",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-120",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a logistics company",
+    "skills": [
+      "react",
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-24"
+    ],
+    "date": "2025-04-10",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-121",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a fintech company",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-10"
+    ],
+    "date": "2026-08-18",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-122",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a e-commerce company",
+    "skills": [
+      "postgres",
+      "websockets",
+      "react",
+      "node.js",
+      "redis"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-10-12",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-123",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a education company",
+    "skills": [
+      "react",
+      "postgres",
+      "tailwind"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-02-27",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-124",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a fintech company",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-10-12",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-125",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a legal company",
+    "skills": [
+      "stripe",
+      "react",
+      "tailwind",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-07-06",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-126",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a fintech company",
+    "skills": [
+      "node.js",
+      "docker",
+      "graphql",
+      "postgres",
+      "fastapi"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-03"
+    ],
+    "date": "2026-07-03",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-127",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a fintech company",
+    "skills": [
+      "aws",
+      "prisma",
+      "react",
+      "tailwind",
+      "next.js"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-01"
+    ],
+    "date": "2026-02-09",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-128",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-01-09",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-129",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a fintech company",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-10"
+    ],
+    "date": "2025-02-06",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-130",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-01-02",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-131",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a travel company",
+    "skills": [
+      "fastapi",
+      "node.js",
+      "graphql",
+      "redis",
+      "django"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-09-02",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-132",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a marketing company",
+    "skills": [
+      "node.js",
+      "redis",
+      "typescript",
+      "websockets",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-20"
+    ],
+    "date": "2026-04-02",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-133",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a education company",
+    "skills": [
+      "django",
+      "postgres",
+      "redis",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-08"
+    ],
+    "date": "2025-05-03",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-134",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a real estate company",
+    "skills": [
+      "next.js",
+      "postgres",
+      "typescript",
+      "prisma"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-03-30",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-135",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a e-commerce company",
+    "skills": [
+      "postgres",
+      "websockets",
+      "react",
+      "node.js",
+      "redis"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-09-09",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-136",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-21"
+    ],
+    "date": "2025-12-31",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-137",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a real estate company",
+    "skills": [
+      "websockets",
+      "redis",
+      "postgres"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-05"
+    ],
+    "date": "2026-10-12",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-138",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a media company",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-07-20",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-139",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a fintech company",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-10"
+    ],
+    "date": "2025-10-12",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-140",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a media company",
+    "skills": [
+      "node.js",
+      "postgres",
+      "stripe"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-07-14",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-141",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a media company",
+    "skills": [
+      "express",
+      "node.js",
+      "graphql",
+      "django"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-18"
+    ],
+    "date": "2025-11-26",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-142",
+    "type": "past_proposal",
+    "category": "Real-time app",
+    "job_title": "Real-time app for a fintech company",
+    "skills": [
+      "react",
+      "typescript",
+      "redis",
+      "postgres",
+      "node.js"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-10"
+    ],
+    "date": "2025-12-01",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-143",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a logistics company",
+    "skills": [
+      "react",
+      "postgres",
+      "stripe",
+      "typescript",
+      "node.js"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-24"
+    ],
+    "date": "2025-09-27",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-144",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a real estate company",
+    "skills": [
+      "next.js",
+      "postgres",
+      "typescript",
+      "prisma"
+    ],
+    "outcome": "won",
+    "cites": [
+      "fullstack-cs-16"
+    ],
+    "date": "2025-08-01",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-145",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a e-commerce company",
+    "skills": [
+      "next.js",
+      "stripe",
+      "node.js"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-06-27",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-146",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a education company",
+    "skills": [
+      "react",
+      "postgres",
+      "tailwind"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-04-02",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-147",
+    "type": "past_proposal",
+    "category": "Payment integration",
+    "job_title": "Payment integration for a media company",
+    "skills": [
+      "node.js",
+      "postgres",
+      "stripe"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "fullstack-cs-19"
+    ],
+    "date": "2025-10-04",
+    "industry": "media",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-148",
+    "type": "past_proposal",
+    "category": "SaaS web app",
+    "job_title": "SaaS web app for a travel company",
+    "skills": [
+      "postgres",
+      "next.js",
+      "prisma",
+      "react",
+      "stripe"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "fullstack-cs-21"
+    ],
+    "date": "2025-07-11",
+    "industry": "travel",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-149",
+    "type": "past_proposal",
+    "category": "API backend",
+    "job_title": "API backend for a insurance company",
+    "skills": [
+      "redis",
+      "fastapi",
+      "express",
+      "node.js",
+      "graphql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-03-26",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "fullstack-prop-150",
+    "type": "past_proposal",
+    "category": "E-commerce site",
+    "job_title": "E-commerce site for a e-commerce company",
+    "skills": [
+      "next.js",
+      "stripe",
+      "node.js"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-06-17",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  }
+]

@@ -1,0 +1,4 @@
+import React from 'react'
+import Stripe from 'stripe'
+
+# core logic omitted

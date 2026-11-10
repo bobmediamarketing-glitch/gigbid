@@ -1,0 +1,4 @@
+import json
+-- SELECT ... OVER (PARTITION BY ...)
+
+# core logic omitted

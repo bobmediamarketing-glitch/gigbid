@@ -1,0 +1,23 @@
+# GigSim platform policy, version 1 (stand-in).
+# The "platform policy update" change request ships as a new file (v2.yaml)
+# selected with GIGSIM_POLICY_VERSION; GigBid reads it from GET /policy.
+version: 1
+effective_from: "2026-10-27"
+connects:
+  weekly_allowance: 80
+  # Evaluated top to bottom; first match wins.
+  cost_rules:
+    - when: {budget_type: fixed, budget_max_lt: 500}
+      cost: 2
+    - when: {budget_max_lt: 3000}
+      cost: 4
+    - when: {}
+      cost: 6
+proposals:
+  max_cover_letter_chars: 5000
+  min_cover_letter_chars: 150
+  max_screening_answer_chars: 1500
+rate_limit:
+  requests: 20
+  per_seconds: 10
+notes: []

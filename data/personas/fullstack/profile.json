@@ -1,0 +1,34 @@
+{
+  "id": "fullstack",
+  "name": "Bilal Ahmed",
+  "title": "Full-Stack Web Developer - React, Next.js, Node and Postgres",
+  "skills": [
+    "react",
+    "next.js",
+    "typescript",
+    "node.js",
+    "express",
+    "postgres",
+    "prisma",
+    "tailwind",
+    "stripe",
+    "graphql",
+    "websockets",
+    "django",
+    "fastapi",
+    "python",
+    "docker",
+    "aws",
+    "redis",
+    "celery"
+  ],
+  "hourly_floor": 30,
+  "fixed_floor": 350,
+  "categories": [
+    "SaaS web app",
+    "E-commerce site",
+    "API backend",
+    "Payment integration",
+    "Real-time app"
+  ]
+}

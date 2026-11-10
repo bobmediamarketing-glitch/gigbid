@@ -1,0 +1,19 @@
+[project]
+name = "gigbid"
+version = "0.1.0"
+description = "Multi-agent freelancer copilot (AI-4016 R&D assignment)"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.115.*",
+  "uvicorn[standard]==0.32.*",
+  "pydantic==2.*",
+  "httpx==0.28.*",
+  "pyyaml==6.*",
+  "reportlab==4.*",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "mcp_servers"]

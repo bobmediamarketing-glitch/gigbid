@@ -1,0 +1,3361 @@
+[
+  {
+    "id": "data_analyst-cs-01",
+    "type": "case_study",
+    "title": "Marketing attribution report for a e-commerce client",
+    "category": "BI dashboard",
+    "skills": [
+      "tableau",
+      "bigquery",
+      "looker"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-04-12",
+    "metric": "reached 97% accuracy on a held-out set",
+    "source": "case_studies/data_analyst-cs-01.md",
+    "outcome": null,
+    "repo": "data_analyst-repo-01"
+  },
+  {
+    "id": "data_analyst-repo-01",
+    "type": "repo",
+    "title": "marketing-attribution-report",
+    "category": "BI dashboard",
+    "skills": [
+      "tableau",
+      "bigquery",
+      "looker"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-04-12",
+    "project": "data_analyst-cs-01",
+    "source": "repos/data_analyst-repo-01",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-02",
+    "type": "case_study",
+    "title": "Shopify to Snowflake pipeline for a marketing client",
+    "category": "Data pipeline",
+    "skills": [
+      "bigquery",
+      "dbt",
+      "python",
+      "sql",
+      "airflow"
+    ],
+    "industry": "marketing",
+    "date": "2023-08-04",
+    "metric": "reduced latency from 6s to 751ms",
+    "source": "case_studies/data_analyst-cs-02.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-03",
+    "type": "case_study",
+    "title": "Pricing elasticity analysis for a legal client",
+    "category": "SQL analysis",
+    "skills": [
+      "bigquery",
+      "postgres",
+      "pandas",
+      "statistics",
+      "sql"
+    ],
+    "industry": "legal",
+    "date": "2025-02-15",
+    "metric": "reached 90% accuracy on a held-out set",
+    "source": "case_studies/data_analyst-cs-03.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-04",
+    "type": "case_study",
+    "title": "Commission calculator rebuild for a insurance client",
+    "category": "Excel automation",
+    "skills": [
+      "pandas",
+      "power bi",
+      "excel",
+      "python"
+    ],
+    "industry": "insurance",
+    "date": "2023-08-19",
+    "metric": "served 16k users in the first quarter",
+    "source": "case_studies/data_analyst-cs-04.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-05",
+    "type": "case_study",
+    "title": "Email subject-line test for a marketing client",
+    "category": "Experiment analysis",
+    "skills": [
+      "sql",
+      "python",
+      "a/b testing",
+      "pandas",
+      "statistics"
+    ],
+    "industry": "marketing",
+    "date": "2026-03-28",
+    "metric": "cut manual effort by 32%",
+    "source": "case_studies/data_analyst-cs-05.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-06",
+    "type": "case_study",
+    "title": "Store performance scorecard for a marketing client",
+    "category": "BI dashboard",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql"
+    ],
+    "industry": "marketing",
+    "date": "2025-12-07",
+    "metric": "reduced latency from 8s to 432ms",
+    "source": "case_studies/data_analyst-cs-06.md",
+    "outcome": null,
+    "repo": "data_analyst-repo-06"
+  },
+  {
+    "id": "data_analyst-repo-06",
+    "type": "repo",
+    "title": "store-performance-scorecard",
+    "category": "BI dashboard",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql"
+    ],
+    "industry": "marketing",
+    "date": "2025-12-07",
+    "project": "data_analyst-cs-06",
+    "source": "repos/data_analyst-repo-06",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-07",
+    "type": "case_study",
+    "title": "Finance close automation for a insurance client",
+    "category": "Data pipeline",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "sql"
+    ],
+    "industry": "insurance",
+    "date": "2024-02-03",
+    "metric": "saved the client $12k per month",
+    "source": "case_studies/data_analyst-cs-07.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-08",
+    "type": "case_study",
+    "title": "Pricing elasticity analysis for a real estate client",
+    "category": "SQL analysis",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "industry": "real estate",
+    "date": "2023-08-06",
+    "metric": "saved the client $24k per month",
+    "source": "case_studies/data_analyst-cs-08.md",
+    "outcome": null,
+    "repo": "data_analyst-repo-08"
+  },
+  {
+    "id": "data_analyst-repo-08",
+    "type": "repo",
+    "title": "pricing-elasticity-analysis",
+    "category": "SQL analysis",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "industry": "real estate",
+    "date": "2023-08-06",
+    "project": "data_analyst-cs-08",
+    "source": "repos/data_analyst-repo-08",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-09",
+    "type": "case_study",
+    "title": "Budget consolidation workbook for a fintech client",
+    "category": "Excel automation",
+    "skills": [
+      "python",
+      "pandas",
+      "power bi",
+      "excel"
+    ],
+    "industry": "fintech",
+    "date": "2026-02-06",
+    "metric": "saved the client $16k per month",
+    "source": "case_studies/data_analyst-cs-09.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-10",
+    "type": "case_study",
+    "title": "Pricing page test for a logistics client",
+    "category": "Experiment analysis",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "industry": "logistics",
+    "date": "2025-01-03",
+    "metric": "saved the client $14k per month",
+    "source": "case_studies/data_analyst-cs-10.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-11",
+    "type": "case_study",
+    "title": "Store performance scorecard for a healthcare client",
+    "category": "BI dashboard",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "industry": "healthcare",
+    "date": "2023-11-18",
+    "metric": "saved the client $25k per month",
+    "source": "case_studies/data_analyst-cs-11.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-12",
+    "type": "case_study",
+    "title": "IoT telemetry ELT for a insurance client",
+    "category": "Data pipeline",
+    "skills": [
+      "python",
+      "snowflake",
+      "sql"
+    ],
+    "industry": "insurance",
+    "date": "2025-07-07",
+    "metric": "lifted conversion by 9%",
+    "source": "case_studies/data_analyst-cs-12.md",
+    "outcome": null,
+    "repo": "data_analyst-repo-12"
+  },
+  {
+    "id": "data_analyst-repo-12",
+    "type": "repo",
+    "title": "iot-telemetry-elt",
+    "category": "Data pipeline",
+    "skills": [
+      "python",
+      "snowflake",
+      "sql"
+    ],
+    "industry": "insurance",
+    "date": "2025-07-07",
+    "project": "data_analyst-cs-12",
+    "source": "repos/data_analyst-repo-12",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-13",
+    "type": "case_study",
+    "title": "Cohort retention study for a fintech client",
+    "category": "SQL analysis",
+    "skills": [
+      "sql",
+      "statistics",
+      "postgres"
+    ],
+    "industry": "fintech",
+    "date": "2024-09-14",
+    "metric": "lifted conversion by 4%",
+    "source": "case_studies/data_analyst-cs-13.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-14",
+    "type": "case_study",
+    "title": "Payroll reconciliation macro for a legal client",
+    "category": "Excel automation",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "industry": "legal",
+    "date": "2026-03-24",
+    "metric": "reached 95% accuracy on a held-out set",
+    "source": "case_studies/data_analyst-cs-14.md",
+    "outcome": null,
+    "repo": "data_analyst-repo-14"
+  },
+  {
+    "id": "data_analyst-repo-14",
+    "type": "repo",
+    "title": "payroll-reconciliation-macro",
+    "category": "Excel automation",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "industry": "legal",
+    "date": "2026-03-24",
+    "project": "data_analyst-cs-14",
+    "source": "repos/data_analyst-repo-14",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-15",
+    "type": "case_study",
+    "title": "Email subject-line test for a real estate client",
+    "category": "Experiment analysis",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "industry": "real estate",
+    "date": "2023-08-04",
+    "metric": "reduced latency from 12s to 339ms",
+    "source": "case_studies/data_analyst-cs-15.md",
+    "outcome": null,
+    "repo": "data_analyst-repo-15"
+  },
+  {
+    "id": "data_analyst-repo-15",
+    "type": "repo",
+    "title": "email-subject-line-test",
+    "category": "Experiment analysis",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "industry": "real estate",
+    "date": "2023-08-04",
+    "project": "data_analyst-cs-15",
+    "source": "repos/data_analyst-repo-15",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-16",
+    "type": "case_study",
+    "title": "Store performance scorecard for a saas client",
+    "category": "BI dashboard",
+    "skills": [
+      "bigquery",
+      "tableau",
+      "looker"
+    ],
+    "industry": "saas",
+    "date": "2023-07-18",
+    "metric": "reduced latency from 6s to 794ms",
+    "source": "case_studies/data_analyst-cs-16.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-17",
+    "type": "case_study",
+    "title": "Ad spend warehouse for a real estate client",
+    "category": "Data pipeline",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "bigquery",
+      "airflow",
+      "sql"
+    ],
+    "industry": "real estate",
+    "date": "2023-02-19",
+    "metric": "reached 88% accuracy on a held-out set",
+    "source": "case_studies/data_analyst-cs-17.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-18",
+    "type": "case_study",
+    "title": "Cohort retention study for a saas client",
+    "category": "SQL analysis",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "industry": "saas",
+    "date": "2025-11-28",
+    "metric": "reduced latency from 6s to 859ms",
+    "source": "case_studies/data_analyst-cs-18.md",
+    "outcome": null,
+    "repo": "data_analyst-repo-18"
+  },
+  {
+    "id": "data_analyst-repo-18",
+    "type": "repo",
+    "title": "cohort-retention-study",
+    "category": "SQL analysis",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "industry": "saas",
+    "date": "2025-11-28",
+    "project": "data_analyst-cs-18",
+    "source": "repos/data_analyst-repo-18",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-19",
+    "type": "case_study",
+    "title": "Budget consolidation workbook for a education client",
+    "category": "Excel automation",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "industry": "education",
+    "date": "2026-05-10",
+    "metric": "reduced latency from 10s to 519ms",
+    "source": "case_studies/data_analyst-cs-19.md",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cs-20",
+    "type": "case_study",
+    "title": "Email subject-line test for a insurance client",
+    "category": "Experiment analysis",
+    "skills": [
+      "sql",
+      "python",
+      "statistics",
+      "pandas"
+    ],
+    "industry": "insurance",
+    "date": "2024-01-29",
+    "metric": "reduced latency from 3s to 716ms",
+    "source": "case_studies/data_analyst-cs-20.md",
+    "outcome": null,
+    "repo": "data_analyst-repo-20"
+  },
+  {
+    "id": "data_analyst-repo-20",
+    "type": "repo",
+    "title": "email-subject-line-test",
+    "category": "Experiment analysis",
+    "skills": [
+      "sql",
+      "python",
+      "statistics",
+      "pandas"
+    ],
+    "industry": "insurance",
+    "date": "2024-01-29",
+    "project": "data_analyst-cs-20",
+    "source": "repos/data_analyst-repo-20",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-01",
+    "type": "review",
+    "project": "data_analyst-cs-05",
+    "stars": 3,
+    "skills": [
+      "sql",
+      "python"
+    ],
+    "industry": "marketing",
+    "date": "2026-03-28",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-02",
+    "type": "review",
+    "project": "data_analyst-cs-15",
+    "stars": 4,
+    "skills": [
+      "statistics",
+      "a/b testing"
+    ],
+    "industry": "real estate",
+    "date": "2023-08-04",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-03",
+    "type": "review",
+    "project": "data_analyst-cs-03",
+    "stars": 3,
+    "skills": [
+      "bigquery",
+      "postgres"
+    ],
+    "industry": "legal",
+    "date": "2025-02-15",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-04",
+    "type": "review",
+    "project": "data_analyst-cs-10",
+    "stars": 5,
+    "skills": [
+      "statistics",
+      "a/b testing"
+    ],
+    "industry": "logistics",
+    "date": "2025-01-03",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-05",
+    "type": "review",
+    "project": "data_analyst-cs-11",
+    "stars": 4,
+    "skills": [
+      "looker",
+      "bigquery"
+    ],
+    "industry": "healthcare",
+    "date": "2023-11-18",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-06",
+    "type": "review",
+    "project": "data_analyst-cs-16",
+    "stars": 5,
+    "skills": [
+      "bigquery",
+      "tableau"
+    ],
+    "industry": "saas",
+    "date": "2023-07-18",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-07",
+    "type": "review",
+    "project": "data_analyst-cs-19",
+    "stars": 4,
+    "skills": [
+      "python",
+      "excel"
+    ],
+    "industry": "education",
+    "date": "2026-05-10",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-08",
+    "type": "review",
+    "project": "data_analyst-cs-17",
+    "stars": 5,
+    "skills": [
+      "dbt",
+      "snowflake"
+    ],
+    "industry": "real estate",
+    "date": "2023-02-19",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-09",
+    "type": "review",
+    "project": "data_analyst-cs-14",
+    "stars": 5,
+    "skills": [
+      "power bi",
+      "python"
+    ],
+    "industry": "legal",
+    "date": "2026-03-24",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-10",
+    "type": "review",
+    "project": "data_analyst-cs-04",
+    "stars": 5,
+    "skills": [
+      "pandas",
+      "power bi"
+    ],
+    "industry": "insurance",
+    "date": "2023-08-19",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-cv",
+    "type": "cv",
+    "title": "CV",
+    "skills": [
+      "sql",
+      "pandas",
+      "python",
+      "dbt",
+      "power bi",
+      "tableau",
+      "excel",
+      "looker",
+      "bigquery",
+      "snowflake",
+      "airflow",
+      "statistics",
+      "a/b testing",
+      "postgres"
+    ],
+    "date": "2026-11-01",
+    "source": "cv.pdf",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-prop-001",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a legal company",
+    "skills": [
+      "bigquery",
+      "postgres",
+      "pandas",
+      "statistics",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-03"
+    ],
+    "date": "2026-06-21",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-002",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-07"
+    ],
+    "date": "2025-03-21",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-003",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a real estate company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-12-11",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-004",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a fintech company",
+    "skills": [
+      "python",
+      "pandas",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-07-17",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-005",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a legal company",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-14"
+    ],
+    "date": "2026-09-24",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-006",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a saas company",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-18"
+    ],
+    "date": "2024-12-18",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-007",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a education company",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-19"
+    ],
+    "date": "2025-07-15",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-008",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a real estate company",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-08-16",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-009",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a marketing company",
+    "skills": [
+      "bigquery",
+      "dbt",
+      "python",
+      "sql",
+      "airflow"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-06-19",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-010",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-07"
+    ],
+    "date": "2025-02-03",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-011",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a insurance company",
+    "skills": [
+      "pandas",
+      "power bi",
+      "excel",
+      "python"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-04"
+    ],
+    "date": "2025-03-15",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-012",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a marketing company",
+    "skills": [
+      "sql",
+      "python",
+      "a/b testing",
+      "pandas",
+      "statistics"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-05"
+    ],
+    "date": "2026-06-09",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-013",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-11"
+    ],
+    "date": "2026-10-11",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-014",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a saas company",
+    "skills": [
+      "bigquery",
+      "tableau",
+      "looker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-16"
+    ],
+    "date": "2025-06-11",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-015",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "python",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-06-30",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-016",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-07"
+    ],
+    "date": "2026-07-16",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-017",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-11"
+    ],
+    "date": "2024-06-23",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-018",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a real estate company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "bigquery",
+      "airflow",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-09-04",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-019",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a education company",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-19"
+    ],
+    "date": "2024-05-19",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-020",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a saas company",
+    "skills": [
+      "bigquery",
+      "tableau",
+      "looker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-16"
+    ],
+    "date": "2024-12-24",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-021",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a saas company",
+    "skills": [
+      "bigquery",
+      "tableau",
+      "looker"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-02-21",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-022",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a real estate company",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-08"
+    ],
+    "date": "2026-08-05",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-023",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-10"
+    ],
+    "date": "2025-10-10",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-024",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a saas company",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-18"
+    ],
+    "date": "2026-03-19",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-025",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-11"
+    ],
+    "date": "2026-04-08",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-026",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-11"
+    ],
+    "date": "2025-08-12",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-027",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a marketing company",
+    "skills": [
+      "sql",
+      "python",
+      "a/b testing",
+      "pandas",
+      "statistics"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-05"
+    ],
+    "date": "2026-01-15",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-028",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a education company",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-12-03",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-029",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a legal company",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-14"
+    ],
+    "date": "2024-07-17",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-030",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a real estate company",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-05-18",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-031",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a saas company",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-18"
+    ],
+    "date": "2025-07-30",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-032",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "python",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-12"
+    ],
+    "date": "2024-08-27",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-033",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a education company",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-19"
+    ],
+    "date": "2025-08-25",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-034",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a legal company",
+    "skills": [
+      "bigquery",
+      "postgres",
+      "pandas",
+      "statistics",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-10-19",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-035",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a saas company",
+    "skills": [
+      "bigquery",
+      "tableau",
+      "looker"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-04-20",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-036",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a real estate company",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-08"
+    ],
+    "date": "2024-11-13",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-037",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a education company",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-04-12",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-038",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a insurance company",
+    "skills": [
+      "sql",
+      "python",
+      "statistics",
+      "pandas"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-01-06",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-039",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a legal company",
+    "skills": [
+      "bigquery",
+      "postgres",
+      "pandas",
+      "statistics",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-03"
+    ],
+    "date": "2025-01-21",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-040",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a legal company",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-11-08",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-041",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a real estate company",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-10-28",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-042",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a marketing company",
+    "skills": [
+      "sql",
+      "python",
+      "a/b testing",
+      "pandas",
+      "statistics"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-05"
+    ],
+    "date": "2026-06-03",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-043",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-10"
+    ],
+    "date": "2025-03-16",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-044",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-11"
+    ],
+    "date": "2024-09-01",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-045",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a education company",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-19"
+    ],
+    "date": "2024-12-18",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-046",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a fintech company",
+    "skills": [
+      "python",
+      "pandas",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-09"
+    ],
+    "date": "2024-05-30",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-047",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a saas company",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-07-24",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-048",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a fintech company",
+    "skills": [
+      "python",
+      "pandas",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-09"
+    ],
+    "date": "2024-12-30",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-049",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a saas company",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-10-28",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-050",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-11"
+    ],
+    "date": "2026-04-14",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-051",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a e-commerce company",
+    "skills": [
+      "tableau",
+      "bigquery",
+      "looker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-01"
+    ],
+    "date": "2026-03-26",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-052",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-07"
+    ],
+    "date": "2025-10-18",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-053",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a e-commerce company",
+    "skills": [
+      "tableau",
+      "bigquery",
+      "looker"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-01"
+    ],
+    "date": "2026-07-01",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-054",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-10"
+    ],
+    "date": "2025-09-01",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-055",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a legal company",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-14"
+    ],
+    "date": "2026-01-22",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-056",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a saas company",
+    "skills": [
+      "bigquery",
+      "tableau",
+      "looker"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-16"
+    ],
+    "date": "2026-08-17",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-057",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a e-commerce company",
+    "skills": [
+      "tableau",
+      "bigquery",
+      "looker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-01"
+    ],
+    "date": "2024-07-31",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-058",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "python",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-12"
+    ],
+    "date": "2026-08-23",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-059",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a e-commerce company",
+    "skills": [
+      "tableau",
+      "bigquery",
+      "looker"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-01"
+    ],
+    "date": "2026-06-21",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-060",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-03-12",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-061",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a real estate company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "bigquery",
+      "airflow",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-17"
+    ],
+    "date": "2024-06-03",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-062",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "python",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-12"
+    ],
+    "date": "2025-01-14",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-063",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a insurance company",
+    "skills": [
+      "pandas",
+      "power bi",
+      "excel",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-04-23",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-064",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a insurance company",
+    "skills": [
+      "sql",
+      "python",
+      "statistics",
+      "pandas"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-20"
+    ],
+    "date": "2026-08-26",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-065",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a insurance company",
+    "skills": [
+      "pandas",
+      "power bi",
+      "excel",
+      "python"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-07-17",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-066",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a legal company",
+    "skills": [
+      "bigquery",
+      "postgres",
+      "pandas",
+      "statistics",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-07-29",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-067",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a insurance company",
+    "skills": [
+      "pandas",
+      "power bi",
+      "excel",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-04"
+    ],
+    "date": "2026-08-19",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-068",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a insurance company",
+    "skills": [
+      "sql",
+      "python",
+      "statistics",
+      "pandas"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-20"
+    ],
+    "date": "2025-10-25",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-069",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a real estate company",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-08"
+    ],
+    "date": "2024-06-01",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-070",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-11"
+    ],
+    "date": "2026-07-26",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-071",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a legal company",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-11-28",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-072",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a fintech company",
+    "skills": [
+      "sql",
+      "statistics",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-03-22",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-073",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a education company",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-19"
+    ],
+    "date": "2026-10-19",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-074",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a fintech company",
+    "skills": [
+      "sql",
+      "statistics",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-13"
+    ],
+    "date": "2025-06-21",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-075",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a marketing company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-06"
+    ],
+    "date": "2024-11-15",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-076",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a legal company",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-04-09",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-077",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a marketing company",
+    "skills": [
+      "bigquery",
+      "dbt",
+      "python",
+      "sql",
+      "airflow"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-02"
+    ],
+    "date": "2025-12-13",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-078",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a marketing company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-06"
+    ],
+    "date": "2026-10-17",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-079",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a legal company",
+    "skills": [
+      "bigquery",
+      "postgres",
+      "pandas",
+      "statistics",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-06-23",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-080",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-10"
+    ],
+    "date": "2026-03-06",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-081",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a saas company",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-18"
+    ],
+    "date": "2024-09-21",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-082",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a saas company",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-11-29",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-083",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a fintech company",
+    "skills": [
+      "sql",
+      "statistics",
+      "postgres"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-13"
+    ],
+    "date": "2026-05-09",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-084",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a real estate company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "bigquery",
+      "airflow",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-06-21",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-085",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a marketing company",
+    "skills": [
+      "bigquery",
+      "dbt",
+      "python",
+      "sql",
+      "airflow"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-09-13",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-086",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a legal company",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-14"
+    ],
+    "date": "2025-12-21",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-087",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a saas company",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-10-31",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-088",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-10"
+    ],
+    "date": "2024-11-11",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-089",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a insurance company",
+    "skills": [
+      "pandas",
+      "power bi",
+      "excel",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-04"
+    ],
+    "date": "2025-02-05",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-090",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a fintech company",
+    "skills": [
+      "sql",
+      "statistics",
+      "postgres"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-12-13",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-091",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-07"
+    ],
+    "date": "2025-03-30",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-092",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a fintech company",
+    "skills": [
+      "python",
+      "pandas",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-09"
+    ],
+    "date": "2025-01-13",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-093",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a marketing company",
+    "skills": [
+      "sql",
+      "python",
+      "a/b testing",
+      "pandas",
+      "statistics"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-05"
+    ],
+    "date": "2024-12-01",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-094",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a saas company",
+    "skills": [
+      "bigquery",
+      "tableau",
+      "looker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-16"
+    ],
+    "date": "2025-08-16",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-095",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a marketing company",
+    "skills": [
+      "bigquery",
+      "dbt",
+      "python",
+      "sql",
+      "airflow"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-02"
+    ],
+    "date": "2024-06-01",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-096",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a marketing company",
+    "skills": [
+      "sql",
+      "python",
+      "a/b testing",
+      "pandas",
+      "statistics"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-12-03",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-097",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-04-27",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-098",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-08-21",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-099",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a real estate company",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-08"
+    ],
+    "date": "2024-10-04",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-100",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a fintech company",
+    "skills": [
+      "python",
+      "pandas",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-09"
+    ],
+    "date": "2025-01-28",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-101",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a saas company",
+    "skills": [
+      "bigquery",
+      "tableau",
+      "looker"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-16"
+    ],
+    "date": "2026-06-13",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-102",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a education company",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-19"
+    ],
+    "date": "2026-06-07",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-103",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a marketing company",
+    "skills": [
+      "sql",
+      "python",
+      "a/b testing",
+      "pandas",
+      "statistics"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-10-06",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-104",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a real estate company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-11-29",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-105",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a marketing company",
+    "skills": [
+      "sql",
+      "python",
+      "a/b testing",
+      "pandas",
+      "statistics"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-07-22",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-106",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a legal company",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-14"
+    ],
+    "date": "2026-02-18",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-107",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a insurance company",
+    "skills": [
+      "pandas",
+      "power bi",
+      "excel",
+      "python"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-10-05",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-108",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a legal company",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-09-19",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-109",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a fintech company",
+    "skills": [
+      "python",
+      "pandas",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-09"
+    ],
+    "date": "2025-05-27",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-110",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a fintech company",
+    "skills": [
+      "python",
+      "pandas",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-09"
+    ],
+    "date": "2025-12-07",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-111",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a e-commerce company",
+    "skills": [
+      "tableau",
+      "bigquery",
+      "looker"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-01"
+    ],
+    "date": "2025-07-09",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-112",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "python",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-12"
+    ],
+    "date": "2025-03-25",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-113",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-04-08",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-114",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a e-commerce company",
+    "skills": [
+      "tableau",
+      "bigquery",
+      "looker"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-01"
+    ],
+    "date": "2025-03-22",
+    "industry": "e-commerce",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-115",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a education company",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-19"
+    ],
+    "date": "2026-04-29",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-116",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a marketing company",
+    "skills": [
+      "bigquery",
+      "dbt",
+      "python",
+      "sql",
+      "airflow"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2024-08-11",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-117",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a saas company",
+    "skills": [
+      "bigquery",
+      "tableau",
+      "looker"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-11-11",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-118",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a legal company",
+    "skills": [
+      "power bi",
+      "python",
+      "excel"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-14"
+    ],
+    "date": "2024-05-26",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-119",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a real estate company",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-08"
+    ],
+    "date": "2025-09-09",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-120",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a marketing company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-06"
+    ],
+    "date": "2026-04-28",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-121",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-06-14",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-122",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a insurance company",
+    "skills": [
+      "pandas",
+      "power bi",
+      "excel",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-04"
+    ],
+    "date": "2024-06-18",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-123",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-07-11",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-124",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [
+      "data_analyst-cs-07"
+    ],
+    "date": "2025-04-13",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-125",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-08-21",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-126",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a insurance company",
+    "skills": [
+      "pandas",
+      "power bi",
+      "excel",
+      "python"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-10-05",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-127",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "python",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-12"
+    ],
+    "date": "2026-10-21",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-128",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a real estate company",
+    "skills": [
+      "pandas",
+      "postgres",
+      "sql",
+      "bigquery"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-02-20",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-129",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a legal company",
+    "skills": [
+      "bigquery",
+      "postgres",
+      "pandas",
+      "statistics",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-01-21",
+    "industry": "legal",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-130",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a fintech company",
+    "skills": [
+      "python",
+      "pandas",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-09"
+    ],
+    "date": "2024-12-19",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-131",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a insurance company",
+    "skills": [
+      "sql",
+      "python",
+      "statistics",
+      "pandas"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-20"
+    ],
+    "date": "2024-12-23",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-132",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a saas company",
+    "skills": [
+      "bigquery",
+      "tableau",
+      "looker"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-16"
+    ],
+    "date": "2024-06-26",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-133",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-10"
+    ],
+    "date": "2024-12-04",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-134",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a fintech company",
+    "skills": [
+      "sql",
+      "statistics",
+      "postgres"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-13"
+    ],
+    "date": "2025-05-01",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-135",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a saas company",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-18"
+    ],
+    "date": "2025-07-01",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-136",
+    "type": "past_proposal",
+    "category": "SQL analysis",
+    "job_title": "SQL analysis for a saas company",
+    "skills": [
+      "bigquery",
+      "pandas",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-05-20",
+    "industry": "saas",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-137",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-03-28",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-138",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a education company",
+    "skills": [
+      "python",
+      "excel",
+      "pandas",
+      "power bi"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-09-07",
+    "industry": "education",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-139",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a real estate company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "bigquery",
+      "airflow",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-17"
+    ],
+    "date": "2024-07-12",
+    "industry": "real estate",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-140",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a insurance company",
+    "skills": [
+      "sql",
+      "python",
+      "statistics",
+      "pandas"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-20"
+    ],
+    "date": "2025-12-19",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-141",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2026-10-07",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-142",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a marketing company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2026-09-19",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-143",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a insurance company",
+    "skills": [
+      "dbt",
+      "snowflake",
+      "sql"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2024-06-06",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-144",
+    "type": "past_proposal",
+    "category": "BI dashboard",
+    "job_title": "BI dashboard for a healthcare company",
+    "skills": [
+      "looker",
+      "bigquery",
+      "sql",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-11"
+    ],
+    "date": "2025-06-16",
+    "industry": "healthcare",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-145",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a marketing company",
+    "skills": [
+      "bigquery",
+      "dbt",
+      "python",
+      "sql",
+      "airflow"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-02"
+    ],
+    "date": "2026-10-06",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-146",
+    "type": "past_proposal",
+    "category": "Excel automation",
+    "job_title": "Excel automation for a fintech company",
+    "skills": [
+      "python",
+      "pandas",
+      "power bi",
+      "excel"
+    ],
+    "outcome": "ignored",
+    "cites": [],
+    "date": "2025-12-30",
+    "industry": "fintech",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-147",
+    "type": "past_proposal",
+    "category": "Data pipeline",
+    "job_title": "Data pipeline for a marketing company",
+    "skills": [
+      "bigquery",
+      "dbt",
+      "python",
+      "sql",
+      "airflow"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-02"
+    ],
+    "date": "2025-03-09",
+    "industry": "marketing",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-148",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "won",
+    "cites": [
+      "data_analyst-cs-10"
+    ],
+    "date": "2025-06-28",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-149",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a logistics company",
+    "skills": [
+      "statistics",
+      "a/b testing",
+      "python",
+      "sql"
+    ],
+    "outcome": "replied",
+    "cites": [],
+    "date": "2025-07-09",
+    "industry": "logistics",
+    "source": "past_proposals.jsonl"
+  },
+  {
+    "id": "data_analyst-prop-150",
+    "type": "past_proposal",
+    "category": "Experiment analysis",
+    "job_title": "Experiment analysis for a insurance company",
+    "skills": [
+      "sql",
+      "python",
+      "statistics",
+      "pandas"
+    ],
+    "outcome": "replied",
+    "cites": [
+      "data_analyst-cs-20"
+    ],
+    "date": "2025-04-07",
+    "industry": "insurance",
+    "source": "past_proposals.jsonl"
+  }
+]

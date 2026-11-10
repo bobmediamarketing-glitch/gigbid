@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "no_contact_details",
+      "severity": "block",
+      "action": "redact",
+      "patterns": [
+        "[\\w.+-]+@[\\w-]+\\.[\\w.]+",
+        "\\+?\\d[\\d\\s().-]{8,}\\d",
+        "(?i)\\b(whatsapp|telegram|skype|discord|signal)\\b"
+      ]
+    },
+    {
+      "id": "no_offplatform_payment",
+      "severity": "block",
+      "action": "block",
+      "patterns": [
+        "(?i)\\b(bank transfer|paypal me|crypto|bitcoin|usdt|western union|gift card|outside (the )?platform)\\b"
+      ]
+    },
+    {
+      "id": "no_guarantees",
+      "severity": "warn",
+      "action": "rewrite",
+      "patterns": [
+        "(?i)\\bguarantee[ds]?\\b",
+        "(?i)100\\s?% (satisfaction|accuracy|success)",
+        "(?i)full refund"
+      ]
+    },
+    {
+      "id": "no_fabrication",
+      "severity": "block",
+      "action": "verify_claims",
+      "patterns": [
+        "(?i)\\b\\d{2,}\\+? years\\b"
+      ]
+    },
+    {
+      "id": "no_credentials",
+      "severity": "block",
+      "action": "block",
+      "patterns": [
+        "(?i)\\b(password|login details|credentials)\\b"
+      ]
+    }
+  ]
+}

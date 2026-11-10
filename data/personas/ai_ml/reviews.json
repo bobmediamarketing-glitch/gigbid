@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ai_ml-rev-01",
+    "type": "review",
+    "project": "ai_ml-cs-16",
+    "stars": 5,
+    "text": "Great communication. Delivered the contract search copilot for a marketing client on time.",
+    "skills": [
+      "nlp",
+      "langchain"
+    ],
+    "industry": "marketing",
+    "date": "2024-02-11",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-02",
+    "type": "review",
+    "project": "ai_ml-cs-25",
+    "stars": 4,
+    "text": "Solid engineer; a few delays but the final nlp work was strong.",
+    "skills": [
+      "nlp",
+      "huggingface"
+    ],
+    "industry": "insurance",
+    "date": "2024-04-04",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-03",
+    "type": "review",
+    "project": "ai_ml-cs-05",
+    "stars": 5,
+    "text": "Great communication. Delivered the resume entity extractor for a education client on time.",
+    "skills": [
+      "fine-tuning",
+      "huggingface"
+    ],
+    "industry": "education",
+    "date": "2026-05-27",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-04",
+    "type": "review",
+    "project": "ai_ml-cs-10",
+    "stars": 4,
+    "text": "Solid engineer; a few delays but the final python work was strong.",
+    "skills": [
+      "python",
+      "nlp"
+    ],
+    "industry": "real estate",
+    "date": "2023-04-03",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-05",
+    "type": "review",
+    "project": "ai_ml-cs-20",
+    "stars": 3,
+    "text": "Great communication. Delivered the resume entity extractor for a travel client on time.",
+    "skills": [
+      "python",
+      "nlp"
+    ],
+    "industry": "travel",
+    "date": "2023-08-19",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-06",
+    "type": "review",
+    "project": "ai_ml-cs-07",
+    "stars": 4,
+    "text": "Solid engineer; a few delays but the final redis work was strong.",
+    "skills": [
+      "redis",
+      "fastapi"
+    ],
+    "industry": "media",
+    "date": "2024-11-15",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-07",
+    "type": "review",
+    "project": "ai_ml-cs-04",
+    "stars": 5,
+    "text": "Solid engineer; a few delays but the final celery work was strong.",
+    "skills": [
+      "celery",
+      "aws"
+    ],
+    "industry": "saas",
+    "date": "2025-01-26",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-08",
+    "type": "review",
+    "project": "ai_ml-cs-18",
+    "stars": 5,
+    "text": "Solid engineer; a few delays but the final python work was strong.",
+    "skills": [
+      "python",
+      "computer vision"
+    ],
+    "industry": "legal",
+    "date": "2024-07-28",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-09",
+    "type": "review",
+    "project": "ai_ml-cs-21",
+    "stars": 3,
+    "text": "Solid engineer; a few delays but the final python work was strong.",
+    "skills": [
+      "python",
+      "rag"
+    ],
+    "industry": "healthcare",
+    "date": "2026-08-27",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-10",
+    "type": "review",
+    "project": "ai_ml-cs-11",
+    "stars": 5,
+    "text": "Sara understood the problem fast and the rag chatbot work was excellent.",
+    "skills": [
+      "python",
+      "fastapi"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-08-01",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-11",
+    "type": "review",
+    "project": "ai_ml-cs-06",
+    "stars": 5,
+    "text": "Solid engineer; a few delays but the final langchain work was strong.",
+    "skills": [
+      "langchain",
+      "pinecone"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-02-10",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "ai_ml-rev-12",
+    "type": "review",
+    "project": "ai_ml-cs-09",
+    "stars": 4,
+    "text": "Great communication. Delivered the model registry rollout for a fintech client on time.",
+    "skills": [
+      "mlflow",
+      "mlops"
+    ],
+    "industry": "fintech",
+    "date": "2023-12-01",
+    "source": "reviews.json",
+    "outcome": null
+  }
+]

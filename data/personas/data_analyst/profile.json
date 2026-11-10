@@ -1,0 +1,30 @@
+{
+  "id": "data_analyst",
+  "name": "Hina Raza",
+  "title": "Data Analyst - SQL, dbt, Power BI and experimentation",
+  "skills": [
+    "sql",
+    "pandas",
+    "python",
+    "dbt",
+    "power bi",
+    "tableau",
+    "excel",
+    "looker",
+    "bigquery",
+    "snowflake",
+    "airflow",
+    "statistics",
+    "a/b testing",
+    "postgres"
+  ],
+  "hourly_floor": 25,
+  "fixed_floor": 250,
+  "categories": [
+    "BI dashboard",
+    "Data pipeline",
+    "SQL analysis",
+    "Excel automation",
+    "Experiment analysis"
+  ]
+}

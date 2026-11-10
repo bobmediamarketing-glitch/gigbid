@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ai_ml",
+    "name": "Sara Malik",
+    "token": "gigsim-ai_ml-token",
+    "connects_weekly": 80
+  },
+  {
+    "id": "fullstack",
+    "name": "Bilal Ahmed",
+    "token": "gigsim-fullstack-token",
+    "connects_weekly": 80
+  },
+  {
+    "id": "data_analyst",
+    "name": "Hina Raza",
+    "token": "gigsim-data_analyst-token",
+    "connects_weekly": 80
+  }
+]

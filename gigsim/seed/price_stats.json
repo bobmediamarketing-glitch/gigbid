@@ -1,0 +1,338 @@
+[
+  {
+    "category": "RAG chatbot",
+    "budget_type": "fixed",
+    "p25": 1808.7,
+    "p50": 2705.79,
+    "p75": 3718.36,
+    "n": 52
+  },
+  {
+    "category": "RAG chatbot",
+    "budget_type": "hourly",
+    "p25": 28.82,
+    "p50": 40.7,
+    "p75": 71.6,
+    "n": 20
+  },
+  {
+    "category": "LLM agent",
+    "budget_type": "fixed",
+    "p25": 1979.24,
+    "p50": 3387.63,
+    "p75": 4676.35,
+    "n": 37
+  },
+  {
+    "category": "LLM agent",
+    "budget_type": "hourly",
+    "p25": 23.38,
+    "p50": 34.05,
+    "p75": 51.44,
+    "n": 23
+  },
+  {
+    "category": "Computer vision",
+    "budget_type": "fixed",
+    "p25": 1471.93,
+    "p50": 2747.13,
+    "p75": 3766.62,
+    "n": 41
+  },
+  {
+    "category": "Computer vision",
+    "budget_type": "hourly",
+    "p25": 32.22,
+    "p50": 40.69,
+    "p75": 63.38,
+    "n": 32
+  },
+  {
+    "category": "ML deployment",
+    "budget_type": "fixed",
+    "p25": 1316.56,
+    "p50": 2418.63,
+    "p75": 3273.24,
+    "n": 51
+  },
+  {
+    "category": "ML deployment",
+    "budget_type": "hourly",
+    "p25": 24.38,
+    "p50": 44.06,
+    "p75": 63.96,
+    "n": 29
+  },
+  {
+    "category": "NLP pipeline",
+    "budget_type": "fixed",
+    "p25": 1786.2,
+    "p50": 2611.35,
+    "p75": 3286.03,
+    "n": 43
+  },
+  {
+    "category": "NLP pipeline",
+    "budget_type": "hourly",
+    "p25": 27.23,
+    "p50": 35.59,
+    "p75": 56.3,
+    "n": 34
+  },
+  {
+    "category": "SaaS web app",
+    "budget_type": "fixed",
+    "p25": 2644.28,
+    "p50": 4587.19,
+    "p75": 7634.73,
+    "n": 46
+  },
+  {
+    "category": "SaaS web app",
+    "budget_type": "hourly",
+    "p25": 29.3,
+    "p50": 42.12,
+    "p75": 63.45,
+    "n": 40
+  },
+  {
+    "category": "E-commerce site",
+    "budget_type": "fixed",
+    "p25": 1515.49,
+    "p50": 2192.45,
+    "p75": 3251.01,
+    "n": 42
+  },
+  {
+    "category": "E-commerce site",
+    "budget_type": "hourly",
+    "p25": 26.73,
+    "p50": 35.78,
+    "p75": 64.36,
+    "n": 24
+  },
+  {
+    "category": "API backend",
+    "budget_type": "fixed",
+    "p25": 1244.94,
+    "p50": 2261.58,
+    "p75": 3865.01,
+    "n": 37
+  },
+  {
+    "category": "API backend",
+    "budget_type": "hourly",
+    "p25": 26.66,
+    "p50": 37.33,
+    "p75": 43.4,
+    "n": 24
+  },
+  {
+    "category": "Payment integration",
+    "budget_type": "fixed",
+    "p25": 659.23,
+    "p50": 1197.92,
+    "p75": 1631.59,
+    "n": 44
+  },
+  {
+    "category": "Payment integration",
+    "budget_type": "hourly",
+    "p25": 22.83,
+    "p50": 31.55,
+    "p75": 59.31,
+    "n": 27
+  },
+  {
+    "category": "Real-time app",
+    "budget_type": "fixed",
+    "p25": 1992.42,
+    "p50": 2889.82,
+    "p75": 4619.65,
+    "n": 37
+  },
+  {
+    "category": "Real-time app",
+    "budget_type": "hourly",
+    "p25": 25.1,
+    "p50": 39.91,
+    "p75": 58.19,
+    "n": 22
+  },
+  {
+    "category": "BI dashboard",
+    "budget_type": "fixed",
+    "p25": 762.75,
+    "p50": 1235.83,
+    "p75": 2054.66,
+    "n": 51
+  },
+  {
+    "category": "BI dashboard",
+    "budget_type": "hourly",
+    "p25": 23.02,
+    "p50": 31.35,
+    "p75": 53.84,
+    "n": 26
+  },
+  {
+    "category": "Data pipeline",
+    "budget_type": "fixed",
+    "p25": 1663.51,
+    "p50": 3726.62,
+    "p75": 5017.59,
+    "n": 48
+  },
+  {
+    "category": "Data pipeline",
+    "budget_type": "hourly",
+    "p25": 22.36,
+    "p50": 35.08,
+    "p75": 51.45,
+    "n": 36
+  },
+  {
+    "category": "SQL analysis",
+    "budget_type": "fixed",
+    "p25": 511.73,
+    "p50": 775.14,
+    "p75": 1080.43,
+    "n": 48
+  },
+  {
+    "category": "SQL analysis",
+    "budget_type": "hourly",
+    "p25": 23.34,
+    "p50": 32.62,
+    "p75": 55.48,
+    "n": 33
+  },
+  {
+    "category": "Excel automation",
+    "budget_type": "fixed",
+    "p25": 318.72,
+    "p50": 584.75,
+    "p75": 799.93,
+    "n": 37
+  },
+  {
+    "category": "Excel automation",
+    "budget_type": "hourly",
+    "p25": 26.91,
+    "p50": 37.83,
+    "p75": 59.61,
+    "n": 29
+  },
+  {
+    "category": "Experiment analysis",
+    "budget_type": "fixed",
+    "p25": 674.36,
+    "p50": 1167.55,
+    "p75": 1606.27,
+    "n": 48
+  },
+  {
+    "category": "Experiment analysis",
+    "budget_type": "hourly",
+    "p25": 20.58,
+    "p50": 45.77,
+    "p75": 57.8,
+    "n": 24
+  },
+  {
+    "category": "Logo design",
+    "budget_type": "fixed",
+    "p25": 103.64,
+    "p50": 215.05,
+    "p75": 357.6,
+    "n": 33
+  },
+  {
+    "category": "Logo design",
+    "budget_type": "hourly",
+    "p25": 27.9,
+    "p50": 33.96,
+    "p75": 51.97,
+    "n": 25
+  },
+  {
+    "category": "Mobile game",
+    "budget_type": "fixed",
+    "p25": 2537.51,
+    "p50": 3748.99,
+    "p75": 5085.99,
+    "n": 40
+  },
+  {
+    "category": "Mobile game",
+    "budget_type": "hourly",
+    "p25": 24.86,
+    "p50": 38.42,
+    "p75": 54.16,
+    "n": 35
+  },
+  {
+    "category": "Video editing",
+    "budget_type": "fixed",
+    "p25": 470.28,
+    "p50": 647.92,
+    "p75": 920.96,
+    "n": 47
+  },
+  {
+    "category": "Video editing",
+    "budget_type": "hourly",
+    "p25": 29.61,
+    "p50": 46.98,
+    "p75": 72.48,
+    "n": 26
+  },
+  {
+    "category": "iOS app",
+    "budget_type": "fixed",
+    "p25": 3192.76,
+    "p50": 5044.43,
+    "p75": 6459.03,
+    "n": 37
+  },
+  {
+    "category": "iOS app",
+    "budget_type": "hourly",
+    "p25": 29.04,
+    "p50": 40.95,
+    "p75": 64.13,
+    "n": 25
+  },
+  {
+    "category": "SEO articles",
+    "budget_type": "fixed",
+    "p25": 196.76,
+    "p50": 344.96,
+    "p75": 435.51,
+    "n": 26
+  },
+  {
+    "category": "SEO articles",
+    "budget_type": "hourly",
+    "p25": 21.5,
+    "p50": 38.36,
+    "p75": 55.87,
+    "n": 38
+  },
+  {
+    "category": "Embedded firmware",
+    "budget_type": "fixed",
+    "p25": 2660.04,
+    "p50": 4852.14,
+    "p75": 6125.66,
+    "n": 51
+  },
+  {
+    "category": "Embedded firmware",
+    "budget_type": "hourly",
+    "p25": 23.41,
+    "p50": 38.16,
+    "p75": 49.93,
+    "n": 32
+  }
+]

@@ -1,0 +1,5 @@
+-- SELECT ... OVER (PARTITION BY ...)
+import json
+import pandas as pd
+
+# core logic omitted

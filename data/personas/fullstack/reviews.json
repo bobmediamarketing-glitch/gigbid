@@ -1,0 +1,182 @@
+[
+  {
+    "id": "fullstack-rev-01",
+    "type": "review",
+    "project": "fullstack-cs-14",
+    "stars": 5,
+    "text": "Solid engineer; a few delays but the final stripe work was strong.",
+    "skills": [
+      "stripe",
+      "typescript"
+    ],
+    "industry": "healthcare",
+    "date": "2026-08-22",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-02",
+    "type": "review",
+    "project": "fullstack-cs-10",
+    "stars": 4,
+    "text": "Solid engineer; a few delays but the final react work was strong.",
+    "skills": [
+      "react",
+      "typescript"
+    ],
+    "industry": "fintech",
+    "date": "2025-09-10",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-03",
+    "type": "review",
+    "project": "fullstack-cs-22",
+    "stars": 5,
+    "text": "Solid engineer; a few delays but the final next.js work was strong.",
+    "skills": [
+      "next.js",
+      "stripe"
+    ],
+    "industry": "e-commerce",
+    "date": "2024-08-08",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-04",
+    "type": "review",
+    "project": "fullstack-cs-03",
+    "stars": 3,
+    "text": "Bilal understood the problem fast and the api backend work was excellent.",
+    "skills": [
+      "node.js",
+      "docker"
+    ],
+    "industry": "fintech",
+    "date": "2025-07-09",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-05",
+    "type": "review",
+    "project": "fullstack-cs-23",
+    "stars": 5,
+    "text": "Solid engineer; a few delays but the final fastapi work was strong.",
+    "skills": [
+      "fastapi",
+      "node.js"
+    ],
+    "industry": "travel",
+    "date": "2023-11-14",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-06",
+    "type": "review",
+    "project": "fullstack-cs-20",
+    "stars": 5,
+    "text": "Bilal understood the problem fast and the real-time app work was excellent.",
+    "skills": [
+      "node.js",
+      "redis"
+    ],
+    "industry": "marketing",
+    "date": "2024-03-02",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-07",
+    "type": "review",
+    "project": "fullstack-cs-21",
+    "stars": 4,
+    "text": "Great communication. Delivered the team okr tracker for a travel client on time.",
+    "skills": [
+      "postgres",
+      "next.js"
+    ],
+    "industry": "travel",
+    "date": "2023-01-04",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-08",
+    "type": "review",
+    "project": "fullstack-cs-09",
+    "stars": 5,
+    "text": "Bilal understood the problem fast and the payment integration work was excellent.",
+    "skills": [
+      "postgres",
+      "stripe"
+    ],
+    "industry": "legal",
+    "date": "2023-05-06",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-09",
+    "type": "review",
+    "project": "fullstack-cs-16",
+    "stars": 4,
+    "text": "Great communication. Delivered the clinic booking saas for a real estate client on time.",
+    "skills": [
+      "next.js",
+      "postgres"
+    ],
+    "industry": "real estate",
+    "date": "2024-03-05",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-10",
+    "type": "review",
+    "project": "fullstack-cs-08",
+    "stars": 5,
+    "text": "Great communication. Delivered the logistics tracking api for a education client on time.",
+    "skills": [
+      "django",
+      "postgres"
+    ],
+    "industry": "education",
+    "date": "2024-09-26",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-11",
+    "type": "review",
+    "project": "fullstack-cs-12",
+    "stars": 4,
+    "text": "Great communication. Delivered the print-on-demand storefront for a logistics client on time.",
+    "skills": [
+      "next.js",
+      "postgres"
+    ],
+    "industry": "logistics",
+    "date": "2026-04-21",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "fullstack-rev-12",
+    "type": "review",
+    "project": "fullstack-cs-04",
+    "stars": 5,
+    "text": "Solid engineer; a few delays but the final node.js work was strong.",
+    "skills": [
+      "node.js",
+      "react"
+    ],
+    "industry": "fintech",
+    "date": "2023-07-12",
+    "source": "reviews.json",
+    "outcome": null
+  }
+]

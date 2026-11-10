@@ -1,0 +1,5 @@
+from django.db import models
+import redis
+import { gql } from 'graphql-tag'
+
+# core logic omitted

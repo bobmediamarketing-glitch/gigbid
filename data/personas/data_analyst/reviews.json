@@ -1,0 +1,152 @@
+[
+  {
+    "id": "data_analyst-rev-01",
+    "type": "review",
+    "project": "data_analyst-cs-05",
+    "stars": 3,
+    "text": "Hina understood the problem fast and the experiment analysis work was excellent.",
+    "skills": [
+      "sql",
+      "python"
+    ],
+    "industry": "marketing",
+    "date": "2026-03-28",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-02",
+    "type": "review",
+    "project": "data_analyst-cs-15",
+    "stars": 4,
+    "text": "Solid engineer; a few delays but the final statistics work was strong.",
+    "skills": [
+      "statistics",
+      "a/b testing"
+    ],
+    "industry": "real estate",
+    "date": "2023-08-04",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-03",
+    "type": "review",
+    "project": "data_analyst-cs-03",
+    "stars": 3,
+    "text": "Hina understood the problem fast and the sql analysis work was excellent.",
+    "skills": [
+      "bigquery",
+      "postgres"
+    ],
+    "industry": "legal",
+    "date": "2025-02-15",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-04",
+    "type": "review",
+    "project": "data_analyst-cs-10",
+    "stars": 5,
+    "text": "Great communication. Delivered the pricing page test for a logistics client on time.",
+    "skills": [
+      "statistics",
+      "a/b testing"
+    ],
+    "industry": "logistics",
+    "date": "2025-01-03",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-05",
+    "type": "review",
+    "project": "data_analyst-cs-11",
+    "stars": 4,
+    "text": "Solid engineer; a few delays but the final looker work was strong.",
+    "skills": [
+      "looker",
+      "bigquery"
+    ],
+    "industry": "healthcare",
+    "date": "2023-11-18",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-06",
+    "type": "review",
+    "project": "data_analyst-cs-16",
+    "stars": 5,
+    "text": "Hina understood the problem fast and the bi dashboard work was excellent.",
+    "skills": [
+      "bigquery",
+      "tableau"
+    ],
+    "industry": "saas",
+    "date": "2023-07-18",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-07",
+    "type": "review",
+    "project": "data_analyst-cs-19",
+    "stars": 4,
+    "text": "Solid engineer; a few delays but the final python work was strong.",
+    "skills": [
+      "python",
+      "excel"
+    ],
+    "industry": "education",
+    "date": "2026-05-10",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-08",
+    "type": "review",
+    "project": "data_analyst-cs-17",
+    "stars": 5,
+    "text": "Solid engineer; a few delays but the final dbt work was strong.",
+    "skills": [
+      "dbt",
+      "snowflake"
+    ],
+    "industry": "real estate",
+    "date": "2023-02-19",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-09",
+    "type": "review",
+    "project": "data_analyst-cs-14",
+    "stars": 5,
+    "text": "Great communication. Delivered the payroll reconciliation macro for a legal client on time.",
+    "skills": [
+      "power bi",
+      "python"
+    ],
+    "industry": "legal",
+    "date": "2026-03-24",
+    "source": "reviews.json",
+    "outcome": null
+  },
+  {
+    "id": "data_analyst-rev-10",
+    "type": "review",
+    "project": "data_analyst-cs-04",
+    "stars": 5,
+    "text": "Hina understood the problem fast and the excel automation work was excellent.",
+    "skills": [
+      "pandas",
+      "power bi"
+    ],
+    "industry": "insurance",
+    "date": "2023-08-19",
+    "source": "reviews.json",
+    "outcome": null
+  }
+]

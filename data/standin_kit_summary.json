@@ -1,0 +1,32 @@
+{
+  "ai_ml": {
+    "items": 199,
+    "case_studies": 25,
+    "dev_jobs": 200,
+    "dev_bid": 92,
+    "dev_scam": 28,
+    "dev_injection": 12
+  },
+  "fullstack": {
+    "items": 196,
+    "case_studies": 24,
+    "dev_jobs": 200,
+    "dev_bid": 98,
+    "dev_scam": 25,
+    "dev_injection": 10
+  },
+  "data_analyst": {
+    "items": 189,
+    "case_studies": 20,
+    "dev_jobs": 200,
+    "dev_bid": 85,
+    "dev_scam": 30,
+    "dev_injection": 12
+  },
+  "gigsim": {
+    "open_jobs": 940,
+    "historical": 1500,
+    "clients": 450,
+    "seed": 4016
+  }
+}

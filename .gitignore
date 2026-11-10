@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+node_modules/
+.next/
+dist/
+data/processed/
+gigsim/state/
+tests/**/.gigsim_test_state.json
+playwright-report/
+test-results/
+*.log

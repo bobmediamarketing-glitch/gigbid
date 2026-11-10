@@ -1,0 +1,35 @@
+{
+  "id": "ai_ml",
+  "name": "Sara Malik",
+  "title": "AI/ML Engineer - LLM agents, RAG and computer vision",
+  "skills": [
+    "python",
+    "pytorch",
+    "langchain",
+    "langgraph",
+    "rag",
+    "pinecone",
+    "qdrant",
+    "huggingface",
+    "fine-tuning",
+    "computer vision",
+    "opencv",
+    "nlp",
+    "mlflow",
+    "mlops",
+    "fastapi",
+    "docker",
+    "aws",
+    "celery",
+    "redis"
+  ],
+  "hourly_floor": 35,
+  "fixed_floor": 400,
+  "categories": [
+    "RAG chatbot",
+    "LLM agent",
+    "Computer vision",
+    "ML deployment",
+    "NLP pipeline"
+  ]
+}
