@@ -19,8 +19,9 @@ PATTERNS = {
     "github token": r"\bgh[pousr]_[A-Za-z0-9]{30,}",
     "aws key": r"\bAKIA[0-9A-Z]{16}\b",
     "private key": r"-----BEGIN [A-Z ]*PRIVATE KEY-----",
-    "fernet key value": r"TOKEN_ENCRYPTION_KEY[ \t]*=[ \t]*[A-Za-z0-9_\-]{40,}=?",
-    "jwt secret value": r"JWT_SECRET[ \t]*=[ \t]*[^\s#]{16,}",
+    # values only: shell expansions like ${JWT_SECRET:-$(...)} generate the secret at runtime
+    "fernet key value": r"TOKEN_ENCRYPTION_KEY[ \t]*=[ \t]*(?![$\"'])[A-Za-z0-9_\-]{40,}=?",
+    "jwt secret value": r"JWT_SECRET[ \t]*=[ \t]*(?![$\"'])[^\s#]{16,}",
 }
 SKIP_FILES = {"uv.lock", "apps/web/package-lock.json", "scripts/ci/check_secrets.py"}
 
