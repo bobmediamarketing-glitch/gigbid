@@ -1,0 +1,28 @@
+# GigBid configuration. Rules, budgets and model choices live here, never in code,
+# so a platform policy change is a config edit (see the change request in the brief).
+
+marketplace:
+  mode: gigsim                     # overridden by MARKETPLACE_MODE
+  gigsim:
+    base_url: http://localhost:8100
+  upwork_live:
+    url: https://mcp.upwork.com/mcp
+    # Reads at most every 15 min per identical query: a person checking the feed, not a scraper.
+    min_read_interval_s: 900
+    # Port method -> Upwork MCP tool name. Verified against list_tools() on connect;
+    # update here if Upwork renames a tool. Empty means "not supported in live mode".
+    tool_map:
+      search_jobs: search_jobs
+      get_job: get_job_details
+      get_client_history: get_client_info
+      get_connects_balance: get_connects_balance
+      list_threads: list_rooms
+      get_thread: get_room_messages
+      create_proposal_draft: create_proposal_draft
+      submit_proposal: submit_proposal
+      send_message: send_message
+
+marketplace_server:
+  # Stay under GigSim's 20 requests / 10 s with headroom for retries.
+  rate_limit: {requests: 15, per_seconds: 10, max_wait_s: 20}
+  audit_log: data/audit/marketplace.jsonl

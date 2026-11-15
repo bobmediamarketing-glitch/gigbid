@@ -8,7 +8,9 @@ node_modules/
 dist/
 data/processed/
 gigsim/state/
-tests/**/.gigsim_test_state.json
+**/.gigsim_test_state.json
 playwright-report/
 test-results/
 *.log
+data/audit/
+data/workspace/
