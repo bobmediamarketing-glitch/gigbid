@@ -1,0 +1,74 @@
+{
+ "meta": {
+  "model_profile": "open",
+  "n_per_persona": 4,
+  "generated_at": "2026-11-15T22:13:28",
+  "note": "rubric_score is the Critic's rule rubric until the LLM judge is calibrated (judge.py)"
+ },
+ "results": {
+  "best": {
+   "per_persona": {
+    "ai_ml": {
+     "jobs": 4,
+     "proposals": 4,
+     "reply_rate": 0.5,
+     "unsupported_claims_per_proposal_before": 0.0,
+     "unsupported_claims_per_proposal_after": 0.0,
+     "partly_supported_per_proposal": 0.0,
+     "unsupported_claim_rate_before": 0.0,
+     "rubric_score": 0.8938,
+     "hidden_client_score": 0.7,
+     "p50_s": 22.215,
+     "p95_s": 39.415,
+     "tokens_per_proposal": 8067.5,
+     "usd_per_proposal": 0.0032
+    },
+    "fullstack": {
+     "jobs": 4,
+     "proposals": 3,
+     "reply_rate": 1.0,
+     "unsupported_claims_per_proposal_before": 0.0,
+     "unsupported_claims_per_proposal_after": 0.0,
+     "partly_supported_per_proposal": 0.0,
+     "unsupported_claim_rate_before": 0.0,
+     "rubric_score": 0.905,
+     "hidden_client_score": 0.7167,
+     "p50_s": 22.99,
+     "p95_s": 27.505,
+     "tokens_per_proposal": 6864.6667,
+     "usd_per_proposal": 0.0028
+    },
+    "data_analyst": {
+     "jobs": 4,
+     "proposals": 4,
+     "reply_rate": 0.75,
+     "unsupported_claims_per_proposal_before": 0.0,
+     "unsupported_claims_per_proposal_after": 0.0,
+     "partly_supported_per_proposal": 0.0,
+     "unsupported_claim_rate_before": 0.0,
+     "rubric_score": 0.842,
+     "hidden_client_score": 0.7,
+     "p50_s": 25.737,
+     "p95_s": 45.083,
+     "tokens_per_proposal": 8193.25,
+     "usd_per_proposal": 0.0033
+    }
+   },
+   "overall": {
+    "jobs": 12,
+    "proposals": 11,
+    "reply_rate": 0.7273,
+    "unsupported_claims_per_proposal_before": 0.0,
+    "unsupported_claims_per_proposal_after": 0.0,
+    "partly_supported_per_proposal": 0.0,
+    "unsupported_claim_rate_before": 0.0,
+    "rubric_score": 0.878,
+    "hidden_client_score": 0.7045,
+    "p50_s": 22.99,
+    "p95_s": 43.581,
+    "tokens_per_proposal": 7785.1818,
+    "usd_per_proposal": 0.0031
+   }
+  }
+ }
+}

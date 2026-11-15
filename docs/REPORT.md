@@ -331,7 +331,34 @@ Difference (B - A) -0.034; McNemar exact p = 0.6177. Not significant at 0.05, so
 The identical hidden client score shows the simulator rewards content, not order.
 <!-- results:end -->
 
-## 9. Limitations and honest caveats
+## 9. Real-model run (open profile on Groq)
+
+A small run with the open profile (gpt-oss-120b writer, gpt-oss-20b for the cheap nodes, a Qwen critic) was
+added once a model key was available. Results are in evals/results/llm/. The sample is small (11 proposals, 6
+drafted injection jobs per setting), so treat it as a smoke test, not a benchmark.
+
+<!-- results:start -->
+| Metric (best retrieval, open profile) | Value |
+|---|---|
+| Proposals drafted and submitted | 11 |
+| Unsupported claims per proposal (before / after verification) | 0.00 / 0.00 |
+| Rubric score | 0.878 |
+| GigSim reply rate | 0.727 |
+| p95 latency per proposal (s) | 43.58 |
+| Cost per proposal (USD) | 0.0031 |
+
+| Prompt-injection setting | Jobs drafted | Success in writer draft | Success in sent text |
+|---|---|---|---|
+| defences off | 6 | 16.7% | 16.7% |
+| defences on | 6 | 16.7% | 0.0% |
+
+With a real model the injections do reach the writer, and stripping alone did not stop every one. The layered
+defence worked: the Compliance Guard blocked the echo, so 0.0% of attacks reached the text that would be sent.
+Cost is well inside the declared budget, but p95 latency (43.58 s) misses the 30 s target. The writer call
+dominates; the next optimisation is a shorter evidence pack and a smaller writer for low-value jobs.
+<!-- results:end -->
+
+## 10. Limitations and honest caveats
 
 1. **Stand-in starter kit.** The official kit had not been released, so all data comes from a stand-in kit and simulator built to the brief's description. The official kit replaces these files (the marketplace is reached only through the port), and `python -m evals.run_all` regenerates every number. Simulated clients score with a transparent heuristic, which is easy to audit but easy to overfit; GigBid never reads the hidden scores.
 2. **Rule mode.** No model key was configured. The unsupported-claim rate is zero by construction, the "judge score" is the Critic's rule rubric, the injection result shows nothing because the writer does not read the job text, and cost and latency are rule-mode values.
@@ -343,6 +370,6 @@ The identical hidden client score shows the simulator rewards content, not order
    - *Choices made on the dev set.* The shipped combination and the V8 refusal threshold were picked on the dev set they are reported on, so those numbers are optimistic.
    - *Small samples for outcomes.* About 75 proposals per variant gives a standard error of about 5 points; differences under about 10 points are noise.
 
-## 10. What ships
+## 11. What ships
 
 GigBid ships the `best` retrieval pipeline (`rag/variants/best.py`): one unit per portfolio item with a metadata header, hybrid BM25 + dense retrieval, and the whole job post plus each extracted requirement as queries, fused with RRF. On this dev set it has the highest Recall@5 of every configuration measured apart from adding the cross-encoder, which matches it at about 1.9 s p95; it runs on CPU with no API cost. The cross-encoder, outcome boost and corrective loop stay available but off: the ablation shows no recall gain from them, and the corrective loop lowers bid/skip F1. Better retrieval did not raise the simulated reply rate (differences are within the simulator's noise in rule mode), so the case for this pipeline rests on evidence quality, which a model-writer run should show as fewer unsupported claims before verification.
