@@ -33,6 +33,16 @@ DOCKER_PREFIX=""
 docker info >/dev/null 2>&1 || DOCKER_PREFIX="sudo"
 COMPOSE=($DOCKER_PREFIX "${COMPOSE[@]}")
 
+# ---------------------------------------------------------------- 1b. Swap on small VMs (4 GB RAM)
+# The full stack fits in ~3 GB, but building the images at the same time can spike past 4 GB.
+MEM_MB=$(awk '/MemTotal/ {print int($2/1024)}' /proc/meminfo)
+if [ "$MEM_MB" -lt 6000 ] && ! swapon --show | grep -q .; then
+  log "Adding a 2 GB swap file (RAM: ${MEM_MB} MB)"
+  sudo fallocate -l 2G /swapfile || sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
+  sudo chmod 600 /swapfile && sudo mkswap /swapfile && sudo swapon /swapfile
+  grep -q '^/swapfile' /etc/fstab || echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab >/dev/null
+fi
+
 # ---------------------------------------------------------------- 2. Firewall: open 80/443 on the VM itself
 # (Oracle Cloud's Ubuntu images ship iptables rules that drop everything but SSH; ufw users get a rule too.)
 log "Opening ports 80 and 443 on the VM firewall"
