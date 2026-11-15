@@ -1,0 +1,44 @@
+name: publish-portfolio-mcp
+
+# Publishes the Portfolio MCP server as a public Docker image:
+#   ghcr.io/<owner>/gigbid-portfolio-mcp:latest  (and :<short sha>)
+on:
+  push:
+    branches: [main]
+    paths: ["mcp_servers/**", "rag/**", "agent/settings.py", "agent/config.yaml", "data/personas/**",
+            "infra/docker/mcp-portfolio.Dockerfile", "pyproject.toml", "uv.lock", ".github/workflows/publish-mcp.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Image name (lowercase owner)
+        id: n
+        run: echo "image=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/gigbid-portfolio-mcp" >> "$GITHUB_OUTPUT"
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: infra/docker/mcp-portfolio.Dockerfile
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: |
+            ${{ steps.n.outputs.image }}:latest
+            ${{ steps.n.outputs.image }}:${{ github.sha }}
+          labels: |
+            org.opencontainers.image.title=GigBid Portfolio MCP server
+            org.opencontainers.image.description=A freelancer's portfolio (CV, case studies, repos, reviews, past proposals) as an MCP server with grounded evidence search
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+            org.opencontainers.image.licenses=MIT
