@@ -5,6 +5,8 @@ measured choice is made (R6), the default is the keyword baseline below.
 """
 from __future__ import annotations
 
+import os
+
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable, Protocol
@@ -70,12 +72,20 @@ VARIANTS: dict[str, Callable[[Corpus], Retriever]] = {"keyword": KeywordRetrieve
 
 
 def configured_variant() -> str:
+    """RAG_VARIANT env (used by the eval runner) beats `rag.variant` in config."""
+    if os.getenv("RAG_VARIANT"):
+        return os.environ["RAG_VARIANT"]
     cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
     return (cfg.get("rag") or {}).get("variant", "keyword")
 
 
 def get_retriever(corpus: Corpus, variant: str | None = None) -> Retriever:
     name = variant or configured_variant()
-    if name not in VARIANTS:
-        raise ValueError(f"unknown retriever variant {name!r}; known: {sorted(VARIANTS)}")
-    return VARIANTS[name](corpus)
+    if name in VARIANTS:
+        return VARIANTS[name](corpus)
+    from rag.pipeline import Pipeline
+    from rag.variants import all_configs
+    configs = all_configs()
+    if name not in configs:
+        raise ValueError(f"unknown retriever variant {name!r}; known: {sorted(VARIANTS) + sorted(configs)}")
+    return Pipeline(corpus, configs[name])

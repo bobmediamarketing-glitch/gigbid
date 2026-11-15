@@ -15,3 +15,4 @@ test-results/
 data/audit/
 data/workspace/
 data/checkpoints.sqlite*
+data/models/

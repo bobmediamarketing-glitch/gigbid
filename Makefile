@@ -1,6 +1,6 @@
 PY ?= .venv/Scripts/python
 
-.PHONY: dev test eval seed demo lint gigsim
+.PHONY: dev test eval eval-table seed demo lint gigsim
 
 seed:            ## regenerate the stand-in starter kit (personas, GigSim seed, dev set)
 	$(PY) scripts/make_standin_kit.py
@@ -14,8 +14,11 @@ test:
 dev:
 	docker compose -f infra/docker-compose.yml up --build
 
-eval:
-	@echo "eval runners land in evals/runners/ (next milestone)"
+eval:           ## regenerate every Part B number and evals/results/RESULTS.md
+	$(PY) -m evals.run_all
+
+eval-table:     ## rebuild RESULTS.md from existing results JSON
+	$(PY) -m evals.run_all --table-only
 
 demo:
 	@echo "demo script lands with the web app"

@@ -123,3 +123,8 @@ guardrails:
     unverified_payment: 0.25
     new_client_no_spend: 0.1
     low_hire_rate: {below: 0.1, min_jobs: 10, weight: 0.1}
+
+# Retrieval (Part B). The variant is picked from the measured comparison in evals/results/
+# (see docs/DATA_CARD.md); RAG_VARIANT overrides it for eval runs.
+rag:
+  variant: best

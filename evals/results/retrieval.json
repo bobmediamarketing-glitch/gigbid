@@ -1,0 +1,1262 @@
+{
+ "meta": {
+  "hypothesis": "H-B: requirement decomposition plus hybrid retrieval raises evidence Recall@5 by at least 15 points over V0 on jobs with four or more requirements.",
+  "limit": null,
+  "personas": [
+   "ai_ml",
+   "fullstack",
+   "data_analyst"
+  ],
+  "generated_at": "2026-11-15T19:17:06"
+ },
+ "results": {
+  "best": {
+   "config": {
+    "name": "best",
+    "query": "both",
+    "expand": false,
+    "units": "item",
+    "retrieval": "hybrid",
+    "rerank": false,
+    "outcome_boost": false,
+    "corrective": false,
+    "candidates": 30,
+    "rerank_top": 15,
+    "chunk_words": 60,
+    "boost": {
+     "won": 1.3,
+     "replied": 1.15,
+     "ignored": 0.75
+    },
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "min_grade": 0.0,
+    "whole_weight": 2.0
+   },
+   "per_persona": {
+    "ai_ml": {
+     "n": 123,
+     "recall@5": 0.9024,
+     "mrr": 0.9353,
+     "ndcg@10": 0.7229,
+     "p50_ms": 18.38,
+     "p95_ms": 42.04,
+     "by_n_requirements": {
+      "4+": {
+       "n": 89,
+       "recall@5": 0.9056,
+       "mrr": 0.9419,
+       "ndcg@10": 0.7081
+      },
+      "1-3": {
+       "n": 34,
+       "recall@5": 0.8941,
+       "mrr": 0.9179,
+       "ndcg@10": 0.7619
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 91,
+       "recall@5": 0.8989,
+       "mrr": 0.9391,
+       "ndcg@10": 0.71
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.9125,
+       "mrr": 0.9245,
+       "ndcg@10": 0.7597
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "fullstack": {
+     "n": 125,
+     "recall@5": 0.936,
+     "mrr": 0.9667,
+     "ndcg@10": 0.7068,
+     "p50_ms": 16.95,
+     "p95_ms": 39.78,
+     "by_n_requirements": {
+      "4+": {
+       "n": 99,
+       "recall@5": 0.9535,
+       "mrr": 0.9697,
+       "ndcg@10": 0.6895
+      },
+      "1-3": {
+       "n": 26,
+       "recall@5": 0.8692,
+       "mrr": 0.9551,
+       "ndcg@10": 0.7725
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 93,
+       "recall@5": 0.9398,
+       "mrr": 0.9767,
+       "ndcg@10": 0.7085
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.925,
+       "mrr": 0.9375,
+       "ndcg@10": 0.7018
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "data_analyst": {
+     "n": 116,
+     "recall@5": 0.9741,
+     "mrr": 0.9793,
+     "ndcg@10": 0.7174,
+     "p50_ms": 16.6,
+     "p95_ms": 46.06,
+     "by_n_requirements": {
+      "4+": {
+       "n": 88,
+       "recall@5": 0.9705,
+       "mrr": 0.9784,
+       "ndcg@10": 0.6879
+      },
+      "1-3": {
+       "n": 28,
+       "recall@5": 0.9857,
+       "mrr": 0.9821,
+       "ndcg@10": 0.8102
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 85,
+       "recall@5": 0.9788,
+       "mrr": 0.9824,
+       "ndcg@10": 0.7232
+      },
+      "skip": {
+       "n": 31,
+       "recall@5": 0.9613,
+       "mrr": 0.971,
+       "ndcg@10": 0.7016
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    }
+   },
+   "overall": {
+    "recall@5": 0.9375,
+    "mrr": 0.9604,
+    "ndcg@10": 0.7157,
+    "p50_ms": 17.31,
+    "p95_ms": 42.6267,
+    "recall@5 (4+ req)": 0.9432,
+    "evidence when unqualified": 1.0,
+    "evidence when qualified": 1.0
+   }
+  },
+  "v0_naive": {
+   "config": {
+    "name": "v0_naive",
+    "query": "whole",
+    "expand": false,
+    "units": "fixed",
+    "retrieval": "dense",
+    "rerank": false,
+    "outcome_boost": false,
+    "corrective": false,
+    "candidates": 30,
+    "rerank_top": 15,
+    "chunk_words": 60,
+    "boost": {
+     "won": 1.3,
+     "replied": 1.15,
+     "ignored": 0.75
+    },
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "min_grade": 0.0,
+    "whole_weight": 2.0
+   },
+   "per_persona": {
+    "ai_ml": {
+     "n": 123,
+     "recall@5": 0.6878,
+     "mrr": 0.8146,
+     "ndcg@10": 0.5143,
+     "p50_ms": 12.86,
+     "p95_ms": 20.74,
+     "by_n_requirements": {
+      "4+": {
+       "n": 89,
+       "recall@5": 0.6899,
+       "mrr": 0.8058,
+       "ndcg@10": 0.5064
+      },
+      "1-3": {
+       "n": 34,
+       "recall@5": 0.6824,
+       "mrr": 0.8377,
+       "ndcg@10": 0.5351
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 91,
+       "recall@5": 0.7011,
+       "mrr": 0.8239,
+       "ndcg@10": 0.5196
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.65,
+       "mrr": 0.7882,
+       "ndcg@10": 0.4993
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "fullstack": {
+     "n": 125,
+     "recall@5": 0.7424,
+     "mrr": 0.8356,
+     "ndcg@10": 0.4965,
+     "p50_ms": 14.73,
+     "p95_ms": 54.02,
+     "by_n_requirements": {
+      "4+": {
+       "n": 99,
+       "recall@5": 0.7636,
+       "mrr": 0.8412,
+       "ndcg@10": 0.4994
+      },
+      "1-3": {
+       "n": 26,
+       "recall@5": 0.6615,
+       "mrr": 0.8145,
+       "ndcg@10": 0.4853
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 93,
+       "recall@5": 0.7312,
+       "mrr": 0.8309,
+       "ndcg@10": 0.4897
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.775,
+       "mrr": 0.8493,
+       "ndcg@10": 0.516
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "data_analyst": {
+     "n": 116,
+     "recall@5": 0.7276,
+     "mrr": 0.8007,
+     "ndcg@10": 0.4681,
+     "p50_ms": 13.8,
+     "p95_ms": 54.07,
+     "by_n_requirements": {
+      "4+": {
+       "n": 88,
+       "recall@5": 0.7068,
+       "mrr": 0.7913,
+       "ndcg@10": 0.447
+      },
+      "1-3": {
+       "n": 28,
+       "recall@5": 0.7929,
+       "mrr": 0.8304,
+       "ndcg@10": 0.5346
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 85,
+       "recall@5": 0.7247,
+       "mrr": 0.7992,
+       "ndcg@10": 0.4749
+      },
+      "skip": {
+       "n": 31,
+       "recall@5": 0.7355,
+       "mrr": 0.8048,
+       "ndcg@10": 0.4496
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    }
+   },
+   "overall": {
+    "recall@5": 0.7193,
+    "mrr": 0.817,
+    "ndcg@10": 0.493,
+    "p50_ms": 13.7967,
+    "p95_ms": 42.9433,
+    "recall@5 (4+ req)": 0.7201,
+    "evidence when unqualified": 1.0,
+    "evidence when qualified": 1.0
+   }
+  },
+  "v1_decompose": {
+   "config": {
+    "name": "v1_decompose",
+    "query": "decompose",
+    "expand": false,
+    "units": "fixed",
+    "retrieval": "dense",
+    "rerank": false,
+    "outcome_boost": false,
+    "corrective": false,
+    "candidates": 30,
+    "rerank_top": 15,
+    "chunk_words": 60,
+    "boost": {
+     "won": 1.3,
+     "replied": 1.15,
+     "ignored": 0.75
+    },
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "min_grade": 0.0,
+    "whole_weight": 2.0
+   },
+   "per_persona": {
+    "ai_ml": {
+     "n": 123,
+     "recall@5": 0.6163,
+     "mrr": 0.713,
+     "ndcg@10": 0.4407,
+     "p50_ms": 0.77,
+     "p95_ms": 21.59,
+     "by_n_requirements": {
+      "4+": {
+       "n": 89,
+       "recall@5": 0.6112,
+       "mrr": 0.7156,
+       "ndcg@10": 0.4329
+      },
+      "1-3": {
+       "n": 34,
+       "recall@5": 0.6294,
+       "mrr": 0.7064,
+       "ndcg@10": 0.4609
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 91,
+       "recall@5": 0.6,
+       "mrr": 0.6936,
+       "ndcg@10": 0.4245
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.6625,
+       "mrr": 0.7682,
+       "ndcg@10": 0.4867
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "fullstack": {
+     "n": 125,
+     "recall@5": 0.6032,
+     "mrr": 0.7651,
+     "ndcg@10": 0.3999,
+     "p50_ms": 0.7,
+     "p95_ms": 25.23,
+     "by_n_requirements": {
+      "4+": {
+       "n": 99,
+       "recall@5": 0.6081,
+       "mrr": 0.7839,
+       "ndcg@10": 0.3882
+      },
+      "1-3": {
+       "n": 26,
+       "recall@5": 0.5846,
+       "mrr": 0.6934,
+       "ndcg@10": 0.4444
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 93,
+       "recall@5": 0.6258,
+       "mrr": 0.8001,
+       "ndcg@10": 0.4125
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.5375,
+       "mrr": 0.6634,
+       "ndcg@10": 0.3633
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "data_analyst": {
+     "n": 116,
+     "recall@5": 0.681,
+     "mrr": 0.8542,
+     "ndcg@10": 0.4388,
+     "p50_ms": 0.63,
+     "p95_ms": 19.76,
+     "by_n_requirements": {
+      "4+": {
+       "n": 88,
+       "recall@5": 0.675,
+       "mrr": 0.8605,
+       "ndcg@10": 0.4204
+      },
+      "1-3": {
+       "n": 28,
+       "recall@5": 0.7,
+       "mrr": 0.8345,
+       "ndcg@10": 0.4963
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 85,
+       "recall@5": 0.6871,
+       "mrr": 0.8641,
+       "ndcg@10": 0.4398
+      },
+      "skip": {
+       "n": 31,
+       "recall@5": 0.6645,
+       "mrr": 0.8272,
+       "ndcg@10": 0.4358
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    }
+   },
+   "overall": {
+    "recall@5": 0.6335,
+    "mrr": 0.7774,
+    "ndcg@10": 0.4265,
+    "p50_ms": 0.7,
+    "p95_ms": 22.1933,
+    "recall@5 (4+ req)": 0.6314,
+    "evidence when unqualified": 1.0,
+    "evidence when qualified": 1.0
+   }
+  },
+  "v2_hybrid": {
+   "config": {
+    "name": "v2_hybrid",
+    "query": "whole",
+    "expand": false,
+    "units": "fixed",
+    "retrieval": "hybrid",
+    "rerank": false,
+    "outcome_boost": false,
+    "corrective": false,
+    "candidates": 30,
+    "rerank_top": 15,
+    "chunk_words": 60,
+    "boost": {
+     "won": 1.3,
+     "replied": 1.15,
+     "ignored": 0.75
+    },
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "min_grade": 0.0,
+    "whole_weight": 2.0
+   },
+   "per_persona": {
+    "ai_ml": {
+     "n": 123,
+     "recall@5": 0.6683,
+     "mrr": 0.8114,
+     "ndcg@10": 0.4882,
+     "p50_ms": 14.18,
+     "p95_ms": 41.1,
+     "by_n_requirements": {
+      "4+": {
+       "n": 89,
+       "recall@5": 0.6607,
+       "mrr": 0.8035,
+       "ndcg@10": 0.4726
+      },
+      "1-3": {
+       "n": 34,
+       "recall@5": 0.6882,
+       "mrr": 0.8321,
+       "ndcg@10": 0.5288
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 91,
+       "recall@5": 0.6813,
+       "mrr": 0.8136,
+       "ndcg@10": 0.4885
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.6312,
+       "mrr": 0.8053,
+       "ndcg@10": 0.4871
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "fullstack": {
+     "n": 125,
+     "recall@5": 0.7744,
+     "mrr": 0.8599,
+     "ndcg@10": 0.4959,
+     "p50_ms": 13.9,
+     "p95_ms": 18.29,
+     "by_n_requirements": {
+      "4+": {
+       "n": 99,
+       "recall@5": 0.798,
+       "mrr": 0.8805,
+       "ndcg@10": 0.4926
+      },
+      "1-3": {
+       "n": 26,
+       "recall@5": 0.6846,
+       "mrr": 0.7817,
+       "ndcg@10": 0.5087
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 93,
+       "recall@5": 0.7677,
+       "mrr": 0.8503,
+       "ndcg@10": 0.4937
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.7937,
+       "mrr": 0.888,
+       "ndcg@10": 0.5025
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "data_analyst": {
+     "n": 116,
+     "recall@5": 0.7017,
+     "mrr": 0.7765,
+     "ndcg@10": 0.4719,
+     "p50_ms": 13.67,
+     "p95_ms": 17.32,
+     "by_n_requirements": {
+      "4+": {
+       "n": 88,
+       "recall@5": 0.6818,
+       "mrr": 0.7623,
+       "ndcg@10": 0.4554
+      },
+      "1-3": {
+       "n": 28,
+       "recall@5": 0.7643,
+       "mrr": 0.8214,
+       "ndcg@10": 0.5236
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 85,
+       "recall@5": 0.6965,
+       "mrr": 0.7728,
+       "ndcg@10": 0.4744
+      },
+      "skip": {
+       "n": 31,
+       "recall@5": 0.7161,
+       "mrr": 0.7869,
+       "ndcg@10": 0.4648
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    }
+   },
+   "overall": {
+    "recall@5": 0.7148,
+    "mrr": 0.8159,
+    "ndcg@10": 0.4853,
+    "p50_ms": 13.9167,
+    "p95_ms": 25.57,
+    "recall@5 (4+ req)": 0.7135,
+    "evidence when unqualified": 1.0,
+    "evidence when qualified": 1.0
+   }
+  },
+  "v3_rerank": {
+   "config": {
+    "name": "v3_rerank",
+    "query": "whole",
+    "expand": false,
+    "units": "fixed",
+    "retrieval": "dense",
+    "rerank": true,
+    "outcome_boost": false,
+    "corrective": false,
+    "candidates": 30,
+    "rerank_top": 15,
+    "chunk_words": 60,
+    "boost": {
+     "won": 1.3,
+     "replied": 1.15,
+     "ignored": 0.75
+    },
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "min_grade": 0.0,
+    "whole_weight": 2.0
+   },
+   "per_persona": {
+    "ai_ml": {
+     "n": 123,
+     "recall@5": 0.8163,
+     "mrr": 0.8916,
+     "ndcg@10": 0.5451,
+     "p50_ms": 590.62,
+     "p95_ms": 971.29,
+     "by_n_requirements": {
+      "4+": {
+       "n": 89,
+       "recall@5": 0.8472,
+       "mrr": 0.9148,
+       "ndcg@10": 0.5539
+      },
+      "1-3": {
+       "n": 34,
+       "recall@5": 0.7353,
+       "mrr": 0.8309,
+       "ndcg@10": 0.5221
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 91,
+       "recall@5": 0.811,
+       "mrr": 0.8892,
+       "ndcg@10": 0.53
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.8313,
+       "mrr": 0.8984,
+       "ndcg@10": 0.5881
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "fullstack": {
+     "n": 125,
+     "recall@5": 0.8368,
+     "mrr": 0.8722,
+     "ndcg@10": 0.5318,
+     "p50_ms": 608.36,
+     "p95_ms": 1011.63,
+     "by_n_requirements": {
+      "4+": {
+       "n": 99,
+       "recall@5": 0.8667,
+       "mrr": 0.9079,
+       "ndcg@10": 0.5356
+      },
+      "1-3": {
+       "n": 26,
+       "recall@5": 0.7231,
+       "mrr": 0.7363,
+       "ndcg@10": 0.5171
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 93,
+       "recall@5": 0.8387,
+       "mrr": 0.8759,
+       "ndcg@10": 0.53
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.8313,
+       "mrr": 0.8615,
+       "ndcg@10": 0.5368
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "data_analyst": {
+     "n": 116,
+     "recall@5": 0.7914,
+     "mrr": 0.8593,
+     "ndcg@10": 0.5103,
+     "p50_ms": 531.61,
+     "p95_ms": 1029.79,
+     "by_n_requirements": {
+      "4+": {
+       "n": 88,
+       "recall@5": 0.7659,
+       "mrr": 0.8486,
+       "ndcg@10": 0.4792
+      },
+      "1-3": {
+       "n": 28,
+       "recall@5": 0.8714,
+       "mrr": 0.8929,
+       "ndcg@10": 0.6082
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 85,
+       "recall@5": 0.7929,
+       "mrr": 0.8588,
+       "ndcg@10": 0.5122
+      },
+      "skip": {
+       "n": 31,
+       "recall@5": 0.7871,
+       "mrr": 0.8606,
+       "ndcg@10": 0.5052
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    }
+   },
+   "overall": {
+    "recall@5": 0.8148,
+    "mrr": 0.8744,
+    "ndcg@10": 0.5291,
+    "p50_ms": 576.8633,
+    "p95_ms": 1004.2367,
+    "recall@5 (4+ req)": 0.8266,
+    "evidence when unqualified": 1.0,
+    "evidence when qualified": 1.0
+   }
+  },
+  "v4_outcome": {
+   "config": {
+    "name": "v4_outcome",
+    "query": "whole",
+    "expand": false,
+    "units": "fixed",
+    "retrieval": "dense",
+    "rerank": false,
+    "outcome_boost": true,
+    "corrective": false,
+    "candidates": 30,
+    "rerank_top": 15,
+    "chunk_words": 60,
+    "boost": {
+     "won": 1.3,
+     "replied": 1.15,
+     "ignored": 0.75
+    },
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "min_grade": 0.0,
+    "whole_weight": 2.0
+   },
+   "per_persona": {
+    "ai_ml": {
+     "n": 123,
+     "recall@5": 0.6163,
+     "mrr": 0.7652,
+     "ndcg@10": 0.464,
+     "p50_ms": 12.31,
+     "p95_ms": 16.36,
+     "by_n_requirements": {
+      "4+": {
+       "n": 89,
+       "recall@5": 0.6202,
+       "mrr": 0.7607,
+       "ndcg@10": 0.4506
+      },
+      "1-3": {
+       "n": 34,
+       "recall@5": 0.6059,
+       "mrr": 0.7771,
+       "ndcg@10": 0.4991
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 91,
+       "recall@5": 0.6286,
+       "mrr": 0.7557,
+       "ndcg@10": 0.4692
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.5813,
+       "mrr": 0.7922,
+       "ndcg@10": 0.4492
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "fullstack": {
+     "n": 125,
+     "recall@5": 0.7552,
+     "mrr": 0.856,
+     "ndcg@10": 0.4887,
+     "p50_ms": 12.47,
+     "p95_ms": 17.18,
+     "by_n_requirements": {
+      "4+": {
+       "n": 99,
+       "recall@5": 0.7758,
+       "mrr": 0.8648,
+       "ndcg@10": 0.4854
+      },
+      "1-3": {
+       "n": 26,
+       "recall@5": 0.6769,
+       "mrr": 0.8224,
+       "ndcg@10": 0.5013
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 93,
+       "recall@5": 0.7419,
+       "mrr": 0.8606,
+       "ndcg@10": 0.4886
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.7937,
+       "mrr": 0.8425,
+       "ndcg@10": 0.4891
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "data_analyst": {
+     "n": 116,
+     "recall@5": 0.7121,
+     "mrr": 0.7565,
+     "ndcg@10": 0.4497,
+     "p50_ms": 12.16,
+     "p95_ms": 15.59,
+     "by_n_requirements": {
+      "4+": {
+       "n": 88,
+       "recall@5": 0.6864,
+       "mrr": 0.7229,
+       "ndcg@10": 0.429
+      },
+      "1-3": {
+       "n": 28,
+       "recall@5": 0.7929,
+       "mrr": 0.8622,
+       "ndcg@10": 0.5147
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 85,
+       "recall@5": 0.7294,
+       "mrr": 0.7782,
+       "ndcg@10": 0.47
+      },
+      "skip": {
+       "n": 31,
+       "recall@5": 0.6645,
+       "mrr": 0.6971,
+       "ndcg@10": 0.3939
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    }
+   },
+   "overall": {
+    "recall@5": 0.6945,
+    "mrr": 0.7926,
+    "ndcg@10": 0.4675,
+    "p50_ms": 12.3133,
+    "p95_ms": 16.3767,
+    "recall@5 (4+ req)": 0.6941,
+    "evidence when unqualified": 1.0,
+    "evidence when qualified": 1.0
+   }
+  },
+  "v5_multivector": {
+   "config": {
+    "name": "v5_multivector",
+    "query": "whole",
+    "expand": false,
+    "units": "multivector",
+    "retrieval": "dense",
+    "rerank": false,
+    "outcome_boost": false,
+    "corrective": false,
+    "candidates": 30,
+    "rerank_top": 15,
+    "chunk_words": 60,
+    "boost": {
+     "won": 1.3,
+     "replied": 1.15,
+     "ignored": 0.75
+    },
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "min_grade": 0.0,
+    "whole_weight": 2.0
+   },
+   "per_persona": {
+    "ai_ml": {
+     "n": 123,
+     "recall@5": 0.8959,
+     "mrr": 0.9346,
+     "ndcg@10": 0.7274,
+     "p50_ms": 12.49,
+     "p95_ms": 32.77,
+     "by_n_requirements": {
+      "4+": {
+       "n": 89,
+       "recall@5": 0.8989,
+       "mrr": 0.9359,
+       "ndcg@10": 0.7135
+      },
+      "1-3": {
+       "n": 34,
+       "recall@5": 0.8882,
+       "mrr": 0.9314,
+       "ndcg@10": 0.7639
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 91,
+       "recall@5": 0.8813,
+       "mrr": 0.9281,
+       "ndcg@10": 0.7126
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.9375,
+       "mrr": 0.9531,
+       "ndcg@10": 0.7695
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "fullstack": {
+     "n": 125,
+     "recall@5": 0.9104,
+     "mrr": 0.92,
+     "ndcg@10": 0.7043,
+     "p50_ms": 12.43,
+     "p95_ms": 16.14,
+     "by_n_requirements": {
+      "4+": {
+       "n": 99,
+       "recall@5": 0.9414,
+       "mrr": 0.9437,
+       "ndcg@10": 0.7217
+      },
+      "1-3": {
+       "n": 26,
+       "recall@5": 0.7923,
+       "mrr": 0.8296,
+       "ndcg@10": 0.6384
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 93,
+       "recall@5": 0.914,
+       "mrr": 0.9252,
+       "ndcg@10": 0.7036
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.9,
+       "mrr": 0.9047,
+       "ndcg@10": 0.7066
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    },
+    "data_analyst": {
+     "n": 116,
+     "recall@5": 0.9586,
+     "mrr": 0.9608,
+     "ndcg@10": 0.712,
+     "p50_ms": 12.38,
+     "p95_ms": 18.48,
+     "by_n_requirements": {
+      "4+": {
+       "n": 88,
+       "recall@5": 0.9568,
+       "mrr": 0.9585,
+       "ndcg@10": 0.6801
+      },
+      "1-3": {
+       "n": 28,
+       "recall@5": 0.9643,
+       "mrr": 0.9679,
+       "ndcg@10": 0.8123
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 85,
+       "recall@5": 0.9671,
+       "mrr": 0.9688,
+       "ndcg@10": 0.7079
+      },
+      "skip": {
+       "n": 31,
+       "recall@5": 0.9355,
+       "mrr": 0.9387,
+       "ndcg@10": 0.7233
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 1.0
+     }
+    }
+   },
+   "overall": {
+    "recall@5": 0.9216,
+    "mrr": 0.9385,
+    "ndcg@10": 0.7146,
+    "p50_ms": 12.4333,
+    "p95_ms": 22.4633,
+    "recall@5 (4+ req)": 0.9324,
+    "evidence when unqualified": 1.0,
+    "evidence when qualified": 1.0
+   }
+  },
+  "v8_corrective": {
+   "config": {
+    "name": "v8_corrective",
+    "query": "both",
+    "expand": false,
+    "units": "item",
+    "retrieval": "hybrid",
+    "rerank": false,
+    "outcome_boost": false,
+    "corrective": true,
+    "candidates": 30,
+    "rerank_top": 15,
+    "chunk_words": 60,
+    "boost": {
+     "won": 1.3,
+     "replied": 1.15,
+     "ignored": 0.75
+    },
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "min_grade": -3.0,
+    "whole_weight": 2.0
+   },
+   "per_persona": {
+    "ai_ml": {
+     "n": 123,
+     "recall@5": 0.8992,
+     "mrr": 0.9353,
+     "ndcg@10": 0.721,
+     "p50_ms": 216.5,
+     "p95_ms": 609.21,
+     "by_n_requirements": {
+      "4+": {
+       "n": 89,
+       "recall@5": 0.9034,
+       "mrr": 0.9419,
+       "ndcg@10": 0.707
+      },
+      "1-3": {
+       "n": 34,
+       "recall@5": 0.8882,
+       "mrr": 0.9179,
+       "ndcg@10": 0.7576
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 91,
+       "recall@5": 0.8945,
+       "mrr": 0.9391,
+       "ndcg@10": 0.7065
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.9125,
+       "mrr": 0.9245,
+       "ndcg@10": 0.7623
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 0.2297
+     }
+    },
+    "fullstack": {
+     "n": 125,
+     "recall@5": 0.928,
+     "mrr": 0.9636,
+     "ndcg@10": 0.6747,
+     "p50_ms": 211.06,
+     "p95_ms": 661.25,
+     "by_n_requirements": {
+      "4+": {
+       "n": 99,
+       "recall@5": 0.9515,
+       "mrr": 0.9747,
+       "ndcg@10": 0.6607
+      },
+      "1-3": {
+       "n": 26,
+       "recall@5": 0.8385,
+       "mrr": 0.9209,
+       "ndcg@10": 0.7279
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 93,
+       "recall@5": 0.9333,
+       "mrr": 0.9767,
+       "ndcg@10": 0.682
+      },
+      "skip": {
+       "n": 32,
+       "recall@5": 0.9125,
+       "mrr": 0.9253,
+       "ndcg@10": 0.6533
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 0.1587
+     }
+    },
+    "data_analyst": {
+     "n": 116,
+     "recall@5": 0.9655,
+     "mrr": 0.9836,
+     "ndcg@10": 0.7252,
+     "p50_ms": 208.49,
+     "p95_ms": 611.81,
+     "by_n_requirements": {
+      "4+": {
+       "n": 88,
+       "recall@5": 0.9614,
+       "mrr": 0.9784,
+       "ndcg@10": 0.6943
+      },
+      "1-3": {
+       "n": 28,
+       "recall@5": 0.9786,
+       "mrr": 1.0,
+       "ndcg@10": 0.8222
+      }
+     },
+     "by_decision": {
+      "bid": {
+       "n": 85,
+       "recall@5": 0.9647,
+       "mrr": 0.9882,
+       "ndcg@10": 0.7274
+      },
+      "skip": {
+       "n": 31,
+       "recall@5": 0.9677,
+       "mrr": 0.971,
+       "ndcg@10": 0.7191
+      }
+     },
+     "evidence_returned_rate": {
+      "can": 1.0,
+      "cannot": 0.3571
+     }
+    }
+   },
+   "overall": {
+    "recall@5": 0.9309,
+    "mrr": 0.9608,
+    "ndcg@10": 0.707,
+    "p50_ms": 212.0167,
+    "p95_ms": 627.4233,
+    "recall@5 (4+ req)": 0.9388,
+    "evidence when unqualified": 0.2485,
+    "evidence when qualified": 1.0
+   }
+  }
+ }
+}

@@ -461,7 +461,10 @@ def gold_for(pid: str, p: dict, job: dict, hidden: dict, items: list[dict], clie
         if ov:
             scored.append((ov, it["id"]))
     scored.sort(key=lambda x: (-x[0], x[1]))
-    gold_ev = [{"id": i, "relevance": ov} for ov, i in scored[:8]]
+    # Every item proving at least half the job's skills is relevant, graded by overlap. (An earlier
+    # version kept only the top 8 and broke the many ties at the cutoff by id, which made gold arbitrary.)
+    thr = max(1, -(-len(skills) // 2))
+    gold_ev = [{"id": i, "relevance": ov} for ov, i in scored if ov >= thr]
     coverage = len(skills & set(p["skills"])) / max(1, len(skills))
     b = job["budget"]
     floor_ok = (b["max"] >= p["fixed_floor"]) if b["type"] == "fixed" else (b["max"] >= p["hourly_floor"])

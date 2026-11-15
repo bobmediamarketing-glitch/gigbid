@@ -1,0 +1,573 @@
+{
+ "meta": {
+  "model_profile": "rules (no API key)",
+  "limit": null,
+  "generated_at": "2026-11-15T19:36:30"
+ },
+ "results": {
+  "best": {
+   "per_persona": {
+    "ai_ml": {
+     "n": 200,
+     "bid": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 92,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 28,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam_recall_by_type": {
+      "credentials": {
+       "n": 10,
+       "caught": 1.0
+      },
+      "free_work": {
+       "n": 5,
+       "caught": 1.0
+      },
+      "off_platform": {
+       "n": 7,
+       "caught": 1.0
+      },
+      "payment": {
+       "n": 6,
+       "caught": 1.0
+      }
+     },
+     "price_in_band": 0.9239,
+     "priced_n": 92,
+     "p50_ms": 192.78,
+     "p95_ms": 283.47,
+     "tokens_per_job": 0.0,
+     "usd_per_job": 0.0,
+     "errors": 0
+    },
+    "fullstack": {
+     "n": 200,
+     "bid": {
+      "precision": 1.0,
+      "recall": 0.9388,
+      "f1": 0.9684,
+      "tp": 92,
+      "fp": 0,
+      "fn": 6,
+      "n": 200
+     },
+     "scam": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 25,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam_recall_by_type": {
+      "credentials": {
+       "n": 2,
+       "caught": 1.0
+      },
+      "free_work": {
+       "n": 10,
+       "caught": 1.0
+      },
+      "off_platform": {
+       "n": 11,
+       "caught": 1.0
+      },
+      "payment": {
+       "n": 2,
+       "caught": 1.0
+      }
+     },
+     "price_in_band": 0.837,
+     "priced_n": 92,
+     "p50_ms": 181.21,
+     "p95_ms": 253.19,
+     "tokens_per_job": 0.0,
+     "usd_per_job": 0.0,
+     "errors": 0
+    },
+    "data_analyst": {
+     "n": 200,
+     "bid": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 85,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam_recall_by_type": {
+      "credentials": {
+       "n": 2,
+       "caught": 1.0
+      },
+      "free_work": {
+       "n": 9,
+       "caught": 1.0
+      },
+      "off_platform": {
+       "n": 13,
+       "caught": 1.0
+      },
+      "payment": {
+       "n": 6,
+       "caught": 1.0
+      }
+     },
+     "price_in_band": 0.8471,
+     "priced_n": 85,
+     "p50_ms": 161.47,
+     "p95_ms": 217.07,
+     "tokens_per_job": 0.0,
+     "usd_per_job": 0.0,
+     "errors": 0
+    }
+   },
+   "overall": {
+    "n": 600,
+    "bid": {
+     "precision": 1.0,
+     "recall": 0.9782,
+     "f1": 0.989,
+     "tp": 269,
+     "fp": 0,
+     "fn": 6,
+     "n": 600
+    },
+    "scam": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 83,
+     "fp": 0,
+     "fn": 0,
+     "n": 600
+    },
+    "scam_recall_by_type": {
+     "credentials": {
+      "n": 14,
+      "caught": 1.0
+     },
+     "free_work": {
+      "n": 24,
+      "caught": 1.0
+     },
+     "off_platform": {
+      "n": 31,
+      "caught": 1.0
+     },
+     "payment": {
+      "n": 14,
+      "caught": 1.0
+     }
+    },
+    "price_in_band": 0.8699,
+    "priced_n": 269,
+    "p50_ms": 176.12,
+    "p95_ms": 257.96,
+    "tokens_per_job": 0.0,
+    "usd_per_job": 0.0,
+    "errors": 0
+   }
+  },
+  "v8_corrective": {
+   "per_persona": {
+    "ai_ml": {
+     "n": 200,
+     "bid": {
+      "precision": 1.0,
+      "recall": 0.9783,
+      "f1": 0.989,
+      "tp": 90,
+      "fp": 0,
+      "fn": 2,
+      "n": 200
+     },
+     "scam": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 28,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam_recall_by_type": {
+      "credentials": {
+       "n": 10,
+       "caught": 1.0
+      },
+      "free_work": {
+       "n": 5,
+       "caught": 1.0
+      },
+      "off_platform": {
+       "n": 7,
+       "caught": 1.0
+      },
+      "payment": {
+       "n": 6,
+       "caught": 1.0
+      }
+     },
+     "price_in_band": 0.9222,
+     "priced_n": 90,
+     "p50_ms": 199.26,
+     "p95_ms": 418.05,
+     "tokens_per_job": 0.0,
+     "usd_per_job": 0.0,
+     "errors": 0
+    },
+    "fullstack": {
+     "n": 200,
+     "bid": {
+      "precision": 1.0,
+      "recall": 0.8878,
+      "f1": 0.9405,
+      "tp": 87,
+      "fp": 0,
+      "fn": 11,
+      "n": 200
+     },
+     "scam": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 25,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam_recall_by_type": {
+      "credentials": {
+       "n": 2,
+       "caught": 1.0
+      },
+      "free_work": {
+       "n": 10,
+       "caught": 1.0
+      },
+      "off_platform": {
+       "n": 11,
+       "caught": 1.0
+      },
+      "payment": {
+       "n": 2,
+       "caught": 1.0
+      }
+     },
+     "price_in_band": 0.8391,
+     "priced_n": 87,
+     "p50_ms": 207.48,
+     "p95_ms": 389.14,
+     "tokens_per_job": 0.0,
+     "usd_per_job": 0.0,
+     "errors": 0
+    },
+    "data_analyst": {
+     "n": 200,
+     "bid": {
+      "precision": 1.0,
+      "recall": 0.7412,
+      "f1": 0.8514,
+      "tp": 63,
+      "fp": 0,
+      "fn": 22,
+      "n": 200
+     },
+     "scam": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam_recall_by_type": {
+      "credentials": {
+       "n": 2,
+       "caught": 1.0
+      },
+      "free_work": {
+       "n": 9,
+       "caught": 1.0
+      },
+      "off_platform": {
+       "n": 13,
+       "caught": 1.0
+      },
+      "payment": {
+       "n": 6,
+       "caught": 1.0
+      }
+     },
+     "price_in_band": 0.8413,
+     "priced_n": 63,
+     "p50_ms": 186.65,
+     "p95_ms": 405.61,
+     "tokens_per_job": 0.0,
+     "usd_per_job": 0.0,
+     "errors": 0
+    }
+   },
+   "overall": {
+    "n": 600,
+    "bid": {
+     "precision": 1.0,
+     "recall": 0.8727,
+     "f1": 0.932,
+     "tp": 240,
+     "fp": 0,
+     "fn": 35,
+     "n": 600
+    },
+    "scam": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 83,
+     "fp": 0,
+     "fn": 0,
+     "n": 600
+    },
+    "scam_recall_by_type": {
+     "credentials": {
+      "n": 14,
+      "caught": 1.0
+     },
+     "free_work": {
+      "n": 24,
+      "caught": 1.0
+     },
+     "off_platform": {
+      "n": 31,
+      "caught": 1.0
+     },
+     "payment": {
+      "n": 14,
+      "caught": 1.0
+     }
+    },
+    "price_in_band": 0.8708,
+    "priced_n": 240,
+    "p50_ms": 197.16,
+    "p95_ms": 399.92,
+    "tokens_per_job": 0.0,
+    "usd_per_job": 0.0,
+    "errors": 0
+   }
+  },
+  "keyword": {
+   "per_persona": {
+    "ai_ml": {
+     "n": 200,
+     "bid": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 92,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 28,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam_recall_by_type": {
+      "credentials": {
+       "n": 10,
+       "caught": 1.0
+      },
+      "free_work": {
+       "n": 5,
+       "caught": 1.0
+      },
+      "off_platform": {
+       "n": 7,
+       "caught": 1.0
+      },
+      "payment": {
+       "n": 6,
+       "caught": 1.0
+      }
+     },
+     "price_in_band": 0.9239,
+     "priced_n": 92,
+     "p50_ms": 166.69,
+     "p95_ms": 232.35,
+     "tokens_per_job": 0.0,
+     "usd_per_job": 0.0,
+     "errors": 0
+    },
+    "fullstack": {
+     "n": 200,
+     "bid": {
+      "precision": 1.0,
+      "recall": 0.898,
+      "f1": 0.9462,
+      "tp": 88,
+      "fp": 0,
+      "fn": 10,
+      "n": 200
+     },
+     "scam": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 25,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam_recall_by_type": {
+      "credentials": {
+       "n": 2,
+       "caught": 1.0
+      },
+      "free_work": {
+       "n": 10,
+       "caught": 1.0
+      },
+      "off_platform": {
+       "n": 11,
+       "caught": 1.0
+      },
+      "payment": {
+       "n": 2,
+       "caught": 1.0
+      }
+     },
+     "price_in_band": 0.8409,
+     "priced_n": 88,
+     "p50_ms": 171.48,
+     "p95_ms": 224.59,
+     "tokens_per_job": 0.0,
+     "usd_per_job": 0.0,
+     "errors": 0
+    },
+    "data_analyst": {
+     "n": 200,
+     "bid": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 85,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "n": 200
+     },
+     "scam_recall_by_type": {
+      "credentials": {
+       "n": 2,
+       "caught": 1.0
+      },
+      "free_work": {
+       "n": 9,
+       "caught": 1.0
+      },
+      "off_platform": {
+       "n": 13,
+       "caught": 1.0
+      },
+      "payment": {
+       "n": 6,
+       "caught": 1.0
+      }
+     },
+     "price_in_band": 0.8471,
+     "priced_n": 85,
+     "p50_ms": 157.16,
+     "p95_ms": 215.12,
+     "tokens_per_job": 0.0,
+     "usd_per_job": 0.0,
+     "errors": 0
+    }
+   },
+   "overall": {
+    "n": 600,
+    "bid": {
+     "precision": 1.0,
+     "recall": 0.9636,
+     "f1": 0.9815,
+     "tp": 265,
+     "fp": 0,
+     "fn": 10,
+     "n": 600
+    },
+    "scam": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 83,
+     "fp": 0,
+     "fn": 0,
+     "n": 600
+    },
+    "scam_recall_by_type": {
+     "credentials": {
+      "n": 14,
+      "caught": 1.0
+     },
+     "free_work": {
+      "n": 24,
+      "caught": 1.0
+     },
+     "off_platform": {
+      "n": 31,
+      "caught": 1.0
+     },
+     "payment": {
+      "n": 14,
+      "caught": 1.0
+     }
+    },
+    "price_in_band": 0.8717,
+    "priced_n": 265,
+    "p50_ms": 164.24,
+    "p95_ms": 227.05,
+    "tokens_per_job": 0.0,
+    "usd_per_job": 0.0,
+    "errors": 0
+   }
+  }
+ }
+}

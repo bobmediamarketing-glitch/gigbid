@@ -30,6 +30,14 @@ def use_inprocess_gigsim(audit_dir: Path | None = None) -> None:
                                                   max_retries=1, backoff_base=0.01))
 
 
+def lift_rate_limits() -> None:
+    """Eval runs only: lift GigSim's and the server's politeness limits (in memory) so latency
+    numbers measure the agents, not deliberate waiting. Production keeps both limits."""
+    from mcp_servers.common.ratelimit import PoliteLimiter
+    mk.limiter = PoliteLimiter(requests=100_000, per_seconds=1, max_wait_s=1)
+    SIM.policy["rate_limit"] = {"requests": 100_000, "per_seconds": 1}
+
+
 @contextlib.asynccontextmanager
 async def toolbox(persona: str = "ai_ml"):
     os.environ["PORTFOLIO_PERSONA"] = persona
@@ -43,4 +51,4 @@ async def toolbox(persona: str = "ai_ml"):
         yield ToolBox(sessions)
 
 
-__all__ = ["SIM", "toolbox", "use_inprocess_gigsim"]
+__all__ = ["SIM", "lift_rate_limits", "toolbox", "use_inprocess_gigsim"]
