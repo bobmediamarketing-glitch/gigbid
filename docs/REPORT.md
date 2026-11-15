@@ -315,7 +315,23 @@ Measured in rule mode: p95 of 258 ms per job analysed (best variant) and 0.38 s 
 
 `infra/deploy/setup_vm.sh` sets up a Linux VM (4 GB RAM or more) in one command: Docker, firewall ports 80/443, generated secrets (never committed), a swap file on small VMs, the stack behind Caddy with automatic HTTPS (a free `sslip.io` hostname or a custom domain), and a reviewer account preloaded with the AI/ML persona, whose login is shared only privately.
 
-## 8. Limitations and honest caveats
+## 8. Signature extension: X2 proposal experiments
+
+Two opening strategies were run as an A/B test in GigSim: goal_first (the default) and proof_first (open with
+the strongest proven result). Both arms drafted and submitted proposals for the same jobs (paired design), each
+in a fresh GigSim, and the test is McNemar's exact test on the discordant pairs (details in docs/EXTENSION.md).
+
+<!-- results:start -->
+| Arm | Proposals | Replies | Reply rate | Hidden client score |
+|---|---|---|---|---|
+| A goal_first | 117 | 94 | 0.803 | 0.764 |
+| B proof_first | 117 | 90 | 0.769 | 0.764 |
+
+Difference (B - A) -0.034; McNemar exact p = 0.6177. Not significant at 0.05, so goal_first stays the default.
+The identical hidden client score shows the simulator rewards content, not order.
+<!-- results:end -->
+
+## 9. Limitations and honest caveats
 
 1. **Stand-in starter kit.** The official kit had not been released, so all data comes from a stand-in kit and simulator built to the brief's description. The official kit replaces these files (the marketplace is reached only through the port), and `python -m evals.run_all` regenerates every number. Simulated clients score with a transparent heuristic, which is easy to audit but easy to overfit; GigBid never reads the hidden scores.
 2. **Rule mode.** No model key was configured. The unsupported-claim rate is zero by construction, the "judge score" is the Critic's rule rubric, the injection result shows nothing because the writer does not read the job text, and cost and latency are rule-mode values.
@@ -327,6 +343,6 @@ Measured in rule mode: p95 of 258 ms per job analysed (best variant) and 0.38 s 
    - *Choices made on the dev set.* The shipped combination and the V8 refusal threshold were picked on the dev set they are reported on, so those numbers are optimistic.
    - *Small samples for outcomes.* About 75 proposals per variant gives a standard error of about 5 points; differences under about 10 points are noise.
 
-## 9. What ships
+## 10. What ships
 
 GigBid ships the `best` retrieval pipeline (`rag/variants/best.py`): one unit per portfolio item with a metadata header, hybrid BM25 + dense retrieval, and the whole job post plus each extracted requirement as queries, fused with RRF. On this dev set it has the highest Recall@5 of every configuration measured apart from adding the cross-encoder, which matches it at about 1.9 s p95; it runs on CPU with no API cost. The cross-encoder, outcome boost and corrective loop stay available but off: the ablation shows no recall gain from them, and the corrective loop lowers bid/skip F1. Better retrieval did not raise the simulated reply rate (differences are within the simulator's noise in rule mode), so the case for this pipeline rests on evidence quality, which a model-writer run should show as fewer unsupported claims before verification.
