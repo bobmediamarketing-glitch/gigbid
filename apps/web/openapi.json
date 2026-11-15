@@ -1,0 +1,3739 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "GigBid API",
+  "description": "Multi-agent freelancer copilot. Every write to a marketplace waits for human approval.",
+  "version": "0.1.0"
+ },
+ "paths": {
+  "/api/auth/register": {
+   "post": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Register",
+    "operationId": "register_api_auth_register_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/RegisterIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Me"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/auth/login": {
+   "post": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Login",
+    "operationId": "login_api_auth_login_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/LoginIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Me"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/auth/logout": {
+   "post": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Logout",
+    "operationId": "logout_api_auth_logout_post",
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     }
+    }
+   }
+  },
+  "/api/auth/me": {
+   "get": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Me",
+    "operationId": "me_api_auth_me_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Me"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/auth/upwork/start": {
+   "get": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Upwork Start",
+    "operationId": "upwork_start_api_auth_upwork_start_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/auth/upwork/callback": {
+   "get": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Upwork Callback",
+    "operationId": "upwork_callback_api_auth_upwork_callback_get",
+    "parameters": [
+     {
+      "name": "code",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Code"
+      }
+     },
+     {
+      "name": "state",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "State"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/personas": {
+   "get": {
+    "tags": [
+     "account"
+    ],
+    "summary": "Personas",
+    "operationId": "personas_api_personas_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/Persona"
+         },
+         "type": "array",
+         "title": "Response Personas Api Personas Get"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/settings": {
+   "get": {
+    "tags": [
+     "account"
+    ],
+    "summary": "Get Settings",
+    "operationId": "get_settings_api_settings_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Settings"
+        }
+       }
+      }
+     }
+    }
+   },
+   "put": {
+    "tags": [
+     "account"
+    ],
+    "summary": "Put Settings",
+    "operationId": "put_settings_api_settings_put",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/SettingsIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Settings"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/portfolio/files": {
+   "post": {
+    "tags": [
+     "account"
+    ],
+    "summary": "Upload",
+    "operationId": "upload_api_portfolio_files_post",
+    "parameters": [
+     {
+      "name": "kind",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Kind"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "multipart/form-data": {
+       "schema": {
+        "$ref": "#/components/schemas/Body_upload_api_portfolio_files_post"
+       }
+      }
+     }
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/PortfolioFile"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "get": {
+    "tags": [
+     "account"
+    ],
+    "summary": "List Files",
+    "operationId": "list_files_api_portfolio_files_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/PortfolioFile"
+         },
+         "title": "Response List Files Api Portfolio Files Get"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/memory": {
+   "get": {
+    "tags": [
+     "account"
+    ],
+    "summary": "Memory",
+    "operationId": "memory_api_memory_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/MemoryView"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/memory/style/{key}": {
+   "delete": {
+    "tags": [
+     "account"
+    ],
+    "summary": "Forget Style",
+    "operationId": "forget_style_api_memory_style__key__delete",
+    "parameters": [
+     {
+      "name": "key",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Key"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/memory/outcome/{category}": {
+   "delete": {
+    "tags": [
+     "account"
+    ],
+    "summary": "Forget Outcome",
+    "operationId": "forget_outcome_api_memory_outcome__category__delete",
+    "parameters": [
+     {
+      "name": "category",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Category"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/jobs": {
+   "get": {
+    "tags": [
+     "runs"
+    ],
+    "summary": "Jobs",
+    "operationId": "jobs_api_jobs_get",
+    "parameters": [
+     {
+      "name": "category",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Category"
+      }
+     },
+     {
+      "name": "q",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Q"
+      }
+     },
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "default": 40,
+       "title": "Limit"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/JobList"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/jobs/{job_id}/analyze": {
+   "post": {
+    "tags": [
+     "runs"
+    ],
+    "summary": "Analyze",
+    "operationId": "analyze_api_jobs__job_id__analyze_post",
+    "parameters": [
+     {
+      "name": "job_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Job Id"
+      }
+     }
+    ],
+    "responses": {
+     "202": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Accepted"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/scout": {
+   "post": {
+    "tags": [
+     "runs"
+    ],
+    "summary": "Scout",
+    "description": "Analyse the newest jobs not seen yet (the worker does this on each saved search's schedule).",
+    "operationId": "scout_api_scout_post",
+    "parameters": [
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "default": 8,
+       "title": "Limit"
+      }
+     },
+     {
+      "name": "category",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Category"
+      }
+     }
+    ],
+    "responses": {
+     "202": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/Accepted"
+         },
+         "title": "Response Scout Api Scout Post"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/jobs/{job_id}/skip": {
+   "post": {
+    "tags": [
+     "runs"
+    ],
+    "summary": "Confirm Skip",
+    "description": "The user confirms a skip suggestion (or skips a job by hand).",
+    "operationId": "confirm_skip_api_jobs__job_id__skip_post",
+    "parameters": [
+     {
+      "name": "job_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Job Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Accepted"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/runs": {
+   "get": {
+    "tags": [
+     "runs"
+    ],
+    "summary": "List Runs",
+    "operationId": "list_runs_api_runs_get",
+    "parameters": [
+     {
+      "name": "kind",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Kind"
+      }
+     },
+     {
+      "name": "status",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Status"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/RunSummary"
+         },
+         "title": "Response List Runs Api Runs Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/runs/{thread_id}": {
+   "get": {
+    "tags": [
+     "runs"
+    ],
+    "summary": "Run View",
+    "operationId": "run_view_api_runs__thread_id__get",
+    "parameters": [
+     {
+      "name": "thread_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Thread Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/RunView"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/runs/{thread_id}/resume": {
+   "post": {
+    "tags": [
+     "runs"
+    ],
+    "summary": "Resume",
+    "operationId": "resume_api_runs__thread_id__resume_post",
+    "parameters": [
+     {
+      "name": "thread_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Thread Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ResumeIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "202": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Accepted"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/runs/{thread_id}/regenerate": {
+   "post": {
+    "tags": [
+     "runs"
+    ],
+    "summary": "Regenerate",
+    "description": "Rewrite one paragraph of the pending draft with the writer model, grounded in the same evidence.\nThe result is returned for the editor; it is only used if the user saves it as an edit.",
+    "operationId": "regenerate_api_runs__thread_id__regenerate_post",
+    "parameters": [
+     {
+      "name": "thread_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Thread Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/RegenerateIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/RegenerateOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/stream": {
+   "get": {
+    "tags": [
+     "runs"
+    ],
+    "summary": "Stream",
+    "description": "Server-Sent Events: node progress, run status, pipeline moves. One stream per browser tab.",
+    "operationId": "stream_api_stream_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/pipeline": {
+   "get": {
+    "tags": [
+     "work"
+    ],
+    "summary": "Pipeline",
+    "operationId": "pipeline_api_pipeline_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Pipeline"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/sync": {
+   "post": {
+    "tags": [
+     "work"
+    ],
+    "summary": "Sync Now",
+    "description": "Pull marketplace events now (the background loop does this every few seconds).",
+    "operationId": "sync_now_api_sync_post",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Accepted"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/threads": {
+   "get": {
+    "tags": [
+     "work"
+    ],
+    "summary": "Threads",
+    "operationId": "threads_api_threads_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ThreadList"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/threads/{thread_id}/draft": {
+   "post": {
+    "tags": [
+     "work"
+    ],
+    "summary": "Draft Reply",
+    "operationId": "draft_reply_api_threads__thread_id__draft_post",
+    "parameters": [
+     {
+      "name": "thread_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Thread Id"
+      }
+     }
+    ],
+    "responses": {
+     "202": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Accepted"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/analytics": {
+   "get": {
+    "tags": [
+     "work"
+    ],
+    "summary": "Analytics",
+    "operationId": "analytics_api_analytics_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Analytics"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/health": {
+   "get": {
+    "tags": [
+     "work"
+    ],
+    "summary": "Health",
+    "operationId": "health_api_health_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Health"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/ping": {
+   "get": {
+    "tags": [
+     "health"
+    ],
+    "summary": "Ping",
+    "operationId": "ping_api_ping_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "additionalProperties": true,
+         "type": "object",
+         "title": "Response Ping Api Ping Get"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "Accepted": {
+    "properties": {
+     "thread_id": {
+      "type": "string",
+      "title": "Thread Id"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status"
+     }
+    },
+    "type": "object",
+    "required": [
+     "thread_id",
+     "status"
+    ],
+    "title": "Accepted"
+   },
+   "Analytics": {
+    "properties": {
+     "proposals": {
+      "type": "integer",
+      "title": "Proposals"
+     },
+     "reply_rate": {
+      "type": "number",
+      "title": "Reply Rate"
+     },
+     "hire_rate": {
+      "type": "number",
+      "title": "Hire Rate"
+     },
+     "connects_spent": {
+      "type": "integer",
+      "title": "Connects Spent"
+     },
+     "connects_on_replied": {
+      "type": "integer",
+      "title": "Connects On Replied"
+     },
+     "avg_usd_per_proposal": {
+      "type": "number",
+      "title": "Avg Usd Per Proposal"
+     },
+     "avg_latency_s": {
+      "type": "number",
+      "title": "Avg Latency S"
+     },
+     "by_category": {
+      "items": {
+       "$ref": "#/components/schemas/CategoryStat"
+      },
+      "type": "array",
+      "title": "By Category"
+     },
+     "rejection_reasons": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Rejection Reasons"
+     },
+     "skip_reasons": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Skip Reasons"
+     }
+    },
+    "type": "object",
+    "required": [
+     "proposals",
+     "reply_rate",
+     "hire_rate",
+     "connects_spent",
+     "connects_on_replied",
+     "avg_usd_per_proposal",
+     "avg_latency_s",
+     "by_category",
+     "rejection_reasons",
+     "skip_reasons"
+    ],
+    "title": "Analytics"
+   },
+   "BidDecision": {
+    "properties": {
+     "job_id": {
+      "type": "string",
+      "title": "Job Id"
+     },
+     "action": {
+      "type": "string",
+      "enum": [
+       "bid",
+       "watch",
+       "skip"
+      ],
+      "title": "Action",
+      "default": "bid"
+     },
+     "bid": {
+      "type": "boolean",
+      "title": "Bid"
+     },
+     "confidence": {
+      "type": "number",
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Confidence"
+     },
+     "reasons": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Reasons"
+     }
+    },
+    "type": "object",
+    "required": [
+     "job_id",
+     "bid",
+     "confidence",
+     "reasons"
+    ],
+    "title": "BidDecision"
+   },
+   "Body_upload_api_portfolio_files_post": {
+    "properties": {
+     "file": {
+      "type": "string",
+      "contentMediaType": "application/octet-stream",
+      "title": "File"
+     }
+    },
+    "type": "object",
+    "required": [
+     "file"
+    ],
+    "title": "Body_upload_api_portfolio_files_post"
+   },
+   "Budget": {
+    "properties": {
+     "type": {
+      "type": "string",
+      "enum": [
+       "fixed",
+       "hourly"
+      ],
+      "title": "Type"
+     },
+     "min": {
+      "type": "number",
+      "title": "Min"
+     },
+     "max": {
+      "type": "number",
+      "title": "Max"
+     }
+    },
+    "type": "object",
+    "required": [
+     "type",
+     "min",
+     "max"
+    ],
+    "title": "Budget"
+   },
+   "CategoryStat": {
+    "properties": {
+     "category": {
+      "type": "string",
+      "title": "Category"
+     },
+     "proposals": {
+      "type": "integer",
+      "title": "Proposals"
+     },
+     "replies": {
+      "type": "integer",
+      "title": "Replies"
+     },
+     "hires": {
+      "type": "integer",
+      "title": "Hires"
+     },
+     "reply_rate": {
+      "type": "number",
+      "title": "Reply Rate"
+     },
+     "hire_rate": {
+      "type": "number",
+      "title": "Hire Rate"
+     },
+     "connects": {
+      "type": "integer",
+      "title": "Connects"
+     }
+    },
+    "type": "object",
+    "required": [
+     "category",
+     "proposals",
+     "replies",
+     "hires",
+     "reply_rate",
+     "hire_rate",
+     "connects"
+    ],
+    "title": "CategoryStat"
+   },
+   "Claim": {
+    "properties": {
+     "text": {
+      "type": "string",
+      "title": "Text",
+      "description": "One factual sentence from the proposal about the freelancer"
+     },
+     "evidence_ids": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Evidence Ids",
+      "description": "Portfolio ids that support it"
+     },
+     "supported": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Supported",
+      "description": "Set by claim verification"
+     }
+    },
+    "type": "object",
+    "required": [
+     "text"
+    ],
+    "title": "Claim"
+   },
+   "ComplianceVerdict": {
+    "properties": {
+     "allowed": {
+      "type": "boolean",
+      "title": "Allowed"
+     },
+     "policy_version": {
+      "type": "string",
+      "title": "Policy Version"
+     },
+     "violations": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Violations",
+      "description": "{rule, action, match}"
+     },
+     "redacted_text": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Redacted Text",
+      "description": "Cover letter after automatic redactions"
+     }
+    },
+    "type": "object",
+    "required": [
+     "allowed",
+     "policy_version"
+    ],
+    "title": "ComplianceVerdict"
+   },
+   "Critique": {
+    "properties": {
+     "revision": {
+      "type": "integer",
+      "title": "Revision"
+     },
+     "score": {
+      "type": "number",
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Score"
+     },
+     "passed": {
+      "type": "boolean",
+      "title": "Passed"
+     },
+     "issues": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Issues"
+     },
+     "suggestions": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Suggestions"
+     }
+    },
+    "type": "object",
+    "required": [
+     "revision",
+     "score",
+     "passed"
+    ],
+    "title": "Critique"
+   },
+   "EditRow": {
+    "properties": {
+     "action": {
+      "type": "string",
+      "title": "Action"
+     },
+     "note": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Note"
+     },
+     "diff": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Diff"
+     },
+     "at": {
+      "type": "number",
+      "title": "At"
+     }
+    },
+    "type": "object",
+    "required": [
+     "action",
+     "note",
+     "diff",
+     "at"
+    ],
+    "title": "EditRow"
+   },
+   "EvidenceRef": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "type": {
+      "type": "string",
+      "title": "Type"
+     },
+     "title": {
+      "type": "string",
+      "title": "Title"
+     },
+     "snippet": {
+      "type": "string",
+      "title": "Snippet"
+     },
+     "score": {
+      "type": "number",
+      "title": "Score"
+     },
+     "uri": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Uri"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "type",
+     "title",
+     "snippet",
+     "score"
+    ],
+    "title": "EvidenceRef"
+   },
+   "FitReport": {
+    "properties": {
+     "job_id": {
+      "type": "string",
+      "title": "Job Id"
+     },
+     "coverage": {
+      "type": "number",
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Coverage"
+     },
+     "per_requirement": {
+      "items": {
+       "$ref": "#/components/schemas/RequirementFit"
+      },
+      "type": "array",
+      "title": "Per Requirement"
+     },
+     "in_domain": {
+      "type": "boolean",
+      "title": "In Domain"
+     },
+     "missing": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Missing"
+     }
+    },
+    "type": "object",
+    "required": [
+     "job_id",
+     "coverage",
+     "per_requirement",
+     "in_domain"
+    ],
+    "title": "FitReport",
+    "description": "Fit Matcher -> decision, writer. Which requirements the portfolio can prove, and with what."
+   },
+   "HTTPValidationError": {
+    "properties": {
+     "detail": {
+      "items": {
+       "$ref": "#/components/schemas/ValidationError"
+      },
+      "type": "array",
+      "title": "Detail"
+     }
+    },
+    "type": "object",
+    "title": "HTTPValidationError"
+   },
+   "Health": {
+    "properties": {
+     "api": {
+      "type": "boolean",
+      "title": "Api",
+      "default": true
+     },
+     "marketplace_ok": {
+      "type": "boolean",
+      "title": "Marketplace Ok"
+     },
+     "marketplace_mode": {
+      "type": "string",
+      "title": "Marketplace Mode"
+     },
+     "marketplace_detail": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Marketplace Detail"
+     },
+     "llm_available": {
+      "type": "boolean",
+      "title": "Llm Available"
+     },
+     "model_profile": {
+      "type": "string",
+      "title": "Model Profile"
+     },
+     "sync_last_run": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Sync Last Run"
+     }
+    },
+    "type": "object",
+    "required": [
+     "marketplace_ok",
+     "marketplace_mode",
+     "llm_available",
+     "model_profile"
+    ],
+    "title": "Health"
+   },
+   "HistoryRow": {
+    "properties": {
+     "checkpoint_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Checkpoint Id"
+     },
+     "next": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Next"
+     },
+     "step": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Step"
+     },
+     "status": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Status"
+     },
+     "created_at": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Created At"
+     }
+    },
+    "type": "object",
+    "required": [
+     "checkpoint_id",
+     "next",
+     "step",
+     "status",
+     "created_at"
+    ],
+    "title": "HistoryRow"
+   },
+   "Intent": {
+    "properties": {
+     "kind": {
+      "type": "string",
+      "enum": [
+       "question",
+       "negotiation",
+       "interview_request",
+       "scam_signal",
+       "other"
+      ],
+      "title": "Kind"
+     },
+     "confidence": {
+      "type": "number",
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Confidence"
+     },
+     "reasons": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Reasons"
+     },
+     "question": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Question",
+      "description": "The client's question, if any"
+     },
+     "counter_offer": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Counter Offer",
+      "description": "Price the client proposed, if any"
+     },
+     "scam_type": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Scam Type"
+     }
+    },
+    "type": "object",
+    "required": [
+     "kind",
+     "confidence"
+    ],
+    "title": "Intent"
+   },
+   "JobCard": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "title": {
+      "type": "string",
+      "title": "Title"
+     },
+     "category": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Category"
+     },
+     "skills": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Skills",
+      "default": []
+     },
+     "budget": {
+      "$ref": "#/components/schemas/Budget"
+     },
+     "posted_at": {
+      "type": "string",
+      "title": "Posted At"
+     },
+     "proposals_count": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Proposals Count"
+     },
+     "connects_cost": {
+      "type": "integer",
+      "title": "Connects Cost"
+     },
+     "run": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/RunSummary"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "title",
+     "budget",
+     "posted_at",
+     "connects_cost"
+    ],
+    "title": "JobCard"
+   },
+   "JobList": {
+    "properties": {
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/JobCard"
+      },
+      "type": "array",
+      "title": "Items"
+     },
+     "analysed": {
+      "type": "integer",
+      "title": "Analysed"
+     },
+     "marketplace_ok": {
+      "type": "boolean",
+      "title": "Marketplace Ok",
+      "default": true
+     }
+    },
+    "type": "object",
+    "required": [
+     "items",
+     "analysed"
+    ],
+    "title": "JobList"
+   },
+   "JobSpec": {
+    "properties": {
+     "job_id": {
+      "type": "string",
+      "title": "Job Id"
+     },
+     "goal": {
+      "type": "string",
+      "title": "Goal",
+      "description": "The client's outcome in one sentence"
+     },
+     "requirements": {
+      "items": {
+       "$ref": "#/components/schemas/Requirement"
+      },
+      "type": "array",
+      "title": "Requirements"
+     },
+     "implied_skills": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Implied Skills",
+      "description": "Skills implied but not tagged"
+     },
+     "deliverables": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Deliverables"
+     },
+     "screening_questions": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Screening Questions"
+     },
+     "read_check_word": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Read Check Word",
+      "description": "Word the client asked proposals to start with"
+     },
+     "budget_type": {
+      "type": "string",
+      "enum": [
+       "fixed",
+       "hourly"
+      ],
+      "title": "Budget Type"
+     },
+     "budget_min": {
+      "type": "number",
+      "title": "Budget Min"
+     },
+     "budget_max": {
+      "type": "number",
+      "title": "Budget Max"
+     },
+     "category": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Category"
+     },
+     "vague": {
+      "type": "boolean",
+      "title": "Vague",
+      "description": "True when the post is too thin to scope",
+      "default": false
+     }
+    },
+    "type": "object",
+    "required": [
+     "job_id",
+     "goal",
+     "requirements",
+     "budget_type",
+     "budget_min",
+     "budget_max"
+    ],
+    "title": "JobSpec",
+    "description": "Job Analyst -> everyone. What the client actually needs, including implied skills."
+   },
+   "LoginIn": {
+    "properties": {
+     "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+     },
+     "password": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Password"
+     }
+    },
+    "type": "object",
+    "required": [
+     "email",
+     "password"
+    ],
+    "title": "LoginIn"
+   },
+   "Me": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "email": {
+      "type": "string",
+      "title": "Email"
+     },
+     "name": {
+      "type": "string",
+      "title": "Name"
+     },
+     "settings": {
+      "$ref": "#/components/schemas/Settings"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "email",
+     "name",
+     "settings"
+    ],
+    "title": "Me"
+   },
+   "MemoryView": {
+    "properties": {
+     "style": {
+      "items": {
+       "$ref": "#/components/schemas/StyleRule"
+      },
+      "type": "array",
+      "title": "Style"
+     },
+     "style_pending": {
+      "items": {
+       "$ref": "#/components/schemas/StyleRule"
+      },
+      "type": "array",
+      "title": "Style Pending"
+     },
+     "outcome": {
+      "items": {
+       "$ref": "#/components/schemas/OutcomeEntry"
+      },
+      "type": "array",
+      "title": "Outcome"
+     }
+    },
+    "type": "object",
+    "required": [
+     "style",
+     "style_pending",
+     "outcome"
+    ],
+    "title": "MemoryView"
+   },
+   "Message": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "sender": {
+      "type": "string",
+      "title": "Sender"
+     },
+     "body": {
+      "type": "string",
+      "title": "Body"
+     },
+     "at": {
+      "type": "string",
+      "title": "At"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "sender",
+     "body",
+     "at"
+    ],
+    "title": "Message"
+   },
+   "OutcomeEntry": {
+    "properties": {
+     "category": {
+      "type": "string",
+      "title": "Category"
+     },
+     "n": {
+      "type": "integer",
+      "title": "N"
+     },
+     "reply_rate": {
+      "type": "number",
+      "title": "Reply Rate"
+     },
+     "won": {
+      "type": "integer",
+      "title": "Won"
+     },
+     "lessons": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Lessons"
+     },
+     "updated_at": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Updated At"
+     }
+    },
+    "type": "object",
+    "required": [
+     "category",
+     "n",
+     "reply_rate",
+     "won",
+     "lessons"
+    ],
+    "title": "OutcomeEntry"
+   },
+   "OwnProfile": {
+    "properties": {
+     "name": {
+      "type": "string",
+      "maxLength": 120,
+      "minLength": 1,
+      "title": "Name"
+     },
+     "title": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Title"
+     },
+     "skills": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "maxItems": 60,
+      "title": "Skills"
+     },
+     "categories": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "maxItems": 20,
+      "title": "Categories"
+     }
+    },
+    "type": "object",
+    "required": [
+     "name",
+     "title"
+    ],
+    "title": "OwnProfile"
+   },
+   "Persona": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "name": {
+      "type": "string",
+      "title": "Name"
+     },
+     "title": {
+      "type": "string",
+      "title": "Title"
+     },
+     "skills": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Skills"
+     },
+     "categories": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Categories"
+     },
+     "hourly_floor": {
+      "type": "number",
+      "title": "Hourly Floor"
+     },
+     "fixed_floor": {
+      "type": "number",
+      "title": "Fixed Floor"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "title",
+     "skills",
+     "categories",
+     "hourly_floor",
+     "fixed_floor"
+    ],
+    "title": "Persona"
+   },
+   "Pipeline": {
+    "properties": {
+     "stages": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Stages"
+     },
+     "cards": {
+      "items": {
+       "$ref": "#/components/schemas/PipelineCard"
+      },
+      "type": "array",
+      "title": "Cards"
+     }
+    },
+    "type": "object",
+    "required": [
+     "stages",
+     "cards"
+    ],
+    "title": "Pipeline"
+   },
+   "PipelineCard": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "title": {
+      "type": "string",
+      "title": "Title"
+     },
+     "stage": {
+      "type": "string",
+      "title": "Stage"
+     },
+     "category": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Category"
+     },
+     "bid_amount": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Bid Amount"
+     },
+     "connects": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Connects"
+     },
+     "thread_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Thread Id"
+     },
+     "market_thread_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Market Thread Id"
+     },
+     "updated_at": {
+      "type": "number",
+      "title": "Updated At"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "title",
+     "stage",
+     "updated_at"
+    ],
+    "title": "PipelineCard"
+   },
+   "PortfolioFile": {
+    "properties": {
+     "path": {
+      "type": "string",
+      "title": "Path"
+     },
+     "size": {
+      "type": "integer",
+      "title": "Size"
+     }
+    },
+    "type": "object",
+    "required": [
+     "path",
+     "size"
+    ],
+    "title": "PortfolioFile"
+   },
+   "PriceQuote": {
+    "properties": {
+     "job_id": {
+      "type": "string",
+      "title": "Job Id"
+     },
+     "bid_type": {
+      "type": "string",
+      "enum": [
+       "fixed",
+       "hourly"
+      ],
+      "title": "Bid Type"
+     },
+     "amount": {
+      "type": "number",
+      "exclusiveMinimum": 0.0,
+      "title": "Amount"
+     },
+     "market": {
+      "additionalProperties": {
+       "type": "number"
+      },
+      "type": "object",
+      "title": "Market",
+      "description": "p25/p50/p75 used"
+     },
+     "floor": {
+      "type": "number",
+      "title": "Floor"
+     },
+     "rationale": {
+      "type": "string",
+      "title": "Rationale"
+     },
+     "connects_cost": {
+      "type": "integer",
+      "title": "Connects Cost"
+     }
+    },
+    "type": "object",
+    "required": [
+     "job_id",
+     "bid_type",
+     "amount",
+     "floor",
+     "rationale",
+     "connects_cost"
+    ],
+    "title": "PriceQuote"
+   },
+   "ProposalDraft": {
+    "properties": {
+     "job_id": {
+      "type": "string",
+      "title": "Job Id"
+     },
+     "cover_letter": {
+      "type": "string",
+      "title": "Cover Letter",
+      "description": "Text with [evidence-id] markers after grounded claims"
+     },
+     "screening_answers": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Screening Answers"
+     },
+     "claims": {
+      "items": {
+       "$ref": "#/components/schemas/Claim"
+      },
+      "type": "array",
+      "title": "Claims"
+     },
+     "revision": {
+      "type": "integer",
+      "title": "Revision",
+      "default": 0
+     },
+     "model": {
+      "type": "string",
+      "title": "Model",
+      "default": "rules"
+     },
+     "prompt_version": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Prompt Version"
+     }
+    },
+    "type": "object",
+    "required": [
+     "job_id",
+     "cover_letter"
+    ],
+    "title": "ProposalDraft",
+    "description": "Proposal Writer -> verify -> critic -> compliance -> human."
+   },
+   "RegenerateIn": {
+    "properties": {
+     "paragraph": {
+      "type": "integer",
+      "maximum": 20.0,
+      "minimum": 0.0,
+      "title": "Paragraph"
+     },
+     "instruction": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 300
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Instruction"
+     }
+    },
+    "type": "object",
+    "required": [
+     "paragraph"
+    ],
+    "title": "RegenerateIn"
+   },
+   "RegenerateOut": {
+    "properties": {
+     "paragraph": {
+      "type": "integer",
+      "title": "Paragraph"
+     },
+     "text": {
+      "type": "string",
+      "title": "Text"
+     },
+     "model": {
+      "type": "string",
+      "title": "Model"
+     }
+    },
+    "type": "object",
+    "required": [
+     "paragraph",
+     "text",
+     "model"
+    ],
+    "title": "RegenerateOut"
+   },
+   "RegisterIn": {
+    "properties": {
+     "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+     },
+     "password": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 8,
+      "title": "Password"
+     },
+     "name": {
+      "type": "string",
+      "maxLength": 120,
+      "minLength": 1,
+      "title": "Name"
+     }
+    },
+    "type": "object",
+    "required": [
+     "email",
+     "password",
+     "name"
+    ],
+    "title": "RegisterIn"
+   },
+   "ReplyDraft": {
+    "properties": {
+     "body": {
+      "type": "string",
+      "title": "Body",
+      "description": "Reply text with [evidence-id] markers after grounded claims"
+     },
+     "claims": {
+      "items": {
+       "$ref": "#/components/schemas/Claim"
+      },
+      "type": "array",
+      "title": "Claims"
+     },
+     "slots_offered": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Slots Offered",
+      "description": "{start, end, timezone}"
+     },
+     "price_position": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Price Position"
+     },
+     "model": {
+      "type": "string",
+      "title": "Model",
+      "default": "rules"
+     }
+    },
+    "type": "object",
+    "required": [
+     "body"
+    ],
+    "title": "ReplyDraft"
+   },
+   "Requirement": {
+    "properties": {
+     "text": {
+      "type": "string",
+      "title": "Text",
+      "description": "One requirement as the client wrote it (or a short paraphrase)"
+     },
+     "skills": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Skills",
+      "description": "Canonical skill tags it implies"
+     },
+     "must_have": {
+      "type": "boolean",
+      "title": "Must Have",
+      "default": true
+     }
+    },
+    "type": "object",
+    "required": [
+     "text"
+    ],
+    "title": "Requirement"
+   },
+   "RequirementFit": {
+    "properties": {
+     "requirement": {
+      "type": "string",
+      "title": "Requirement"
+     },
+     "covered": {
+      "type": "boolean",
+      "title": "Covered"
+     },
+     "evidence": {
+      "items": {
+       "$ref": "#/components/schemas/EvidenceRef"
+      },
+      "type": "array",
+      "title": "Evidence"
+     }
+    },
+    "type": "object",
+    "required": [
+     "requirement",
+     "covered"
+    ],
+    "title": "RequirementFit"
+   },
+   "ResumeIn": {
+    "properties": {
+     "action": {
+      "type": "string",
+      "enum": [
+       "approve",
+       "edit",
+       "reject"
+      ],
+      "title": "Action"
+     },
+     "cover_letter": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 5000
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Cover Letter"
+     },
+     "bid_amount": {
+      "anyOf": [
+       {
+        "type": "number",
+        "maximum": 100000.0,
+        "exclusiveMinimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Bid Amount"
+     },
+     "body": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 4000
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Body"
+     },
+     "slots": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "integer"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Slots"
+     },
+     "note": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 500
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Note",
+      "description": "Reason, required when rejecting"
+     }
+    },
+    "type": "object",
+    "required": [
+     "action"
+    ],
+    "title": "ResumeIn"
+   },
+   "RiskReport": {
+    "properties": {
+     "job_id": {
+      "type": "string",
+      "title": "Job Id"
+     },
+     "scam_score": {
+      "type": "number",
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Scam Score"
+     },
+     "scam_type": {
+      "anyOf": [
+       {
+        "type": "string",
+        "enum": [
+         "off_platform",
+         "free_work",
+         "payment",
+         "credentials"
+        ]
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Scam Type"
+     },
+     "red_flags": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Red Flags"
+     },
+     "injection_detected": {
+      "type": "boolean",
+      "title": "Injection Detected",
+      "default": false
+     },
+     "injection_spans": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Injection Spans",
+      "description": "Removed from the text every LLM sees"
+     },
+     "client_signals": {
+      "additionalProperties": {
+       "anyOf": [
+        {
+         "type": "number"
+        },
+        {
+         "type": "boolean"
+        },
+        {
+         "type": "string"
+        }
+       ]
+      },
+      "type": "object",
+      "title": "Client Signals"
+     }
+    },
+    "type": "object",
+    "required": [
+     "job_id",
+     "scam_score"
+    ],
+    "title": "RiskReport",
+    "description": "Risk Assessor -> decision. Scam, injection and client-quality signals."
+   },
+   "RunSummary": {
+    "properties": {
+     "thread_id": {
+      "type": "string",
+      "title": "Thread Id"
+     },
+     "kind": {
+      "type": "string",
+      "enum": [
+       "bid",
+       "conversation"
+      ],
+      "title": "Kind"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status"
+     },
+     "updated_at": {
+      "type": "number",
+      "title": "Updated At"
+     },
+     "job_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Job Id"
+     },
+     "market_thread_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Market Thread Id"
+     },
+     "title": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Title"
+     },
+     "category": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Category"
+     },
+     "action": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Action"
+     },
+     "confidence": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Confidence"
+     },
+     "reasons": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Reasons",
+      "default": []
+     },
+     "coverage": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Coverage"
+     },
+     "scam_score": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Scam Score"
+     },
+     "scam_type": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Scam Type"
+     },
+     "injection": {
+      "type": "boolean",
+      "title": "Injection",
+      "default": false
+     },
+     "price": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Price"
+     },
+     "bid_type": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Bid Type"
+     },
+     "connects_cost": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Connects Cost"
+     },
+     "critic": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Critic"
+     },
+     "pending": {
+      "type": "boolean",
+      "title": "Pending",
+      "default": false
+     },
+     "intent": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Intent"
+     },
+     "client_message": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Client Message"
+     },
+     "usd": {
+      "type": "number",
+      "title": "Usd",
+      "default": 0.0
+     },
+     "latency_ms": {
+      "type": "number",
+      "title": "Latency Ms",
+      "default": 0.0
+     },
+     "errors": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Errors",
+      "default": []
+     }
+    },
+    "type": "object",
+    "required": [
+     "thread_id",
+     "kind",
+     "status",
+     "updated_at"
+    ],
+    "title": "RunSummary"
+   },
+   "RunView": {
+    "properties": {
+     "thread_id": {
+      "type": "string",
+      "title": "Thread Id"
+     },
+     "kind": {
+      "type": "string",
+      "enum": [
+       "bid",
+       "conversation"
+      ],
+      "title": "Kind"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status"
+     },
+     "pending": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pending"
+     },
+     "job": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Job"
+     },
+     "client": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Client"
+     },
+     "spec": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/JobSpec"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "risk": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/RiskReport"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "fit": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/FitReport"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "decision": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/BidDecision"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "quote": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/PriceQuote"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "draft": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/ProposalDraft"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "critiques": {
+      "items": {
+       "$ref": "#/components/schemas/Critique"
+      },
+      "type": "array",
+      "title": "Critiques",
+      "default": []
+     },
+     "compliance": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/ComplianceVerdict"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "verification": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Verification"
+     },
+     "evidence": {
+      "additionalProperties": {
+       "type": "string"
+      },
+      "type": "object",
+      "title": "Evidence",
+      "default": {}
+     },
+     "submission": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Submission"
+     },
+     "intent": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/Intent"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "reply": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/ReplyDraft"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "client_message": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Client Message"
+     },
+     "thread": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Thread"
+     },
+     "trace": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Trace",
+      "default": []
+     },
+     "errors": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Errors",
+      "default": []
+     },
+     "steps": {
+      "type": "integer",
+      "title": "Steps",
+      "default": 0
+     },
+     "tokens": {
+      "type": "integer",
+      "title": "Tokens",
+      "default": 0
+     },
+     "usd": {
+      "type": "number",
+      "title": "Usd",
+      "default": 0.0
+     },
+     "history": {
+      "items": {
+       "$ref": "#/components/schemas/HistoryRow"
+      },
+      "type": "array",
+      "title": "History",
+      "default": []
+     },
+     "edits": {
+      "items": {
+       "$ref": "#/components/schemas/EditRow"
+      },
+      "type": "array",
+      "title": "Edits",
+      "default": []
+     },
+     "trace_url": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Trace Url"
+     }
+    },
+    "type": "object",
+    "required": [
+     "thread_id",
+     "kind",
+     "status"
+    ],
+    "title": "RunView"
+   },
+   "SavedSearch": {
+    "properties": {
+     "name": {
+      "type": "string",
+      "maxLength": 80,
+      "minLength": 1,
+      "title": "Name"
+     },
+     "query": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 200
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Query"
+     },
+     "category": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 80
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Category"
+     },
+     "interval_min": {
+      "type": "integer",
+      "maximum": 1440.0,
+      "minimum": 15.0,
+      "title": "Interval Min",
+      "description": "How often the worker scouts this search",
+      "default": 60
+     }
+    },
+    "type": "object",
+    "required": [
+     "name"
+    ],
+    "title": "SavedSearch"
+   },
+   "Settings": {
+    "properties": {
+     "onboarded": {
+      "type": "boolean",
+      "title": "Onboarded",
+      "default": false
+     },
+     "profile_mode": {
+      "type": "string",
+      "enum": [
+       "persona",
+       "own"
+      ],
+      "title": "Profile Mode",
+      "default": "persona"
+     },
+     "persona": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Persona"
+     },
+     "own_profile": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/OwnProfile"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "marketplace": {
+      "type": "string",
+      "enum": [
+       "gigsim",
+       "upwork_live"
+      ],
+      "title": "Marketplace",
+      "default": "gigsim"
+     },
+     "gigsim_account": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Gigsim Account"
+     },
+     "autonomy": {
+      "type": "string",
+      "enum": [
+       "suggest",
+       "auto_skip"
+      ],
+      "title": "Autonomy",
+      "default": "suggest"
+     },
+     "weekly_connects_budget": {
+      "type": "integer",
+      "maximum": 1000.0,
+      "minimum": 0.0,
+      "title": "Weekly Connects Budget",
+      "default": 60
+     },
+     "hourly_floor": {
+      "anyOf": [
+       {
+        "type": "number",
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Hourly Floor"
+     },
+     "fixed_floor": {
+      "anyOf": [
+       {
+        "type": "number",
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Fixed Floor"
+     },
+     "categories": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Categories"
+     },
+     "saved_searches": {
+      "items": {
+       "$ref": "#/components/schemas/SavedSearch"
+      },
+      "type": "array",
+      "title": "Saved Searches"
+     },
+     "upwork_connected": {
+      "type": "boolean",
+      "title": "Upwork Connected",
+      "default": false
+     }
+    },
+    "type": "object",
+    "title": "Settings"
+   },
+   "SettingsIn": {
+    "properties": {
+     "profile_mode": {
+      "anyOf": [
+       {
+        "type": "string",
+        "enum": [
+         "persona",
+         "own"
+        ]
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Profile Mode"
+     },
+     "persona": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Persona"
+     },
+     "own_profile": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/OwnProfile"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "marketplace": {
+      "anyOf": [
+       {
+        "type": "string",
+        "enum": [
+         "gigsim",
+         "upwork_live"
+        ]
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Marketplace"
+     },
+     "gigsim_account": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Gigsim Account"
+     },
+     "autonomy": {
+      "anyOf": [
+       {
+        "type": "string",
+        "enum": [
+         "suggest",
+         "auto_skip"
+        ]
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Autonomy"
+     },
+     "weekly_connects_budget": {
+      "anyOf": [
+       {
+        "type": "integer",
+        "maximum": 1000.0,
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Weekly Connects Budget"
+     },
+     "hourly_floor": {
+      "anyOf": [
+       {
+        "type": "number",
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Hourly Floor"
+     },
+     "fixed_floor": {
+      "anyOf": [
+       {
+        "type": "number",
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Fixed Floor"
+     },
+     "categories": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "string"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Categories"
+     },
+     "saved_searches": {
+      "anyOf": [
+       {
+        "items": {
+         "$ref": "#/components/schemas/SavedSearch"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Saved Searches"
+     },
+     "onboarded": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Onboarded"
+     }
+    },
+    "type": "object",
+    "title": "SettingsIn",
+    "description": "Partial update; omitted fields keep their value."
+   },
+   "StyleRule": {
+    "properties": {
+     "key": {
+      "type": "string",
+      "title": "Key"
+     },
+     "kind": {
+      "type": "string",
+      "title": "Kind"
+     },
+     "value": {
+      "type": "string",
+      "title": "Value"
+     },
+     "count": {
+      "type": "integer",
+      "title": "Count"
+     },
+     "examples": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Examples",
+      "default": []
+     },
+     "promoted_at": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Promoted At"
+     }
+    },
+    "type": "object",
+    "required": [
+     "key",
+     "kind",
+     "value",
+     "count"
+    ],
+    "title": "StyleRule"
+   },
+   "ThreadList": {
+    "properties": {
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/ThreadSummary"
+      },
+      "type": "array",
+      "title": "Items"
+     }
+    },
+    "type": "object",
+    "required": [
+     "items"
+    ],
+    "title": "ThreadList"
+   },
+   "ThreadSummary": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "job_id": {
+      "type": "string",
+      "title": "Job Id"
+     },
+     "job_title": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Job Title"
+     },
+     "stage": {
+      "type": "string",
+      "title": "Stage"
+     },
+     "last_message": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/Message"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "pending_run": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pending Run"
+     },
+     "messages": {
+      "items": {
+       "$ref": "#/components/schemas/Message"
+      },
+      "type": "array",
+      "title": "Messages",
+      "default": []
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "job_id",
+     "stage"
+    ],
+    "title": "ThreadSummary"
+   },
+   "ValidationError": {
+    "properties": {
+     "loc": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "integer"
+        }
+       ]
+      },
+      "type": "array",
+      "title": "Location"
+     },
+     "msg": {
+      "type": "string",
+      "title": "Message"
+     },
+     "type": {
+      "type": "string",
+      "title": "Error Type"
+     },
+     "input": {
+      "title": "Input"
+     },
+     "ctx": {
+      "type": "object",
+      "title": "Context"
+     }
+    },
+    "type": "object",
+    "required": [
+     "loc",
+     "msg",
+     "type"
+    ],
+    "title": "ValidationError"
+   }
+  }
+ }
+}

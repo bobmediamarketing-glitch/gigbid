@@ -17,3 +17,5 @@ data/workspace/
 data/checkpoints.sqlite*
 data/models/
 data/memory.sqlite*
+data/app.sqlite*
+data/users/

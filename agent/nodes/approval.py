@@ -16,6 +16,20 @@ from agent.memory import style as style_memory
 from agent.nodes.base import Ctx, node
 
 
+def _cited_text(state: dict) -> str:
+    """The draft with citation markers, after the same redactions compliance applied to the client text,
+    so the approval screen shows exactly what will be sent (plus evidence markers)."""
+    import re
+    t = state["draft"].cover_letter
+    v = state.get("compliance")
+    for x in (v.violations if v else []):
+        if x["action"] == "redact":
+            t = t.replace(x["match"], "")
+        elif x["action"] == "rewrite":
+            t = " ".join(s for s in re.split(r"(?<=[.!?])\s+", t) if x["match"] not in s)
+    return re.sub(r"[ \t]{2,}", " ", t).strip()
+
+
 def _client_text(state: dict) -> str:
     v = state.get("compliance")
     return (v.redacted_text if v and v.redacted_text else None) or state["draft"].client_text()
@@ -32,10 +46,12 @@ async def approval(state: dict, ctx: Ctx, usages: list) -> dict:
     c = state.get("compliance")
     answer = interrupt({
         "type": "approve_proposal", "run_id": state["run_id"], "job_id": job["id"], "job_title": job["title"],
-        "cover_letter": text, "cover_letter_with_citations": d.cover_letter,
+        "cover_letter": text, "cover_letter_with_citations": _cited_text(state),
         "screening_questions": state["spec"].screening_questions, "screening_answers": d.screening_answers,
         "bid_amount": q.amount, "bid_type": q.bid_type, "price_rationale": q.rationale,
-        "connects_cost": p.get("connects_cost") or q.connects_cost, "connects_balance_after": p.get("connects_balance_after"),
+        # Drafting is free; Connects are spent at submit, so "after" = balance now minus this job's cost.
+        "connects_cost": q.connects_cost,
+        "connects_balance_after": (state.get("connects_balance") or 0) - q.connects_cost,
         "claims": [cl.model_dump() for cl in d.claims],
         "evidence": {i: (state.get("evidence") or {}).get(i, "")[:600] for cl in d.claims for i in cl.evidence_ids},
         "risk": state["risk"].model_dump() if state.get("risk") else None,

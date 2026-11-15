@@ -10,7 +10,9 @@ from agent.settings import ROOT
 
 @contextlib.asynccontextmanager
 async def memory_store(url: str | None = None):
-    url = url or os.getenv("DATABASE_URL", "")
+    # Postgres in production (shared DATABASE_URL); locally its own SQLite file, apart from checkpoints.
+    url = url or os.getenv("MEMORY_DATABASE_URL") or (os.getenv("DATABASE_URL", "")
+                                                       if os.getenv("DATABASE_URL", "").startswith("postgres") else "")
     if url.startswith("postgres"):
         from langgraph.store.postgres.aio import AsyncPostgresStore
 

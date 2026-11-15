@@ -54,7 +54,7 @@ def _port(who: Caller) -> MarketplacePort:
     if who.user_id not in _ports:
         if _port_factory:
             _ports[who.user_id] = _port_factory(who)
-        elif os.getenv("MARKETPLACE_MODE", "gigsim") == "upwork_live":
+        elif (who.credentials.get("marketplace_mode") or os.getenv("MARKETPLACE_MODE", "gigsim")) == "upwork_live":
             _ports[who.user_id] = get_port("upwork_live", access_token=who.credentials.get("upwork_access_token"))
         else:
             _ports[who.user_id] = get_port("gigsim", token=who.credentials.get("gigsim_token"))
