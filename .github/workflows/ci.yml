@@ -24,10 +24,12 @@ jobs:
         with: {python-version: "3.12"}
       - name: No secrets in the repo (fast scan)
         run: python scripts/ci/check_secrets.py
-      - name: No secrets in history (gitleaks)
-        uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: No secrets in history (gitleaks over every commit)
+        # The CLI, not gitleaks-action: the action scans "<first pushed commit>^..HEAD", which fails on a
+        # repository's very first push (no parent). Scanning the whole history is cheap at this size.
+        run: |
+          curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.24.3/gitleaks_8.24.3_linux_x64.tar.gz | tar xz gitleaks
+          ./gitleaks detect --source . --redact --verbose --exit-code 1
       - name: Nothing under gigsim/ changed
         run: |
           python scripts/ci/check_gigsim.py
