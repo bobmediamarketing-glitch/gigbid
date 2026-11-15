@@ -40,9 +40,12 @@ async def analyse(uid: int, n: int) -> None:
                 threads.append(await rt.start_bid(uid, j["id"], j["title"]))
             if len(threads) >= n:
                 break
-        for t in list(rt.tasks.values()):
-            await t
-        print(f"analysed {len(threads)} jobs for the reviewer")
+        if rt.queue is not None:
+            print(f"queued {len(threads)} jobs; the worker analyses them in the next minute or two")
+        else:
+            for t in list(rt.tasks.values()):
+                await t
+            print(f"analysed {len(threads)} jobs for the reviewer")
     finally:
         await rt.stop()
 

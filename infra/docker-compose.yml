@@ -37,6 +37,7 @@ x-mcp-env: &mcp-env
 
 services:
   postgres:
+    restart: unless-stopped
     image: postgres:16-alpine
     environment:
       POSTGRES_USER: gigbid
@@ -49,6 +50,7 @@ services:
       retries: 20
 
   redis:
+    restart: unless-stopped
     image: redis:7-alpine
     command: ["redis-server", "--appendonly", "yes"]
     volumes: [redisdata:/data]
@@ -58,10 +60,12 @@ services:
       retries: 20
 
   qdrant:
+    restart: unless-stopped
     image: qdrant/qdrant:v1.12.4
     volumes: [qdrantdata:/qdrant/storage]
 
   ollama:
+    restart: unless-stopped
     image: ollama/ollama:0.5.4
     volumes: [ollamadata:/root/.ollama]
 
@@ -73,15 +77,17 @@ services:
     entrypoint: ["sh", "-c", "ollama pull qwen2.5:7b && ollama pull llama3.2:3b"]
 
   gigsim:
+    restart: unless-stopped
     build: {context: .., dockerfile: infra/docker/gigsim.Dockerfile}
     environment:
       GIGSIM_ERROR_RATE: ${GIGSIM_ERROR_RATE:-0.02}
       GIGSIM_SPEED: ${GIGSIM_SPEED:-60}
       GIGSIM_ADMIN_TOKEN: ${GIGSIM_ADMIN_TOKEN:-gigsim-admin}
     volumes: [gigsimstate:/app/gigsim/state]
-    ports: ["8100:8100"]
+    ports: ["127.0.0.1:8100:8100"]   # local only: its /admin endpoints must never be public
 
   mcp-marketplace:
+    restart: unless-stopped
     build: {context: .., dockerfile: infra/docker/mcp-marketplace.Dockerfile}
     environment:
       <<: *mcp-env
@@ -90,17 +96,20 @@ services:
     depends_on: [gigsim]
 
   mcp-portfolio:
+    restart: unless-stopped
     build: {context: .., dockerfile: infra/docker/mcp-portfolio.Dockerfile}
     environment: *mcp-env
     volumes: [userdata:/app/data/users]
     depends_on: [qdrant]
 
   mcp-workspace:
+    restart: unless-stopped
     build: {context: .., dockerfile: infra/docker/mcp-workspace.Dockerfile}
     environment: *mcp-env
     volumes: [workspace:/app/data/workspace, audit:/app/data/audit]
 
   api:
+    restart: unless-stopped
     build: {context: .., dockerfile: infra/docker/api.Dockerfile}
     environment:
       <<: *app-env
@@ -114,6 +123,7 @@ services:
       mcp-workspace: {condition: service_started}
 
   worker:
+    restart: unless-stopped
     build: {context: .., dockerfile: infra/docker/worker.Dockerfile}
     environment: *app-env
     volumes: [userdata:/app/data/users]
@@ -123,11 +133,27 @@ services:
       api: {condition: service_started}
 
   web:
+    restart: unless-stopped
     build: {context: .., dockerfile: infra/docker/web.Dockerfile}
-    ports: ["8080:80"]
+    ports: ["${WEB_BIND:-0.0.0.0}:8080:80"]   # behind Caddy on a public host: WEB_BIND=127.0.0.1
     depends_on: [api]
 
+  caddy:   # HTTPS for a public host: docker compose --profile tls up -d  (needs DOMAIN, e.g. 1.2.3.4.sslip.io)
+    image: caddy:2.8-alpine
+    profiles: [tls]
+    restart: unless-stopped
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+    ports: ["80:80", "443:443"]
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddydata:/data
+      - caddyconfig:/config
+    depends_on: [web]
+
 volumes:
+  caddydata:
+  caddyconfig:
   pgdata:
   redisdata:
   qdrantdata:

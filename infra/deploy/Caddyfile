@@ -1,0 +1,13 @@
+# Automatic HTTPS (Let's Encrypt) for the public GigBid URL. DOMAIN can be a real domain or <ip>.sslip.io.
+{$DOMAIN} {
+	encode zstd gzip
+	# SSE needs responses flushed immediately
+	reverse_proxy web:80 {
+		flush_interval -1
+	}
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+	}
+}
