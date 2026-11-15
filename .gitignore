@@ -19,3 +19,4 @@ data/models/
 data/memory.sqlite*
 data/app.sqlite*
 data/users/
+submission/
