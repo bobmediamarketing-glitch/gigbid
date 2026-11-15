@@ -80,6 +80,7 @@ budgets:
 
 bid_graph:
   critic_max_loops: 2              # writer is revised at most twice
+  writer_strategy: goal_first      # X2: goal_first | proof_first (see docs/EXTENSION.md for the A/B result)
   timeouts_s: {default: 60, writer: 120, critic: 90}   # per node (C7)
   retries: {default: 2, submit: 3}                    # transient failures only; then dead_letter
   critic_pass_score: 0.7

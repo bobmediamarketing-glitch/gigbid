@@ -1,0 +1,1905 @@
+{
+ "meta": {
+  "model_profile": "rules (no API key)",
+  "n_per_persona": 40,
+  "generated_at": "2026-11-15T21:52:59"
+ },
+ "result": {
+  "pairs": 117,
+  "A_goal_first": {
+   "replies": 94,
+   "reply_rate": 0.8034,
+   "client_score": 0.7645
+  },
+  "B_proof_first": {
+   "replies": 90,
+   "reply_rate": 0.7692,
+   "client_score": 0.7645
+  },
+  "difference_B_minus_A": -0.0342,
+  "mcnemar": {
+   "A_only": 20,
+   "B_only": 16,
+   "p_value": 0.6177
+  },
+  "two_proportion_z": {
+   "z": -0.638,
+   "p_value": 0.5235
+  },
+  "significant_at_0.05": false
+ },
+ "pairs": [
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00001",
+   "A": {
+    "pid": "p-3d5a7654e4",
+    "opening": "You want a working nlp pipeline solution, and that is the kind of system I build and hand over.\n\nFor huggingface: on a r",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-9b04008723",
+    "opening": "For huggingface: on a resume entity extractor for an education client, I did this work and the project cut manual effort",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00002",
+   "A": {
+    "pid": "p-75582091c7",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-1fbb004ce8",
+    "opening": "For python, fastapi: on a claims processing agent for a healthcare client, I did this work and the project saved the cli",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00003",
+   "A": {
+    "pid": "p-62a487785a",
+    "opening": "You want semantic search over ~2M product descriptions, and that is the kind of system I build and hand over.\n\nFor pinec",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-e8bcf5fffd",
+    "opening": "For pinecone: on a contract search copilot for an e-commerce client, I did this work and the project cut manual effort b",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00006",
+   "A": {
+    "pid": "p-2a1dbe6040",
+    "opening": "You want a working nlp pipeline solution, and that is the kind of system I build and hand over.\n\nFor python, a past clie",
+    "client_score": 0.45,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-c689cbbfbb",
+    "opening": "For python, a past client wrote: \"Solid engineer; a few delays but the final python work was strong\".\n\nYour goal is a wo",
+    "client_score": 0.45,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00008",
+   "A": {
+    "pid": "p-e3294a1c2a",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-5b10a46a1f",
+    "opening": "For pytorch: on a defect inspection model for a travel client, I did this work and the project reached 88% accuracy on a",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00010",
+   "A": {
+    "pid": "p-2bdbb1e06f",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-790a21793e",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00011",
+   "A": {
+    "pid": "p-99ede8d776",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-69c9bbac25",
+    "opening": "For python, a past client wrote: \"Solid engineer; a few delays but the final python work was strong\".\n\nYour goal is a pr",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00014",
+   "A": {
+    "pid": "p-a66f88252a",
+    "opening": "Pineapple",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-009790d71e",
+    "opening": "Pineapple",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00015",
+   "A": {
+    "pid": "p-e68acfa80e",
+    "opening": "You want a chatbot that answers from your internal PDFs and cites the page, and that is the kind of system I build and h",
+    "client_score": 0.85,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-99e020399d",
+    "opening": "For rag: on a claims processing agent for a legal client, I did this work and the project reached 92% accuracy on a held",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00018",
+   "A": {
+    "pid": "p-405da53598",
+    "opening": "You want a working computer vision solution, and that is the kind of system I build and hand over.\n\nFor docker: on a par",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-56d461c9ae",
+    "opening": "For docker: on a parking occupancy counter for a saas client, I did this work and the project reached 90% accuracy on a ",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00022",
+   "A": {
+    "pid": "p-4764c055ad",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-47319940f4",
+    "opening": "For nlp, a past client wrote: \"Solid engineer; a few delays but the final nlp work was strong\".\n\nYour goal is a producti",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00026",
+   "A": {
+    "pid": "p-d7e75e292a",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-f8df908f7d",
+    "opening": "For python, a past client wrote: \"Solid engineer; a few delays but the final python work was strong\".\n\nYour goal is a pr",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00031",
+   "A": {
+    "pid": "p-5ee08e6981",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-4cfd04e90d",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00035",
+   "A": {
+    "pid": "p-63afab94c0",
+    "opening": "You want a working llm agent solution, and that is the kind of system I build and hand over.\n\nFor langchain, one of my p",
+    "client_score": 0.45,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-0cdc876580",
+    "opening": "For langchain, one of my public repos shows how I structure this in real code.\n\nYour goal is a working llm agent solutio",
+    "client_score": 0.45,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00036",
+   "A": {
+    "pid": "p-76fbe17cfe",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-db9e5875a3",
+    "opening": "For docker, aws: on a parking occupancy counter for a saas client, I did this work and the project reached 90% accuracy ",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00038",
+   "A": {
+    "pid": "p-392b26d4c0",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-c14646ac01",
+    "opening": "For python, a past client wrote: \"Solid engineer; a few delays but the final python work was strong\".\n\nYour goal is a pr",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00040",
+   "A": {
+    "pid": "p-178ef35c74",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-ba03875236",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00042",
+   "A": {
+    "pid": "p-b841b7a6ab",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-ff0d209cc6",
+    "opening": "For fastapi: on a contract search copilot for an e-commerce client, I did this work and the project reduced latency from",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00047",
+   "A": {
+    "pid": "p-e9db8c701e",
+    "opening": "You want semantic search over ~2M product descriptions, and that is the kind of system I build and hand over.\n\nFor pinec",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-85c695f0bf",
+    "opening": "For pinecone: on a contract search copilot for an e-commerce client, I did this work and the project cut manual effort b",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00048",
+   "A": {
+    "pid": "p-595c440a0b",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-6ef49d7713",
+    "opening": "For qdrant: on a contract search copilot for an e-commerce client, I did this work and the project reduced latency from ",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00050",
+   "A": {
+    "pid": "p-42d56ad217",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-4451399bcb",
+    "opening": "For python, a past client wrote: \"Solid engineer; a few delays but the final python work was strong\".\n\nYour goal is a pr",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00053",
+   "A": {
+    "pid": "p-04ba0a7272",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-bf53ef8cc9",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00058",
+   "A": {
+    "pid": "p-b855389eec",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-6d07b476cb",
+    "opening": "For redis: on a sales research agent for a media client, I did this work and the project reached 90% accuracy on a held-",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00060",
+   "A": {
+    "pid": "p-ea10038efa",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-af9cc1fcf2",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00061",
+   "A": {
+    "pid": "p-f2518c3eac",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-41b7736861",
+    "opening": "For fastapi: on a contract search copilot for an e-commerce client, I did this work and the project reduced latency from",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00063",
+   "A": {
+    "pid": "p-9231bee9d7",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-8f4217a6ba",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00068",
+   "A": {
+    "pid": "p-95de973a9e",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-c577c1b125",
+    "opening": "For docker, aws: on a parking occupancy counter for a saas client, I did this work and the project reached 90% accuracy ",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00069",
+   "A": {
+    "pid": "p-941fbdf3dc",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-3aafafa991",
+    "opening": "For redis: on a sales research agent for a media client, I did this work and the project reached 90% accuracy on a held-",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00070",
+   "A": {
+    "pid": "p-24dc280c8a",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-902251f419",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00073",
+   "A": {
+    "pid": "p-88d2b61d81",
+    "opening": "You want a working rag chatbot solution, and that is the kind of system I build and hand over.\n\nFor fastapi: on a contra",
+    "client_score": 0.65,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-77900b2dbe",
+    "opening": "For fastapi: on a contract search copilot for an e-commerce client, I did this work and the project reduced latency from",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00075",
+   "A": {
+    "pid": "p-94dc6108ae",
+    "opening": "You want counting items on conveyor belt footage, and that is the kind of system I build and hand over.\n\nFor computer vi",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-94b605151b",
+    "opening": "For computer vision: on a pPE compliance camera for a legal client, I did this work and the project reduced latency from",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00076",
+   "A": {
+    "pid": "p-43830a0d6b",
+    "opening": "You want an agent workflow that can pause for a manager to approve, and that is the kind of system I build and hand over",
+    "client_score": 0.85,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-1098507643",
+    "opening": "For langgraph: on a sales research agent for a media client, I did this work and the project reached 90% accuracy on a h",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00079",
+   "A": {
+    "pid": "p-f5a96a857e",
+    "opening": "You want a working computer vision solution, and that is the kind of system I build and hand over.\n\nFor python, a past c",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-e6d9518c21",
+    "opening": "For python, a past client wrote: \"Solid engineer; a few delays but the final python work was strong\".\n\nYour goal is a wo",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00081",
+   "A": {
+    "pid": "p-dd67324215",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.45,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-f38fe78348",
+    "opening": "For python, a past client wrote: \"Solid engineer; a few delays but the final python work was strong\".\n\nYour goal is a pr",
+    "client_score": 0.45,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00082",
+   "A": {
+    "pid": "p-c6e450cf03",
+    "opening": "You want counting items on conveyor belt footage, and that is the kind of system I build and hand over.\n\nFor computer vi",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-181611ea77",
+    "opening": "For computer vision: on a pPE compliance camera for a legal client, I did this work and the project reduced latency from",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00086",
+   "A": {
+    "pid": "p-7154b6fb9b",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-b1d5d969de",
+    "opening": "For redis: on a sales research agent for a media client, I did this work and the project reached 90% accuracy on a held-",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00087",
+   "A": {
+    "pid": "p-9cf68177e4",
+    "opening": "You want a classifier trained on your 40k labelled tickets, and that is the kind of system I build and hand over.\n\nFor f",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-b85f407174",
+    "opening": "For fine-tuning, nlp: on a resume entity extractor for an education client, I did this work and the project cut manual e",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00088",
+   "A": {
+    "pid": "p-3d4dda1195",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-9d221acca0",
+    "opening": "For python, a past client wrote: \"Solid engineer; a few delays but the final python work was strong\".\n\nYour goal is a pr",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00091",
+   "A": {
+    "pid": "p-ba0c15ebdc",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-090be68777",
+    "opening": "For python, a past client wrote: \"Solid engineer; a few delays but the final python work was strong\".\n\nYour goal is a pr",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "ai_ml",
+   "job_id": "j-00093",
+   "A": {
+    "pid": "p-33e6e77f52",
+    "opening": "You want a working ml deployment solution, and that is the kind of system I build and hand over.\n\nFor fastapi: on a cont",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-10d5b8b113",
+    "opening": "For fastapi: on a contract search copilot for an e-commerce client, I did this work and the project reduced latency from",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00206",
+   "A": {
+    "pid": "p-9fb1dced07",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.65,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-a327d6ba2b",
+    "opening": "For express: on a telehealth scheduling API for a media client, I did this work and the project reduced latency from 9s ",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00207",
+   "A": {
+    "pid": "p-f06c675282",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-927b33006b",
+    "opening": "For node.js, a past client wrote: \"Solid engineer; a few delays but the final node.js work was strong\".\n\nYour goal is a ",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00208",
+   "A": {
+    "pid": "p-712ef6c22f",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-46f2cc8b56",
+    "opening": "For node.js: on a marketplace payouts for a legal client, I did this work and the project reduced latency from 8s to 630",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00210",
+   "A": {
+    "pid": "p-e2bc956eed",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-16fa49c491",
+    "opening": "For typescript: on a marketplace payouts for a legal client, I did this work and the project reduced latency from 8s to ",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00211",
+   "A": {
+    "pid": "p-ed980cd361",
+    "opening": "You want a working payment integration solution, and that is the kind of system I build and hand over.\n\nFor react: on a ",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-d2f7982f8d",
+    "opening": "For react: on a collaborative whiteboard for a fintech client, I did this work and the project saved the client $21k per",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00212",
+   "A": {
+    "pid": "p-f712cb54de",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-12cbc4a957",
+    "opening": "For postgres, a past client wrote: \"Bilal understood the problem fast and the payment integration work was excellent\".\n\n",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00214",
+   "A": {
+    "pid": "p-26c4473f2f",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-d91b235bb0",
+    "opening": "For postgres: on a collaborative whiteboard for a real estate client, I did this work and the project reduced latency fr",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00215",
+   "A": {
+    "pid": "p-987e76be4b",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-7526d9a57f",
+    "opening": "For node.js, a past client wrote: \"Solid engineer; a few delays but the final node.js work was strong\".\n\nYour goal is a ",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00216",
+   "A": {
+    "pid": "p-2b4f707ef7",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-f955d4e150",
+    "opening": "For redis, one of my public repos shows how I structure this in real code.\n\nYour goal is a production-ready solution you",
+    "client_score": 0.65,
+    "replied": false
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00218",
+   "A": {
+    "pid": "p-c3dea6bc2e",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-6426a58e64",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00222",
+   "A": {
+    "pid": "p-c058ef4e01",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-fa649c0b51",
+    "opening": "For typescript, react: on a collaborative whiteboard for a fintech client, I did this work and the project saved the cli",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00225",
+   "A": {
+    "pid": "p-918f320220",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-a005aa2d89",
+    "opening": "For postgres, a past client wrote: \"Bilal understood the problem fast and the payment integration work was excellent\".\n\n",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00227",
+   "A": {
+    "pid": "p-bf542a13bd",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-a75e800f1f",
+    "opening": "For tailwind: on a headless sneaker store for an education client, I did this work and the project lifted conversion by ",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00229",
+   "A": {
+    "pid": "p-f537d12584",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-be218872ae",
+    "opening": "For node.js, react: on a marketplace payouts for a legal client, I did this work and the project reduced latency from 8s",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00230",
+   "A": {
+    "pid": "p-a114163158",
+    "opening": "You want a working saas web app solution, and that is the kind of system I build and hand over.\n\nFor react: on a collabo",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-29c301063b",
+    "opening": "For react: on a collaborative whiteboard for a fintech client, I did this work and the project saved the client $21k per",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00231",
+   "A": {
+    "pid": "p-e9b818b15a",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-882c3f8538",
+    "opening": "For express: on a telehealth scheduling API for a media client, I did this work and the project reduced latency from 9s ",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00234",
+   "A": {
+    "pid": "p-fdabedda01",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-8efd7502ea",
+    "opening": "For postgres: on a collaborative whiteboard for a real estate client, I did this work and the project reduced latency fr",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00235",
+   "A": {
+    "pid": "p-81b2d9f3bc",
+    "opening": "Pineapple",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-d000e512c2",
+    "opening": "Pineapple",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00236",
+   "A": {
+    "pid": "p-9e28b53cca",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-abe3974aa1",
+    "opening": "For typescript, node.js: on a marketplace payouts for a legal client, I did this work and the project reduced latency fr",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00237",
+   "A": {
+    "pid": "p-c3fd80db7b",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-5c5796d0b4",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00239",
+   "A": {
+    "pid": "p-527953dc70",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-a5a03a6952",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00240",
+   "A": {
+    "pid": "p-05950836c4",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-066d191b93",
+    "opening": "For node.js, a past client wrote: \"Solid engineer; a few delays but the final node.js work was strong\".\n\nYour goal is a ",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00245",
+   "A": {
+    "pid": "p-907bc177d9",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-832e2079f7",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00247",
+   "A": {
+    "pid": "p-9bf596deb5",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-608a865f99",
+    "opening": "For postgres: on a collaborative whiteboard for a real estate client, I did this work and the project reduced latency fr",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00249",
+   "A": {
+    "pid": "p-e47a0bd8d5",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-8e3dd12b91",
+    "opening": "For typescript: on a collaborative whiteboard for a fintech client, I did this work and the project saved the client $21",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00252",
+   "A": {
+    "pid": "p-990275c778",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-f53be2051d",
+    "opening": "For prisma: on a clinic booking SaaS for a real estate client, I did this work and the project reduced latency from 7s t",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00253",
+   "A": {
+    "pid": "p-d7c46a9da7",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-97f1f9f673",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00254",
+   "A": {
+    "pid": "p-737993cf41",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-03c31c1589",
+    "opening": "For react, typescript: on a collaborative whiteboard for a fintech client, I did this work and the project saved the cli",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00256",
+   "A": {
+    "pid": "p-e6eb09a5d3",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-5463ba5d7d",
+    "opening": "For typescript, react: on a collaborative whiteboard for a fintech client, I did this work and the project saved the cli",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00257",
+   "A": {
+    "pid": "p-14c6f64a94",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-a061599792",
+    "opening": "For typescript, react: on a collaborative whiteboard for a fintech client, I did this work and the project saved the cli",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00259",
+   "A": {
+    "pid": "p-6ce7b10e32",
+    "opening": "You want a working api backend solution, and that is the kind of system I build and hand over.\n\nFor docker: on a logisti",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-9cda0fe08d",
+    "opening": "For docker: on a logistics tracking API for a fintech client, I did this work and the project reached 91% accuracy on a ",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00261",
+   "A": {
+    "pid": "p-c2a2d2a881",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-f097dc7e53",
+    "opening": "For postgres, a past client wrote: \"Bilal understood the problem fast and the payment integration work was excellent\".\n\n",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00262",
+   "A": {
+    "pid": "p-3c4e816381",
+    "opening": "Pineapple",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-4d76d7d74b",
+    "opening": "Pineapple",
+    "client_score": 0.65,
+    "replied": false
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00264",
+   "A": {
+    "pid": "p-d15de831ec",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-3abf835886",
+    "opening": "For postgres: on a collaborative whiteboard for a real estate client, I did this work and the project reduced latency fr",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00270",
+   "A": {
+    "pid": "p-4e9121e486",
+    "opening": "You want a working e-commerce site solution, and that is the kind of system I build and hand over.\n\nFor react: on a coll",
+    "client_score": 0.45,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-81ce9b7095",
+    "opening": "For react: on a collaborative whiteboard for a fintech client, I did this work and the project saved the client $21k per",
+    "client_score": 0.45,
+    "replied": false
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00273",
+   "A": {
+    "pid": "p-6a26ea4d83",
+    "opening": "You want a working real-time app solution, and that is the kind of system I build and hand over.\n\nFor typescript: on a c",
+    "client_score": 0.65,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-49c37c93bf",
+    "opening": "For typescript: on a collaborative whiteboard for a fintech client, I did this work and the project saved the client $21",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "fullstack",
+   "job_id": "j-00274",
+   "A": {
+    "pid": "p-53c8af6e0f",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-e14abeddcc",
+    "opening": "For aws: on a clinic booking SaaS for a fintech client, I did this work and the project served 35k users in the first qu",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00401",
+   "A": {
+    "pid": "p-511efbe2d9",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-891b5810d8",
+    "opening": "For python: on an email subject-line test for an insurance client, I did this work and the project reduced latency from ",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00402",
+   "A": {
+    "pid": "p-a8bf907ad0",
+    "opening": "You want a working experiment analysis solution, and that is the kind of system I build and hand over.\n\nFor python: on a",
+    "client_score": 0.65,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-b17f4fc894",
+    "opening": "For python: on an email subject-line test for an insurance client, I did this work and the project reduced latency from ",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00404",
+   "A": {
+    "pid": "p-902812aa89",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-77c1e1781d",
+    "opening": "For python, statistics: on an email subject-line test for an insurance client, I did this work and the project reduced l",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00406",
+   "A": {
+    "pid": "p-afbd1c1205",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-6048303c00",
+    "opening": "For pandas, one of my public repos shows how I structure this in real code.\n\nYour goal is a production-ready solution yo",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00407",
+   "A": {
+    "pid": "p-c6232ddc86",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-d9cd5580ce",
+    "opening": "For pandas, one of my public repos shows how I structure this in real code.\n\nYour goal is a production-ready solution yo",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00410",
+   "A": {
+    "pid": "p-db93b3c807",
+    "opening": "You want replacing a 30-tab spreadsheet that takes a day to update, and that is the kind of system I build and hand over",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-feb106bfe2",
+    "opening": "For excel: on a budget consolidation workbook for an education client, I did this work and the project reduced latency f",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00411",
+   "A": {
+    "pid": "p-fa9e771530",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-54309f93e3",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00412",
+   "A": {
+    "pid": "p-7f72c205ec",
+    "opening": "You want clean, tested models on top of raw Shopify exports, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-0e61baf2e6",
+    "opening": "For sql, dbt, python: on an email subject-line test for an insurance client, I did this work and the project reduced lat",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00416",
+   "A": {
+    "pid": "p-31e84751cf",
+    "opening": "You want a working data pipeline solution, and that is the kind of system I build and hand over.\n\nFor snowflake, one of ",
+    "client_score": 0.25,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-5e4ef0eb55",
+    "opening": "For snowflake, one of my public repos shows how I structure this in real code.\n\nYour goal is a working data pipeline sol",
+    "client_score": 0.25,
+    "replied": false
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00419",
+   "A": {
+    "pid": "p-24276b769f",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-b1537d31aa",
+    "opening": "For bigquery, snowflake: on an ad spend warehouse for a real estate client, I did this work and the project reached 88% ",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00420",
+   "A": {
+    "pid": "p-179434402a",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-14601dbc06",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00421",
+   "A": {
+    "pid": "p-63b96f4b08",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-b024b1c1b2",
+    "opening": "For sql: on an email subject-line test for an insurance client, I did this work and the project reduced latency from 3s ",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00422",
+   "A": {
+    "pid": "p-ef824ac530",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-04ea5587fc",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00430",
+   "A": {
+    "pid": "p-8f139b6b12",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-da8e832105",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00431",
+   "A": {
+    "pid": "p-70f9678b0b",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-48988cc920",
+    "opening": "For bigquery: on an ad spend warehouse for a real estate client, I did this work and the project reached 88% accuracy on",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00433",
+   "A": {
+    "pid": "p-03e0cf4042",
+    "opening": "You want replacing a 30-tab spreadsheet that takes a day to update, and that is the kind of system I build and hand over",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-75be190513",
+    "opening": "For excel, power bi: on a payroll reconciliation macro for a legal client, I did this work and the project reached 95% a",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00436",
+   "A": {
+    "pid": "p-94269d806f",
+    "opening": "You want a working bi dashboard solution, and that is the kind of system I build and hand over.\n\nFor tableau: on a marke",
+    "client_score": 0.65,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-ad45c8bd8b",
+    "opening": "For tableau: on a marketing attribution report for an e-commerce client, I did this work and the project reached 97% acc",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00437",
+   "A": {
+    "pid": "p-ceac3d6fef",
+    "opening": "You want a finance dashboard the CFO can filter by region, and that is the kind of system I build and hand over.\n\nFor po",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-ac88f4909c",
+    "opening": "For power bi: on a budget consolidation workbook for a fintech client, I did this work and the project saved the client ",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00440",
+   "A": {
+    "pid": "p-b3e9968220",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-fb814757cb",
+    "opening": "For sql, statistics: on an email subject-line test for an insurance client, I did this work and the project reduced late",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00441",
+   "A": {
+    "pid": "p-eb64aaf80f",
+    "opening": "You want a finance dashboard the CFO can filter by region, and that is the kind of system I build and hand over.\n\nFor po",
+    "client_score": 0.65,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-606c0303a1",
+    "opening": "For power bi: on a payroll reconciliation macro for a legal client, I did this work and the project reached 95% accuracy",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00445",
+   "A": {
+    "pid": "p-e2585708a7",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-d6bc450728",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00447",
+   "A": {
+    "pid": "p-1bd2363d4b",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.65,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-1f69ba555b",
+    "opening": "For sql, sql, dbt: on an email subject-line test for an insurance client, I did this work and the project reduced latenc",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00450",
+   "A": {
+    "pid": "p-9abec8b227",
+    "opening": "You want a working data pipeline solution, and that is the kind of system I build and hand over.\n\nFor snowflake, one of ",
+    "client_score": 0.45,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-8c0d950631",
+    "opening": "For snowflake, one of my public repos shows how I structure this in real code.\n\nYour goal is a working data pipeline sol",
+    "client_score": 0.45,
+    "replied": false
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00455",
+   "A": {
+    "pid": "p-12849a562c",
+    "opening": "You want a working bi dashboard solution, and that is the kind of system I build and hand over.\n\nFor tableau: on a marke",
+    "client_score": 0.45,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-f43a96b810",
+    "opening": "For tableau: on a marketing attribution report for an e-commerce client, I did this work and the project reached 97% acc",
+    "client_score": 0.45,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00456",
+   "A": {
+    "pid": "p-25efe41d43",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-5143e42279",
+    "opening": "For bigquery: on an ad spend warehouse for a real estate client, I did this work and the project reached 88% accuracy on",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00461",
+   "A": {
+    "pid": "p-64a48d2f8a",
+    "opening": "You want a working excel automation solution, and that is the kind of system I build and hand over.\n\nFor excel: on a bud",
+    "client_score": 0.45,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-fd0d4d03f7",
+    "opening": "For excel: on a budget consolidation workbook for an education client, I did this work and the project reduced latency f",
+    "client_score": 0.45,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00463",
+   "A": {
+    "pid": "p-d99b9c283b",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-34240e1815",
+    "opening": "For snowflake, one of my public repos shows how I structure this in real code.\n\nYour goal is a production-ready solution",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00464",
+   "A": {
+    "pid": "p-7607578379",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-e909510729",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00465",
+   "A": {
+    "pid": "p-84cfd09663",
+    "opening": "You want a working experiment analysis solution, and that is the kind of system I build and hand over.\n\nFor pandas, one ",
+    "client_score": 0.25,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-d8049b331a",
+    "opening": "For pandas, one of my public repos shows how I structure this in real code.\n\nYour goal is a working experiment analysis ",
+    "client_score": 0.25,
+    "replied": false
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00466",
+   "A": {
+    "pid": "p-fc067adb45",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-b7311f885f",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00469",
+   "A": {
+    "pid": "p-35611d264d",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-2e669e9c33",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00475",
+   "A": {
+    "pid": "p-c6bfe1da57",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-cc5af1a389",
+    "opening": "For snowflake, one of my public repos shows how I structure this in real code.\n\nYour goal is a production-ready solution",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00476",
+   "A": {
+    "pid": "p-e4f349c658",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-8790a21d06",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00478",
+   "A": {
+    "pid": "p-86589e451e",
+    "opening": "You want a working data pipeline solution, and that is the kind of system I build and hand over.\n\nFor bigquery, one of m",
+    "client_score": 0.25,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-b1d15460f5",
+    "opening": "For bigquery, one of my public repos shows how I structure this in real code.\n\nYour goal is a working data pipeline solu",
+    "client_score": 0.25,
+    "replied": false
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00480",
+   "A": {
+    "pid": "p-de416145fa",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-7eb08e7551",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00481",
+   "A": {
+    "pid": "p-4bb844f24d",
+    "opening": "You want nightly loads from five sources that currently break, and that is the kind of system I build and hand over.\n\nFo",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-1b70bb4a3c",
+    "opening": "For airflow: on a shopify to Snowflake pipeline for a marketing client, I did this work and the project reduced latency ",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00482",
+   "A": {
+    "pid": "p-0e96f53e3f",
+    "opening": "You want a working bi dashboard solution, and that is the kind of system I build and hand over.\n\nFor excel: on a budget ",
+    "client_score": 0.65,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-df46bbaa70",
+    "opening": "For excel: on a budget consolidation workbook for an education client, I did this work and the project reduced latency f",
+    "client_score": 0.65,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00483",
+   "A": {
+    "pid": "p-813472ac0e",
+    "opening": "You want a production-ready solution your team can maintain, and that is the kind of system I build and hand over.\n\nFor ",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-32a31a5f41",
+    "opening": "For sql: on an email subject-line test for an insurance client, I did this work and the project reduced latency from 3s ",
+    "client_score": 0.85,
+    "replied": false
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00484",
+   "A": {
+    "pid": "p-3a4076468b",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   },
+   "B": {
+    "pid": "p-e40ba1215b",
+    "opening": "Pineapple",
+    "client_score": 0.85,
+    "replied": true
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "j-00485",
+   "A": {
+    "pid": "p-1e6b6d00e4",
+    "opening": "You want a working experiment analysis solution, and that is the kind of system I build and hand over.\n\nFor python: on a",
+    "client_score": 0.45,
+    "replied": false
+   },
+   "B": {
+    "pid": "p-e385c28b3a",
+    "opening": "For python: on an email subject-line test for an insurance client, I did this work and the project reduced latency from ",
+    "client_score": 0.45,
+    "replied": true
+   }
+  }
+ ]
+}

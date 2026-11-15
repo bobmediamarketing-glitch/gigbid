@@ -46,6 +46,7 @@ class BidState(TypedDict, total=False):
     persona: str
     user_id: str                       # memory namespace owner (defaults to "local")
     autonomy: str                      # suggest | auto_skip (never auto-send)
+    strategy: str                      # proposal strategy (X2 experiment): goal_first | proof_first
     # context gathered at intake (raw job text is untrusted; LLMs only see job_text_clean)
     job: dict
     job_text_clean: str

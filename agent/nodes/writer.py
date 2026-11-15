@@ -14,6 +14,7 @@ from agent.handoffs import Claim, ProposalDraft
 from agent.memory import outcomes as outcome_memory
 from agent.memory import style as style_memory
 from agent.nodes.base import Ctx, node
+from agent.settings import section
 
 
 def _first_sentence(text: str) -> str:
@@ -49,6 +50,19 @@ async def evidence_pack(state: dict, ctx: Ctx) -> dict[str, dict]:
 def _req_label(req: str, spec) -> str:
     r = next((x for x in spec.requirements if x.text == req), None)
     return ", ".join(r.skills) if r and r.skills else req[0].lower() + req[1:]
+
+
+STRATEGIES = {
+    "goal_first": "Open with the client's specific goal in your first sentence.",
+    "proof_first": "Open with your single strongest proven result for this job (with its evidence id), then tie it "
+                   "to the client's goal in the second sentence.",
+}
+
+
+def strategy(state: dict) -> str:
+    """Proposal strategy for the X2 A/B experiment: from the run input, else config (default goal_first)."""
+    s = state.get("strategy") or section("bid_graph").get("writer_strategy", "goal_first")
+    return s if s in STRATEGIES else "goal_first"
 
 
 def rule_draft(state: dict, pack: dict[str, dict], revision: int) -> ProposalDraft:
@@ -87,6 +101,10 @@ def rule_draft(state: dict, pack: dict[str, dict], revision: int) -> ProposalDra
     parts.append("In week one I would review your current setup, agree the scope and a success metric with you, "
                  "and ship a first working slice you can test.")
     parts.append("Would a short call this week to confirm the scope suit you?")
+    if strategy(state) == "proof_first" and claims and len(parts) > 3:
+        # X2 strategy B: lead with the strongest proven result, then tie it to the client's goal.
+        first_ev = parts[1]
+        parts = [f"{lead}{first_ev}", f"Your goal is {goal}, and I would bring the same approach to it."] + parts[2:]
     best = next((v for v in pack.values() if v["type"] == "case_study"), next(iter(pack.values()), None))
     answers = [screening_answer(q, best, spec) for q in spec.screening_questions]
     return ProposalDraft(job_id=spec.job_id, cover_letter="\n\n".join([parts[0], " ".join(parts[1:-2]), *parts[-2:]]),
@@ -128,6 +146,7 @@ async def writer(state: dict, ctx: Ctx, usages: list) -> dict:
     srules = await style_memory.rules(ctx.store, who)
     oentry = await outcome_memory.lessons(ctx.store, who, spec.category)
     notes += " " + style_memory.as_instructions(srules) + " " + outcome_memory.notes(oentry)
+    notes += " " + STRATEGIES[strategy(state)]
     rc = (f"Start the cover letter with the word '{spec.read_check_word}'." if spec.read_check_word
           else "Do not start with any special word.")
     tmpl, version = prompts.load("writer")
