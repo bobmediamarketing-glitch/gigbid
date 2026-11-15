@@ -29,12 +29,24 @@ def memory_saver():
 
 
 @contextlib.asynccontextmanager
+async def pg_pool(url: str):
+    """Connection pool with the settings LangGraph's Postgres saver/store require."""
+    from psycopg.rows import dict_row
+    from psycopg_pool import AsyncConnectionPool
+
+    async with AsyncConnectionPool(url, min_size=1, max_size=int(os.getenv("PG_POOL_MAX", "10")), open=False,
+                                   kwargs={"autocommit": True, "prepare_threshold": 0, "row_factory": dict_row}) as pool:
+        yield pool
+
+
+@contextlib.asynccontextmanager
 async def checkpointer(url: str | None = None):
     url = url or os.getenv("DATABASE_URL", "")
     if url.startswith("postgres"):
         from langgraph.checkpoint.postgres.aio import AsyncPostgresSaver
 
-        async with AsyncPostgresSaver.from_conn_string(url, serde=SERDE) as saver:
+        async with pg_pool(url) as pool:  # a pool, so concurrent runs do not queue on one connection
+            saver = AsyncPostgresSaver(pool, serde=SERDE)
             await saver.setup()
             yield saver
     else:

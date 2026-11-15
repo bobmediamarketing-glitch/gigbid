@@ -1,0 +1,107 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  GIGBID_OFFLINE: "1"          # CI never calls a paid model; rule paths run end to end
+  GIGBID_MODEL_CACHE: ${{ github.workspace }}/.cache/models
+
+jobs:
+  rules:
+    name: repo rules (secrets, gigsim, prompts, numbers)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: No secrets in the repo (fast scan)
+        run: python scripts/ci/check_secrets.py
+      - name: No secrets in history (gitleaks)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Nothing under gigsim/ changed
+        run: |
+          python scripts/ci/check_gigsim.py
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git diff --exit-code --stat origin/${{ github.base_ref }}...HEAD -- gigsim/ ':!gigsim/state'
+          fi
+      - name: Every prompt lives in agent/prompts/
+        run: python scripts/ci/check_prompts.py
+      - name: Every reported number traces to evals/results/
+        run: python scripts/ci/check_numbers.py
+
+  python:
+    name: lint, unit, contract, integration
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: {version: "0.13.8", enable-cache: true}
+      - name: Install (locked)
+        run: uv sync --frozen --extra dev --python 3.12
+      - uses: actions/cache@v4
+        with:
+          path: .cache/models
+          key: models-bge-small-minilm-v1
+      - name: Lint
+        run: uv run ruff check .
+      - name: Unit + contract + integration tests (GigSim in-process, Postgres via pgserver, Redis via fakeredis)
+        run: uv run pytest -q
+
+  web:
+    name: web typecheck, API-contract drift, Playwright
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: {version: "0.13.8", enable-cache: true}
+      - run: uv sync --frozen --python 3.12
+      - uses: actions/setup-node@v4
+        with: {node-version: "22", cache: npm, cache-dependency-path: apps/web/package-lock.json}
+      - run: npm ci
+        working-directory: apps/web
+      - name: Generated TS client matches the API (no hand edits, no drift)
+        run: |
+          uv run python scripts/export_openapi.py
+          npm --prefix apps/web run gen:api
+          git diff --exit-code -- apps/web/openapi.json apps/web/src/lib/api/
+      - run: npm run typecheck
+        working-directory: apps/web
+      - run: npm run build
+        working-directory: apps/web
+      - uses: actions/cache@v4
+        with:
+          path: .cache/models
+          key: models-bge-small-minilm-v1
+      - run: npx playwright install --with-deps chromium
+        working-directory: apps/web
+      - name: Playwright (onboarding, approve, reject, edit, degraded banner)
+        working-directory: apps/web
+        env:
+          PYTHON: ${{ github.workspace }}/.venv/bin/python
+        run: npx playwright test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-report
+          path: apps/web/playwright-report
+          retention-days: 14
+
+  compose:
+    name: docker compose builds
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compose file is valid
+        run: docker compose -f infra/docker-compose.yml config -q
+      - name: Build every image
+        run: docker compose -f infra/docker-compose.yml build

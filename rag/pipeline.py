@@ -16,7 +16,8 @@ from dataclasses import dataclass, field, replace
 from typing import Literal
 
 from rag.index.bm25 import BM25Index
-from rag.index.dense import DenseIndex, Embedder
+from rag.index.dense import Embedder
+from rag.index.qdrant_index import make_dense_index
 from rag.ingest.loaders import Corpus, EvidenceDoc
 from rag.query import decompose, expand
 from rag.retriever import Filters, Hit
@@ -107,7 +108,7 @@ class Pipeline:
         uids = [str(i) for i in range(len(units))]
         texts = [t for _, t in units]
         self.bm25 = BM25Index(uids, texts) if cfg.retrieval in ("bm25", "hybrid") else None
-        self.dense = DenseIndex(uids, texts, Embedder.get(cfg.embedding_model)) \
+        self.dense = make_dense_index(uids, texts, Embedder.get(cfg.embedding_model)) \
             if cfg.retrieval in ("dense", "hybrid") else None
         self.item_text = {d.id: f"{_header(d)}\n{' '.join(d.text.split())[:1200]}" for d in docs}
         self.last_timing: dict[str, float] = {}

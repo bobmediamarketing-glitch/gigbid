@@ -10,7 +10,7 @@ from agent.memory import style as style_memory
 from apps.api import db
 from apps.api.runtime import runtime, user_dir
 from apps.api.schemas import MemoryView, OutcomeEntry, Persona, PortfolioFile, Settings, SettingsIn, StyleRule
-from apps.api.security import User
+from apps.api.auth import User
 
 router = APIRouter(prefix="/api", tags=["account"])
 PERSONAS = db.ROOT / "data" / "personas"

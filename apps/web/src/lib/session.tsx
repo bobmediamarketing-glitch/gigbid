@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from "react";
-import { api, unwrap, type Me, type S } from "./api";
+import { api, unwrap, type Me, type S } from "./client";
 
 type Session = {
   me: Me | null;

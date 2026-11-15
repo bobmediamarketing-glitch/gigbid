@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { ApiError, STATUS_LABEL, statusTone } from "../lib/api";
+import { ApiError, STATUS_LABEL, statusTone } from "../lib/client";
 
 export function Badge({ tone = "", children, title }: { tone?: string; children: ReactNode; title?: string }) {
   return (

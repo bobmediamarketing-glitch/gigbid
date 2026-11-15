@@ -1,0 +1,6 @@
+{
+  "_comment": "CI eval gate (E2). The smoke run uses 10 dev jobs per persona (30 total), so the floors sit a few points below the full-run numbers in evals/results/ to absorb small-sample noise. Raise them when the full numbers move up.",
+  "retrieval": {"variant": "best", "min_recall@5": 0.85, "min_ndcg@10": 0.55},
+  "decisions": {"min_bid_f1": 0.9, "min_scam_recall": 0.9, "min_price_in_band": 0.7},
+  "outcomes": {"max_unsupported_claims_per_proposal_before": 0.5, "max_unsupported_claims_per_proposal_after": 0.0}
+}

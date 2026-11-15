@@ -1,0 +1,138 @@
+# GigBid, full stack:  docker compose -f infra/docker-compose.yml up --build   (or: make dev)
+# Open http://localhost:8080. Secrets come only from the environment / an .env file next to this compose file
+# (copy ../.env.example). Optional local models: docker compose --profile models up ollama-pull
+name: gigbid
+
+x-app-env: &app-env
+  GIGBID_ENV: ${GIGBID_ENV:-dev}
+  GIGBID_MODEL_PROFILE: ${GIGBID_MODEL_PROFILE:-open}
+  GROQ_API_KEY: ${GROQ_API_KEY:-}
+  ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+  OLLAMA_BASE_URL: http://ollama:11434
+  DATABASE_URL: postgresql://gigbid:${POSTGRES_PASSWORD:-gigbid-dev}@postgres:5432/gigbid
+  REDIS_URL: redis://redis:6379/0
+  QDRANT_URL: http://qdrant:6333
+  MCP_MODE: http
+  MCP_MARKETPLACE_URL: http://mcp-marketplace:8201/mcp
+  MCP_PORTFOLIO_URL: http://mcp-portfolio:8202/mcp
+  MCP_WORKSPACE_URL: http://mcp-workspace:8203/mcp
+  MCP_CALLER_SECRET: ${MCP_CALLER_SECRET:-dev-only-mcp-caller-secret-change-me}
+  JWT_SECRET: ${JWT_SECRET:-dev-only-jwt-secret-change-me}
+  TOKEN_ENCRYPTION_KEY: ${TOKEN_ENCRYPTION_KEY:-}
+  GIGBID_ALLOW_SIGNUP: ${GIGBID_ALLOW_SIGNUP:-1}
+  UPWORK_CLIENT_ID: ${UPWORK_CLIENT_ID:-}
+  UPWORK_CLIENT_SECRET: ${UPWORK_CLIENT_SECRET:-}
+  UPWORK_REDIRECT_URI: ${UPWORK_REDIRECT_URI:-}
+  LANGFUSE_HOST: ${LANGFUSE_HOST:-}
+  LANGFUSE_PUBLIC_KEY: ${LANGFUSE_PUBLIC_KEY:-}
+  LANGFUSE_SECRET_KEY: ${LANGFUSE_SECRET_KEY:-}
+  REVIEWER_EMAIL: ${REVIEWER_EMAIL:-}
+  REVIEWER_PASSWORD: ${REVIEWER_PASSWORD:-}
+
+x-mcp-env: &mcp-env
+  MCP_CALLER_SECRET: ${MCP_CALLER_SECRET:-dev-only-mcp-caller-secret-change-me}
+  MCP_ALLOWED_HOSTS: mcp-marketplace:*,mcp-portfolio:*,mcp-workspace:*
+  GIGSIM_BASE_URL: http://gigsim:8100
+  QDRANT_URL: http://qdrant:6333
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: gigbid
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-gigbid-dev}
+      POSTGRES_DB: gigbid
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gigbid"]
+      interval: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes: [redisdata:/data]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 20
+
+  qdrant:
+    image: qdrant/qdrant:v1.12.4
+    volumes: [qdrantdata:/qdrant/storage]
+
+  ollama:
+    image: ollama/ollama:0.5.4
+    volumes: [ollamadata:/root/.ollama]
+
+  ollama-pull:   # optional: fetch the open_local models once (several GB)
+    image: ollama/ollama:0.5.4
+    profiles: [models]
+    depends_on: [ollama]
+    environment: {OLLAMA_HOST: "http://ollama:11434"}
+    entrypoint: ["sh", "-c", "ollama pull qwen2.5:7b && ollama pull llama3.2:3b"]
+
+  gigsim:
+    build: {context: .., dockerfile: infra/docker/gigsim.Dockerfile}
+    environment:
+      GIGSIM_ERROR_RATE: ${GIGSIM_ERROR_RATE:-0.02}
+      GIGSIM_SPEED: ${GIGSIM_SPEED:-60}
+      GIGSIM_ADMIN_TOKEN: ${GIGSIM_ADMIN_TOKEN:-gigsim-admin}
+    volumes: [gigsimstate:/app/gigsim/state]
+    ports: ["8100:8100"]
+
+  mcp-marketplace:
+    build: {context: .., dockerfile: infra/docker/mcp-marketplace.Dockerfile}
+    environment:
+      <<: *mcp-env
+      MARKETPLACE_MODE: ${MARKETPLACE_MODE:-gigsim}
+    volumes: [audit:/app/data/audit]
+    depends_on: [gigsim]
+
+  mcp-portfolio:
+    build: {context: .., dockerfile: infra/docker/mcp-portfolio.Dockerfile}
+    environment: *mcp-env
+    volumes: [userdata:/app/data/users]
+    depends_on: [qdrant]
+
+  mcp-workspace:
+    build: {context: .., dockerfile: infra/docker/mcp-workspace.Dockerfile}
+    environment: *mcp-env
+    volumes: [workspace:/app/data/workspace, audit:/app/data/audit]
+
+  api:
+    build: {context: .., dockerfile: infra/docker/api.Dockerfile}
+    environment:
+      <<: *app-env
+      GIGBID_SERVE_WEB: "0"
+    volumes: [userdata:/app/data/users]
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+      mcp-marketplace: {condition: service_started}
+      mcp-portfolio: {condition: service_started}
+      mcp-workspace: {condition: service_started}
+
+  worker:
+    build: {context: .., dockerfile: infra/docker/worker.Dockerfile}
+    environment: *app-env
+    volumes: [userdata:/app/data/users]
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+      api: {condition: service_started}
+
+  web:
+    build: {context: .., dockerfile: infra/docker/web.Dockerfile}
+    ports: ["8080:80"]
+    depends_on: [api]
+
+volumes:
+  pgdata:
+  redisdata:
+  qdrantdata:
+  ollamadata:
+  gigsimstate:
+  userdata:
+  workspace:
+  audit:

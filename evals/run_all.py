@@ -12,7 +12,7 @@ import json
 import subprocess
 import sys
 
-from evals.runners.retrieval import RESULTS, ROOT
+from evals.runners.rag_eval import RESULTS, ROOT
 
 VARIANTS = ["v0_naive", "v1_decompose", "v2_hybrid", "v3_rerank", "v4_outcome", "v5_multivector", "v8_corrective",
             "best"]
@@ -29,7 +29,7 @@ def load(name: str) -> dict:
 
 
 def build_table() -> str:
-    ret, out, dec, abl = load("retrieval"), load("outcomes"), load("decisions"), load("ablation")
+    ret, out, abl = load("retrieval"), load("outcomes"), load("ablation")
     judge = json.loads((RESULTS / "judge_calibration.json").read_text()) if (RESULTS / "judge_calibration.json").exists() else {}
     model = out["meta"].get("model_profile", "?")
     L = ["# GigBid results", "",
@@ -51,7 +51,7 @@ def build_table() -> str:
     L += ["", "*Judge score: the Critic's rule rubric (0-1) until the LLM judge is calibrated. "
           + (f"Calibration so far: {json.dumps(judge)}." if judge else "Calibration pending: 30 human labels needed "
              "(evals/judge/labels.csv)."), ""]
-    for name in ("retrieval_table", "ablation_table", "decisions_table"):
+    for name in ("retrieval_table", "ablation_table", "decisions_table", "injection_table"):
         p = RESULTS / f"{name}.md"
         if p.exists():
             L += [p.read_text().strip(), ""]
@@ -75,10 +75,11 @@ def main() -> None:
     ap.add_argument("--table-only", action="store_true")
     a = ap.parse_args()
     if not a.table_only:
-        run("evals.runners.retrieval")
-        run("evals.runners.retrieval", "--ablation")
-        run("evals.runners.decisions", "--variants", "best", "v8_corrective", "keyword")
-        run("evals.runners.outcomes", "--variants", *VARIANTS, "keyword")
+        run("evals.runners.rag_eval")
+        run("evals.runners.ablation")
+        run("evals.runners.decision_eval", "--variants", "best", "v8_corrective", "keyword")
+        run("evals.runners.gigsim_outcomes", "--variants", *VARIANTS, "keyword")
+        run("evals.runners.injection_eval")
     md = build_table()
     (RESULTS / "RESULTS.md").write_text(md + "\n", encoding="utf-8")
     print(md)

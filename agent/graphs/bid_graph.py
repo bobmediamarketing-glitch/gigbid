@@ -18,12 +18,14 @@ from langgraph.types import Send
 from agent.nodes.analyst import analyst
 from agent.nodes.approval import approval, submit
 from agent.nodes.base import Ctx, halted
+from agent.nodes.compliance import compliance
+from agent.nodes.critic import critic
 from agent.nodes.decide import decide
 from agent.nodes.intake import intake
 from agent.nodes.matcher import matcher
 from agent.nodes.pricing import pricing
-from agent.nodes.review import compliance, critic, verify
 from agent.nodes.risk import risk
+from agent.nodes.verifier import verify
 from agent.nodes.writer import writer
 from agent.settings import section
 from agent.state import BidState

@@ -9,8 +9,17 @@ from __future__ import annotations
 import operator
 from typing import Annotated, Any, Literal, TypedDict
 
-from agent.handoffs import (Approval, BidDecision, ComplianceVerdict, Critique, FitReport, JobSpec, PriceQuote,
-                            ProposalDraft, RiskReport)
+from agent.handoffs import (
+    Approval,
+    BidDecision,
+    ComplianceVerdict,
+    Critique,
+    FitReport,
+    JobSpec,
+    PriceQuote,
+    ProposalDraft,
+    RiskReport,
+)
 
 Status = Literal["running", "skipped", "skip_suggested", "watching", "awaiting_approval", "submitted",
                  "pending_platform_confirmation", "rejected", "blocked", "queued", "needs_attention", "dead_letter"]

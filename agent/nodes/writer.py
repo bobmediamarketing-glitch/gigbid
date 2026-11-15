@@ -52,7 +52,7 @@ def _req_label(req: str, spec) -> str:
 
 
 def rule_draft(state: dict, pack: dict[str, dict], revision: int) -> ProposalDraft:
-    spec, profile = state["spec"], state["profile"]
+    spec = state["spec"]
     goal = re.sub(r"\bour\b", "your", spec.goal)
     parts, claims = [], []
     lead = f"{spec.read_check_word.capitalize()}. " if spec.read_check_word else ""

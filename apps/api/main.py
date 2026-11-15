@@ -12,7 +12,8 @@ from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from apps.api.routers import account, auth, runs, work
+from apps.api import streaming
+from apps.api.routers import account, analytics, approvals, auth, jobs, messages, proposals, runs
 from apps.api.runtime import runtime
 
 DIST = Path(__file__).resolve().parents[1] / "web" / "dist"
@@ -27,8 +28,16 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="GigBid API", version="0.1.0", lifespan=lifespan,
               description="Multi-agent freelancer copilot. Every write to a marketplace waits for human approval.")
-for r in (auth.router, account.router, runs.router, work.router):
+for r in (auth.router, account.router, jobs.router, runs.router, approvals.router, proposals.router, messages.router,
+          analytics.router, streaming.router):
     app.include_router(r)
+
+
+if os.getenv("GIGBID_EMBED_GIGSIM") == "1":
+    # Single-container deployments: serve the (unmodified) simulator from this process at /gigsim and point
+    # GIGSIM_BASE_URL at it. Compose runs GigSim as its own service instead.
+    from gigsim.app import app as gigsim_app
+    app.mount("/gigsim", gigsim_app)
 
 
 @app.get("/api/ping", tags=["health"])

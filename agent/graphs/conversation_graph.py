@@ -15,8 +15,16 @@ from langgraph.graph import END, START, StateGraph
 
 from agent.conversation import ConvState
 from agent.nodes.base import Ctx, halted
-from agent.nodes.liaison import (approve_reply, check_reply, classify, draft_reply, gather, load_thread, send_reply,
-                                 verify_reply)
+from agent.nodes.liaison import (
+    approve_reply,
+    check_reply,
+    classify,
+    draft_reply,
+    gather,
+    load_thread,
+    send_reply,
+    verify_reply,
+)
 
 
 def go(target: str):

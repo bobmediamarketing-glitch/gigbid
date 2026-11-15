@@ -4,18 +4,18 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-route
 import { Layout } from "./components/Layout";
 import { Loading } from "./components/ui";
 import { SessionProvider, useSession } from "./lib/session";
-import Analytics from "./pages/Analytics";
-import Approvals from "./pages/Approvals";
-import Inbox from "./pages/Inbox";
-import JobDetail from "./pages/JobDetail";
-import Login from "./pages/Login";
-import Messages from "./pages/Messages";
-import Onboarding from "./pages/Onboarding";
-import Pipeline from "./pages/Pipeline";
-import RunViewer from "./pages/RunViewer";
-import Runs from "./pages/Runs";
-import Settings from "./pages/Settings";
-import Studio from "./pages/Studio";
+import Analytics from "./app/Analytics";
+import Approvals from "./app/Approvals";
+import Inbox from "./app/Inbox";
+import JobDetail from "./app/JobDetail";
+import Login from "./app/Login";
+import Messages from "./app/Messages";
+import Onboarding from "./app/Onboarding";
+import Pipeline from "./app/Pipeline";
+import RunViewer from "./app/RunViewer";
+import Runs from "./app/Runs";
+import Settings from "./app/Settings";
+import Studio from "./app/Studio";
 import "./styles.css";
 
 function Guard({ children }: { children: ReactNode }) {

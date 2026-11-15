@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { NavLink } from "react-router-dom";
-import { api } from "../lib/api";
+import { api } from "../lib/client";
 import { useLive, useSession } from "../lib/session";
 
 const LINKS = [

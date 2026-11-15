@@ -12,7 +12,7 @@ from sqlalchemy.exc import IntegrityError
 
 from apps.api import db
 from apps.api.schemas import LoginIn, Me, RegisterIn, Settings
-from apps.api.security import COOKIE, SESSION_HOURS, User, hash_password, make_token, store_secret, verify_password
+from apps.api.auth import COOKIE, SESSION_HOURS, User, hash_password, make_token, store_secret, verify_password
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 UPWORK_AUTHORIZE = "https://www.upwork.com/ab/account-security/oauth2/authorize"

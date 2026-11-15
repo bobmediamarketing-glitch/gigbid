@@ -39,7 +39,7 @@ def cohen_kappa(a: list, b: list, weights: str | None = None, labels: list | Non
     """Cohen's kappa; weights='quadratic' for ordinal rubric scores (1-5)."""
     assert len(a) == len(b) and a
     labels = labels or sorted(set(a) | set(b))
-    idx = {l: i for i, l in enumerate(labels)}
+    idx = {lab: i for i, lab in enumerate(labels)}
     n, m = len(a), len(labels)
     ca, cb = Counter(a), Counter(b)
 

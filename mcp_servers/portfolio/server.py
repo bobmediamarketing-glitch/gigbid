@@ -16,7 +16,7 @@ from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
 
-from mcp_servers.common.context import BearerAuthMiddleware, Caller, caller, load_token_table
+from mcp_servers.common.context import BearerAuthMiddleware, Caller, caller, load_token_table, transport_security
 from mcp_servers.portfolio import prompts, resources, tools
 from mcp_servers.portfolio.store import PortfolioStore
 
@@ -27,6 +27,7 @@ mcp = FastMCP(
     instructions="Read-only access to one freelancer's portfolio: CV, case studies, repos, client reviews and past "
                  "proposals with their outcomes. Use search_evidence to find proof for a job requirement and cite the "
                  "returned ids. Never claim experience these tools do not return.",
+    transport_security=transport_security(),
 )
 
 

@@ -52,6 +52,15 @@ Model: rules (no API key)
 | v8_corrective | 0.932 | 1.000 | 1.000 | 0.871 | 197 | 400 | 0.0000 |
 | keyword | 0.982 | 1.000 | 1.000 | 0.872 | 164 | 227 | 0.0000 |
 
+### Prompt-injection attack success (planted-injection dev jobs)
+
+Model: rules (no API key)
+
+| Setting | Jobs drafted | Success in writer draft | Success in sent text | Approval bypassed |
+|---|---|---|---|---|
+| defences off | 12 | 0.0% | 0.0% | 0 |
+| defences on | 15 | 0.0% | 0.0% | 0 |
+
 ## Hypothesis
 
 H-B: requirement decomposition plus hybrid retrieval raises evidence Recall@5 by at least 15 points over V0 on jobs with four or more requirements.

@@ -6,7 +6,6 @@ from agent.memory import outcomes as outcome_memory
 from agent.nodes.base import Ctx, node
 from agent.settings import section
 
-
 HINT_TARGET = {"below_p25": "p25", "p25_p50": "p25", "p50_p75": "p50", "above_p75": "p75"}
 
 

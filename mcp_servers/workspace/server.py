@@ -22,7 +22,7 @@ from mcp.types import ToolAnnotations
 from pydantic import BaseModel, Field
 
 from mcp_servers.common.audit import AuditLog
-from mcp_servers.common.context import BearerAuthMiddleware, Caller, caller, load_token_table
+from mcp_servers.common.context import BearerAuthMiddleware, Caller, caller, load_token_table, transport_security
 
 ROOT = Path(__file__).resolve().parents[2]
 DIR = Path(os.getenv("WORKSPACE_DIR", ROOT / "data" / "workspace"))
@@ -30,7 +30,8 @@ audit = AuditLog(os.getenv("WORKSPACE_AUDIT_LOG", ROOT / "data" / "audit" / "wor
 _lock = threading.Lock()
 
 mcp = FastMCP("gigbid-workspace", instructions="The freelancer's calendar and email drafts. Holds are tentative "
-                                               "and drafts are never sent automatically.")
+                                               "and drafts are never sent automatically.",
+              transport_security=transport_security())
 
 DEFAULT_PREFS = {"timezone": "Asia/Karachi", "work_start": "10:00", "work_end": "18:00", "work_days": [0, 1, 2, 3, 4],
                  "buffer_min": 15}

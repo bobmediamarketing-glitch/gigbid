@@ -14,7 +14,7 @@ os.environ.setdefault("GIGSIM_STATE_FILE", str(Path(__file__).with_name(".gigsim
 import httpx  # noqa: E402
 from mcp.shared.memory import create_connected_server_and_client_session as connect  # noqa: E402
 
-from agent.tools import ToolBox  # noqa: E402
+from agent.mcp_client import ToolBox  # noqa: E402
 from gigsim.app import SIM, _buckets, app as gigsim_app  # noqa: E402
 from mcp_servers.marketplace import server as mk  # noqa: E402
 from mcp_servers.marketplace.adapters.gigsim import GigSimAdapter  # noqa: E402

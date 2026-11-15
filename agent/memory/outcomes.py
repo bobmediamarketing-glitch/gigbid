@@ -17,7 +17,7 @@ from __future__ import annotations
 from collections import defaultdict
 from datetime import datetime, timezone
 
-from agent.settings import section
+from agent.memory.promotion_rules import category_qualifies, lesson_qualifies
 
 REPLIED = {"reply", "replied", "interview", "hired"}
 # Marketplace event type -> outcome label (GigSim names; the Upwork adapter maps onto the same events).
@@ -68,7 +68,6 @@ async def ingest_events(store, user: str, events: list[dict]) -> int:
 
 
 async def promote(store, user: str) -> dict[str, dict]:
-    cfg = section("memory")["outcome"]
     rows = [i.value for i in await store.asearch(("proposal_features", user), limit=10_000)]
     by_cat: dict[str, list[dict]] = defaultdict(list)
     for r in rows:
@@ -76,7 +75,7 @@ async def promote(store, user: str) -> dict[str, dict]:
             by_cat[r["category"]].append(r)
     out = {}
     for cat, rs in by_cat.items():
-        if len(rs) < cfg["min_outcomes"]:
+        if not category_qualifies(len(rs)):
             continue
         base = sum(r["outcome"] in REPLIED for r in rs) / len(rs)
         lessons = []
@@ -85,9 +84,9 @@ async def promote(store, user: str) -> dict[str, dict]:
             for r in rs:
                 groups[str(r[feat])].append(r["outcome"] in REPLIED)
             for val, hits in groups.items():
-                if len(hits) >= cfg["min_support"]:
+                if hits:
                     rate = sum(hits) / len(hits)
-                    if rate - base >= cfg["min_lift"]:
+                    if lesson_qualifies(len(hits), rate, base):
                         lessons.append({"feature": feat, "value": val, "reply_rate": round(rate, 3), "n": len(hits)})
         entry = {"category": cat, "n": len(rs), "reply_rate": round(base, 3),
                  "won": sum(r["outcome"] == "hired" for r in rs),
@@ -109,13 +108,13 @@ def price_hint(entry: dict | None) -> str | None:
     """The price position that worked best in this category, if memory has learned one."""
     if not entry:
         return None
-    best = next((l for l in entry["lessons"] if l["feature"] == "price_position"), None)
+    best = next((x for x in entry["lessons"] if x["feature"] == "price_position"), None)
     return best["value"] if best else None
 
 
 def notes(entry: dict | None) -> str:
     if not entry or not entry["lessons"]:
         return ""
-    parts = [f"{l['feature'].replace('_', ' ')} = {l['value']} (reply rate {l['reply_rate']:.0%}, n={l['n']})"
-             for l in entry["lessons"][:3]]
+    parts = [f"{x['feature'].replace('_', ' ')} = {x['value']} (reply rate {x['reply_rate']:.0%}, n={x['n']})"
+             for x in entry["lessons"][:3]]
     return f"In {entry['category']}, what got replies before: " + "; ".join(parts) + "."

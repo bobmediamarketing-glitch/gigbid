@@ -16,7 +16,9 @@ async def memory_store(url: str | None = None):
     if url.startswith("postgres"):
         from langgraph.store.postgres.aio import AsyncPostgresStore
 
-        async with AsyncPostgresStore.from_conn_string(url) as store:
+        from agent.checkpoint import pg_pool
+        async with pg_pool(url) as pool:
+            store = AsyncPostgresStore(pool)
             await store.setup()
             yield store
     else:

@@ -1,0 +1,43 @@
+name: eval
+
+# Smoke eval on 30 dev jobs (10 per persona). Fails the PR if retrieval quality, bid-or-skip F1, scam recall
+# or price-in-band drop below evals/thresholds.json, or if unsupported claims per proposal rise above it.
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Run the full evaluation (make eval) instead of the smoke gate"
+        type: boolean
+        default: false
+
+env:
+  GIGBID_MODEL_CACHE: ${{ github.workspace }}/.cache/models
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: {version: "0.13.8", enable-cache: true}
+      - run: uv sync --frozen --extra dev --python 3.12
+      - uses: actions/cache@v4
+        with:
+          path: .cache/models
+          key: models-bge-small-minilm-v1
+      - name: Eval gate (rule mode unless a model key is configured as a repository secret)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GIGBID_OFFLINE: ${{ secrets.GROQ_API_KEY == '' && '1' || '0' }}
+          EVAL_GATE_DIR: ${{ github.workspace }}/eval-gate
+          CI_QUIET: "1"
+        run: |
+          if [ "${{ inputs.full }}" = "true" ]; then uv run python -m evals.run_all; else uv run python scripts/ci/eval_gate.py; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-gate
+          path: eval-gate
+          retention-days: 30

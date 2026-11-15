@@ -16,7 +16,7 @@ import difflib
 import re
 from datetime import datetime, timezone
 
-from agent.settings import section
+from agent.memory.promotion_rules import style_rule_qualifies
 
 SENT = re.compile(r"(?<=[.!?])\s+")
 WORD = re.compile(r"[a-z][a-z'-]+")
@@ -71,7 +71,6 @@ async def record_edit(store, user: str, before: str, after: str) -> list[dict]:
     Returns the rules promoted by this edit."""
     if store is None or before.strip() == after.strip():
         return []
-    need = section("memory")["style"]["promote_after"]
     promoted = []
     for o in observe(before, after):
         k = _key(o)
@@ -82,7 +81,7 @@ async def record_edit(store, user: str, before: str, after: str) -> list[dict]:
         v["last_seen"] = _now()
         v["examples"] = (v["examples"] + [o["example"]])[-3:]
         await store.aput(("style_obs", user), k, v)
-        if v["count"] >= need and not await store.aget(("style", user), k):
+        if style_rule_qualifies(v["count"]) and not await store.aget(("style", user), k):
             rule = v | {"promoted_at": _now()}
             await store.aput(("style", user), k, rule)
             promoted.append(rule)

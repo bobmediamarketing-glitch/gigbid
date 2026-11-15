@@ -17,10 +17,10 @@ import uuid
 from langgraph.types import Command
 
 from agent.checkpoint import checkpointer
-from agent.memory.store import memory_store
 from agent.graphs.bid_graph import compile
+from agent.mcp_client import connect
+from agent.memory.store import memory_store
 from agent.nodes.base import Ctx
-from agent.tools import connect
 
 
 async def main(a) -> None:

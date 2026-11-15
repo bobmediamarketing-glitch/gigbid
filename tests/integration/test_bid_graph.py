@@ -15,7 +15,7 @@ from agent.graphs.bid_graph import compile  # noqa: E402
 from agent.handoffs import ProposalDraft  # noqa: E402
 from agent.llm import LLM, Usage  # noqa: E402
 from agent.nodes.base import Ctx  # noqa: E402
-from agent.tools import ToolNotAllowed  # noqa: E402
+from agent.mcp_client import ToolNotAllowed  # noqa: E402
 from tests.integration.harness import SIM, toolbox  # noqa: E402
 
 pytestmark = pytest.mark.anyio

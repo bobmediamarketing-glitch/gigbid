@@ -445,7 +445,7 @@
   "/api/jobs": {
    "get": {
     "tags": [
-     "runs"
+     "jobs"
     ],
     "summary": "Jobs",
     "operationId": "jobs_api_jobs_get",
@@ -520,7 +520,7 @@
   "/api/jobs/{job_id}/analyze": {
    "post": {
     "tags": [
-     "runs"
+     "jobs"
     ],
     "summary": "Analyze",
     "operationId": "analyze_api_jobs__job_id__analyze_post",
@@ -562,7 +562,7 @@
   "/api/scout": {
    "post": {
     "tags": [
-     "runs"
+     "jobs"
     ],
     "summary": "Scout",
     "description": "Analyse the newest jobs not seen yet (the worker does this on each saved search's schedule).",
@@ -626,7 +626,7 @@
   "/api/jobs/{job_id}/skip": {
    "post": {
     "tags": [
-     "runs"
+     "jobs"
     ],
     "summary": "Confirm Skip",
     "description": "The user confirms a skip suggestion (or skips a job by hand).",
@@ -780,7 +780,7 @@
   "/api/runs/{thread_id}/resume": {
    "post": {
     "tags": [
-     "runs"
+     "approvals"
     ],
     "summary": "Resume",
     "operationId": "resume_api_runs__thread_id__resume_post",
@@ -829,10 +829,53 @@
     }
    }
   },
+  "/api/pipeline": {
+   "get": {
+    "tags": [
+     "proposals"
+    ],
+    "summary": "Pipeline",
+    "operationId": "pipeline_api_pipeline_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Pipeline"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/sync": {
+   "post": {
+    "tags": [
+     "proposals"
+    ],
+    "summary": "Sync Now",
+    "description": "Pull marketplace events now (the background loop does this every few seconds).",
+    "operationId": "sync_now_api_sync_post",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Accepted"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
   "/api/runs/{thread_id}/regenerate": {
    "post": {
     "tags": [
-     "runs"
+     "proposals"
     ],
     "summary": "Regenerate",
     "description": "Rewrite one paragraph of the pending draft with the writer model, grounded in the same evidence.\nThe result is returned for the editor; it is only used if the user saves it as an edit.",
@@ -882,73 +925,10 @@
     }
    }
   },
-  "/api/stream": {
-   "get": {
-    "tags": [
-     "runs"
-    ],
-    "summary": "Stream",
-    "description": "Server-Sent Events: node progress, run status, pipeline moves. One stream per browser tab.",
-    "operationId": "stream_api_stream_get",
-    "responses": {
-     "200": {
-      "description": "Successful Response",
-      "content": {
-       "application/json": {
-        "schema": {}
-       }
-      }
-     }
-    }
-   }
-  },
-  "/api/pipeline": {
-   "get": {
-    "tags": [
-     "work"
-    ],
-    "summary": "Pipeline",
-    "operationId": "pipeline_api_pipeline_get",
-    "responses": {
-     "200": {
-      "description": "Successful Response",
-      "content": {
-       "application/json": {
-        "schema": {
-         "$ref": "#/components/schemas/Pipeline"
-        }
-       }
-      }
-     }
-    }
-   }
-  },
-  "/api/sync": {
-   "post": {
-    "tags": [
-     "work"
-    ],
-    "summary": "Sync Now",
-    "description": "Pull marketplace events now (the background loop does this every few seconds).",
-    "operationId": "sync_now_api_sync_post",
-    "responses": {
-     "200": {
-      "description": "Successful Response",
-      "content": {
-       "application/json": {
-        "schema": {
-         "$ref": "#/components/schemas/Accepted"
-        }
-       }
-      }
-     }
-    }
-   }
-  },
   "/api/threads": {
    "get": {
     "tags": [
-     "work"
+     "messages"
     ],
     "summary": "Threads",
     "operationId": "threads_api_threads_get",
@@ -969,7 +949,7 @@
   "/api/threads/{thread_id}/draft": {
    "post": {
     "tags": [
-     "work"
+     "messages"
     ],
     "summary": "Draft Reply",
     "operationId": "draft_reply_api_threads__thread_id__draft_post",
@@ -1011,7 +991,7 @@
   "/api/analytics": {
    "get": {
     "tags": [
-     "work"
+     "analytics"
     ],
     "summary": "Analytics",
     "operationId": "analytics_api_analytics_get",
@@ -1032,7 +1012,7 @@
   "/api/health": {
    "get": {
     "tags": [
-     "work"
+     "analytics"
     ],
     "summary": "Health",
     "operationId": "health_api_health_get",
@@ -1044,6 +1024,26 @@
         "schema": {
          "$ref": "#/components/schemas/Health"
         }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/stream": {
+   "get": {
+    "tags": [
+     "streaming"
+    ],
+    "summary": "Stream",
+    "description": "Server-Sent Events: node progress, run status, pipeline moves. One stream per browser tab.",
+    "operationId": "stream_api_stream_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
        }
       }
      }

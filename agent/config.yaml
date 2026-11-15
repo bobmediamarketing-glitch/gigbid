@@ -46,6 +46,14 @@ models:
         critic: openai/gpt-oss-120b            # judge from a different family than the writer
         compliance: llama-3.1-8b-instant
         liaison: llama-3.3-70b-versatile
+    # Same open-weight family served locally by the compose `ollama` service (no API key, no data
+    # leaves the machine). Pull the models once: `docker compose exec ollama ollama pull qwen2.5:7b`.
+    open_local:
+      provider: ollama
+      default: qwen2.5:7b
+      nodes:
+        analyst: llama3.2:3b
+        compliance: llama3.2:3b
     paid:
       provider: anthropic
       default: claude-sonnet-5-5
@@ -153,3 +161,20 @@ memory:
 # Autonomy (Part C5). Per user; the API stores the user's choice. Nothing is ever auto-sent.
 autonomy:
   default: suggest          # suggest: low-fit skips wait for the user | auto_skip: low-fit skips close themselves
+
+# Background worker (E1). Scouting runs on each saved search's own schedule.
+worker:
+  default_interval_min: 60     # searches made from the user's categories when none are saved
+  min_interval_min: 15         # never scout one search more often than this (GigSim)
+  max_new_jobs_per_scout: 5
+  sync_every_s: 15             # marketplace events -> pipeline, memory and reply drafts
+
+# Declared service levels (E5). Measured values live in evals/results/ (decisions.json p95_ms per job
+# analysed; outcomes.json p95_s and usd_per_proposal per proposal) and are reported against these.
+slo:
+  job_analysed: {p95_s: 8.0, usd: 0.004}     # intake -> decide -> price, with model calls (open profile)
+  proposal: {p95_s: 30.0, usd: 0.02}         # through writer, verify, critic loop, compliance, to approval
+  optimisations:                              # what keeps us inside the budget, in order of impact
+    - skip early: risk and fit run before any drafting, so skipped jobs never reach the writer or critic
+    - small models for routing and risk: analyst and compliance on llama-3.1-8b-instant
+    - evidence caching: embeddings and reranker scores cached on disk by text hash

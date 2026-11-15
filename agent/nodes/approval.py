@@ -39,10 +39,11 @@ def _client_text(state: dict) -> str:
 async def approval(state: dict, ctx: Ctx, usages: list) -> dict:
     d, q, job = state["draft"], state["quote"], state["job"]
     text = _client_text(state)
+    # Dry run of the real write: the marketplace validates the payload and nothing is created.
     prev = await ctx.tools.call("approval", "marketplace.create_proposal_draft", {
         "job_id": job["id"], "cover_letter": text, "bid_amount": q.amount, "bid_type": q.bid_type,
         "screening_answers": d.screening_answers, "idempotency_key": f"{state['run_id']}-preview", "dry_run": True})
-    p = prev.get("preview") or {}
+    preview = prev.get("preview") or {}
     c = state.get("compliance")
     answer = interrupt({
         "type": "approve_proposal", "run_id": state["run_id"], "job_id": job["id"], "job_title": job["title"],
@@ -59,6 +60,7 @@ async def approval(state: dict, ctx: Ctx, usages: list) -> dict:
         "critique": state["critiques"][-1].model_dump() if state.get("critiques") else None,
         "compliance": c.model_dump() if c else None,
         "decision": state["decision"].model_dump(),
+        "dry_run_payload": preview.get("payload"),
     })
     a = Approval.model_validate(answer)
     if a.action == "reject":

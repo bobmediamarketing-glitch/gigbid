@@ -49,6 +49,8 @@ def enabled() -> bool:
     if os.getenv("GIGBID_OFFLINE") == "1":
         return False
     provider, _ = model_for("writer")
+    if provider == "ollama":  # no key: enabled when an Ollama endpoint is configured
+        return bool(os.getenv("OLLAMA_BASE_URL"))
     return bool(os.getenv(KEYS.get(provider, "")))
 
 
@@ -63,8 +65,14 @@ def _chat(node: str, model_override: str | None = None):
     if provider == "groq":
         from langchain_groq import ChatGroq
         return ChatGroq(**kw), model
+    if provider == "ollama":  # local open-weight models (docker compose `ollama` service)
+        from langchain_ollama import ChatOllama
+        return ChatOllama(model=model, temperature=kw["temperature"],
+                          base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")), model
     if provider == "anthropic":
-        from langchain_anthropic import ChatAnthropic  # optional dependency for the paid profile
+        from langchain_anthropic import (
+            ChatAnthropic,  # optional dependency for the paid profile
+        )
         return ChatAnthropic(**kw), model
     raise ValueError(f"unknown provider {provider}")
 
