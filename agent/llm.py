@@ -97,8 +97,17 @@ class LLM:
         for override in attempts:
             try:
                 chat, model = _chat(node, override)
-                runnable = chat.with_structured_output(schema, include_raw=True)
-                out = await runnable.ainvoke([("system", system), ("user", user)])
+                method = section("models").get("structured_method", "function_calling")
+                try:
+                    runnable = chat.with_structured_output(schema, include_raw=True, method=method)
+                    out = await runnable.ainvoke([("system", system), ("user", user)])
+                except Exception:
+                    if method == "function_calling":
+                        raise
+                    runnable = chat.with_structured_output(schema, include_raw=True, method="function_calling")
+                    out = await runnable.ainvoke([("system", system), ("user", user)])
+                if out.get("parsed") is None and out.get("parsing_error"):
+                    raise ValueError(f"unparsable output: {out['parsing_error']}")
                 break
             except Exception as e:  # network, quota, invalid JSON: try the fallback model, then the rule path
                 log.warning("llm %s (%s) failed: %s", node, model, e)

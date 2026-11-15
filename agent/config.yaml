@@ -37,15 +37,16 @@ models:
   profile: open
   profiles:
     open:
+      # Open-weight models on Groq (the catalogue as of 2026-11: the Llama 3.x models were retired).
       provider: groq
-      default: llama-3.3-70b-versatile
+      default: openai/gpt-oss-120b
       nodes:
-        analyst: llama-3.1-8b-instant          # extraction: small and fast is enough
-        risk: llama-3.3-70b-versatile
-        writer: llama-3.3-70b-versatile
-        critic: openai/gpt-oss-120b            # judge from a different family than the writer
-        compliance: llama-3.1-8b-instant
-        liaison: llama-3.3-70b-versatile
+        analyst: openai/gpt-oss-20b          # extraction: the small model is enough
+        risk: openai/gpt-oss-20b
+        writer: openai/gpt-oss-120b
+        critic: qwen/qwen3.8-27b             # judge from a different family than the writer
+        compliance: openai/gpt-oss-20b
+        liaison: openai/gpt-oss-120b
     # Same open-weight family served locally by the compose `ollama` service (no API key, no data
     # leaves the machine). Pull the models once: `docker compose exec ollama ollama pull qwen2.5:7b`.
     open_local:
@@ -61,15 +62,16 @@ models:
         analyst: claude-haiku-5-5
         compliance: claude-haiku-5-5
   # Cheap nodes fall back to this model when their own model errors or times out (C7).
-  fallback: {model: llama-3.1-8b-instant, nodes: [analyst, risk, compliance, critic]}
+  fallback: {model: openai/gpt-oss-20b, nodes: [analyst, risk, compliance, critic]}
+  structured_method: json_schema   # Groq structured outputs; falls back to tool calling if a model rejects it
   temperature: {default: 0.2, writer: 0.6}
   timeout_s: 45
   max_retries: 2
   # USD per 1M tokens (input, output) for cost reporting in evals/results.
-  prices:
-    llama-3.1-8b-instant: [0.05, 0.08]
-    llama-3.3-70b-versatile: [0.59, 0.79]
+  prices:   # list prices, USD per 1M tokens (approximate; update from the provider's pricing page)
     openai/gpt-oss-120b: [0.15, 0.75]
+    openai/gpt-oss-20b: [0.10, 0.50]
+    qwen/qwen3.8-27b: [0.29, 0.59]
     claude-haiku-5-5: [1.0, 5.0]
     claude-sonnet-5-5: [3.0, 15.0]
 
@@ -177,5 +179,5 @@ slo:
   proposal: {p95_s: 30.0, usd: 0.02}         # through writer, verify, critic loop, compliance, to approval
   optimisations:                              # what keeps us inside the budget, in order of impact
     - skip early: risk and fit run before any drafting, so skipped jobs never reach the writer or critic
-    - small models for routing and risk: analyst and compliance on llama-3.1-8b-instant
+    - small models for routing and risk: analyst, risk and compliance on gpt-oss-20b
     - evidence caching: embeddings and reranker scores cached on disk by text hash
