@@ -118,7 +118,7 @@ def _sentences(t: str) -> list[str]:
 
 
 def check_policy(text: str, answers: list[str], evidence: dict[str, str], injection_spans: list[str],
-                 platform: dict) -> tuple[ComplianceVerdict, list[str]]:
+                 platform: dict, length_check: bool = True) -> tuple[ComplianceVerdict, list[str]]:
     rules = policy_rules()
     allowed, vio = True, []
     pool = " ".join(evidence.values()).lower()
@@ -150,7 +150,7 @@ def check_policy(text: str, answers: list[str], evidence: dict[str, str], inject
                 vio.append({"rule": "injection_echo", "action": "block", "match": phrase})
     props = (platform.get("raw") or {}).get("proposals", {})
     lo, hi = props.get("min_cover_letter_chars", 150), props.get("max_cover_letter_chars", 5000)
-    if not lo <= len(text) <= hi:
+    if length_check and not lo <= len(text) <= hi:
         allowed = False
         vio.append({"rule": "platform_length", "action": "block", "match": f"{len(text)} chars (allowed {lo}-{hi})"})
     version = f"rules v{rules.get('version')} / platform v{platform.get('version', '?')}"

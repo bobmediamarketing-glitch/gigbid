@@ -1,18 +1,19 @@
 """The bid graph (Part C), hand-written with LangGraph's StateGraph.
 
-    START -> intake -> (analyst | risk | matcher)  run in parallel, one state key each
-          -> decide --skip--> END
+    START -> intake -> Send(analyst | risk | matcher)  run in parallel, one state key each
+          -> decide --skip / watch--> END
           -> pricing -> writer -> verify -> critic --(fail, < max loops)--> writer
                                                \\--> compliance --(blocked once)--> writer
                                                           \\--> approval [interrupt] --edit--> compliance
                                                                     \\--approve--> submit -> END
 
-Any node can halt the run (skipped, queued in degraded mode, budget_exceeded, blocked,
-rejected, failed); every router sends a halted run to END.
+Any node can halt the run (skipped / skip_suggested / watching, queued in degraded mode,
+needs_attention on a budget, blocked, rejected, dead_letter); every router sends a halted run to END.
 """
 from __future__ import annotations
 
 from langgraph.graph import END, START, StateGraph
+from langgraph.types import Send
 
 from agent.nodes.analyst import analyst
 from agent.nodes.approval import approval, submit
@@ -31,7 +32,8 @@ PARALLEL = ["analyst", "risk", "matcher"]
 
 
 def after_intake(s: dict):
-    return END if halted(s) else PARALLEL
+    """Fan out with Send: each analysis agent gets its own copy of the state and writes one key."""
+    return END if halted(s) else [Send(n, s) for n in PARALLEL]
 
 
 def after_decide(s: dict) -> str:
@@ -90,5 +92,6 @@ def build() -> StateGraph:
     return g
 
 
-def compile(checkpointer=None):
-    return build().compile(checkpointer=checkpointer)
+def compile(checkpointer=None, store=None, **kw):
+    """checkpointer = thread state (durability); store = long-term memory (style + outcome)."""
+    return build().compile(checkpointer=checkpointer, store=store, **kw)

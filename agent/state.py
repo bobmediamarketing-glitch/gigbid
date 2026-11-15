@@ -12,8 +12,8 @@ from typing import Annotated, Any, Literal, TypedDict
 from agent.handoffs import (Approval, BidDecision, ComplianceVerdict, Critique, FitReport, JobSpec, PriceQuote,
                             ProposalDraft, RiskReport)
 
-Status = Literal["running", "skipped", "awaiting_approval", "submitted", "pending_platform_confirmation",
-                 "rejected", "blocked", "queued", "budget_exceeded", "failed"]
+Status = Literal["running", "skipped", "skip_suggested", "watching", "awaiting_approval", "submitted",
+                 "pending_platform_confirmation", "rejected", "blocked", "queued", "needs_attention", "dead_letter"]
 
 
 def last_wins(_old: Any, new: Any) -> Any:
@@ -35,6 +35,8 @@ class BidState(TypedDict, total=False):
     run_id: str
     job_id: str
     persona: str
+    user_id: str                       # memory namespace owner (defaults to "local")
+    autonomy: str                      # suggest | auto_skip (never auto-send)
     # context gathered at intake (raw job text is untrusted; LLMs only see job_text_clean)
     job: dict
     job_text_clean: str

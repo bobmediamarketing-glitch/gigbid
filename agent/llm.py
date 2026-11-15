@@ -52,8 +52,10 @@ def enabled() -> bool:
     return bool(os.getenv(KEYS.get(provider, "")))
 
 
-def _chat(node: str):
+def _chat(node: str, model_override: str | None = None):
     provider, model = model_for(node)
+    if model_override:
+        provider, model = "groq", model_override  # the fallback is an open model on Groq
     m = section("models")
     temp = m.get("temperature", {})
     kw = dict(model=model, temperature=temp.get(node, temp.get("default", 0.2)),
@@ -81,13 +83,20 @@ class LLM:
         if not self.available:
             return None, Usage()
         t0 = time.perf_counter()
-        try:
-            chat, model = _chat(node)
-            runnable = chat.with_structured_output(schema, include_raw=True)
-            out = await runnable.ainvoke([("system", system), ("user", user)])
-        except Exception as e:  # network, quota, invalid JSON: fall back, record why
-            log.warning("llm %s failed: %s", node, e)
-            return None, Usage(model=model_for(node)[1], error=str(e)[:200], ms=(time.perf_counter() - t0) * 1000)
+        fb = section("models").get("fallback", {})
+        attempts = [None] + ([fb["model"]] if node in fb.get("nodes", []) and fb.get("model") else [])
+        out, err, model = None, None, model_for(node)[1]
+        for override in attempts:
+            try:
+                chat, model = _chat(node, override)
+                runnable = chat.with_structured_output(schema, include_raw=True)
+                out = await runnable.ainvoke([("system", system), ("user", user)])
+                break
+            except Exception as e:  # network, quota, invalid JSON: try the fallback model, then the rule path
+                log.warning("llm %s (%s) failed: %s", node, model, e)
+                err = f"{model}: {str(e)[:180]}"
+        if out is None:
+            return None, Usage(model=model, error=err, ms=(time.perf_counter() - t0) * 1000)
         raw, parsed = out.get("raw"), out.get("parsed")
         um = getattr(raw, "usage_metadata", None) or {}
         tin, tout = um.get("input_tokens", 0), um.get("output_tokens", 0)

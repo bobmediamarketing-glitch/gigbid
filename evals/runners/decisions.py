@@ -19,8 +19,8 @@ import uuid
 
 os.environ.setdefault("GIGBID_OFFLINE", os.getenv("GIGBID_OFFLINE", "1"))
 
-from langgraph.checkpoint.memory import InMemorySaver  # noqa: E402
 
+from agent.checkpoint import memory_saver  # noqa: E402
 from agent.graphs.bid_graph import build  # noqa: E402
 from agent.llm import LLM, profile_name  # noqa: E402
 from agent.nodes.base import Ctx  # noqa: E402
@@ -39,7 +39,7 @@ async def run_persona(persona: str, limit: int | None, llm: LLM) -> list[dict]:
     from tests.integration.harness import SIM, lift_rate_limits, toolbox
     SIM.reset()
     lift_rate_limits()
-    g = build().compile(checkpointer=InMemorySaver(), interrupt_before=["writer"])
+    g = build().compile(checkpointer=memory_saver(), interrupt_before=["writer"])
     max_scam = section("bid_graph")["decision"]["max_scam_score"]
     rows = []
     async with toolbox(persona) as tb:

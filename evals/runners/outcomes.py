@@ -20,9 +20,9 @@ import uuid
 
 os.environ.setdefault("GIGBID_OFFLINE", "1")
 
-from langgraph.checkpoint.memory import InMemorySaver  # noqa: E402
 from langgraph.types import Command  # noqa: E402
 
+from agent.checkpoint import memory_saver  # noqa: E402
 from agent.graphs.bid_graph import compile  # noqa: E402
 from agent.llm import LLM, profile_name  # noqa: E402
 from agent.nodes.base import Ctx  # noqa: E402
@@ -39,7 +39,7 @@ async def run_persona(persona: str, n: int, llm: LLM) -> list[dict]:
     SIM.reset()
     lift_rate_limits()
     SIM.policy["connects"]["weekly_allowance"] = 100_000  # eval: never run out mid-set
-    g = compile(InMemorySaver())
+    g = compile(memory_saver())
     jobs = [x for x in load_dev(persona) if x["bid"]][:n]
     rows = []
     async with toolbox(persona) as tb:

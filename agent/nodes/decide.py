@@ -28,6 +28,7 @@ def decide_rules(state: dict) -> BidDecision:
     if state.get("connects_balance", 0) - cost < cfg["min_connects_reserve"]:
         bid = False
         reasons.append(f"not enough Connects ({state.get('connects_balance')} left, job costs {cost})")
+    action = "bid" if bid else "skip"
     if bid:
         reasons.append(f"covers {fit.coverage:.0%} of requirements, scam score {risk.scam_score:.2f}")
         if risk.injection_detected:
@@ -35,10 +36,30 @@ def decide_rules(state: dict) -> BidDecision:
         conf = 0.5 + 0.5 * fit.coverage * (1 - risk.scam_score)
     else:
         conf = min(0.95, 0.6 + 0.1 * len(reasons))
-    return BidDecision(job_id=job["id"], bid=bid, confidence=round(conf, 3), reasons=reasons)
+        # Close calls are watched, not skipped: the only blockers are a coverage or scam score just past
+        # the line, nothing hard (off-domain, below floor, out of Connects, a clear scam).
+        hard = (not fit.in_domain or spec.budget_max < floor or risk.scam_score > cfg["watch_max_scam_score"]
+                or state.get("connects_balance", 0) - cost < cfg["min_connects_reserve"])
+        if not hard and fit.coverage >= cfg["watch_min_coverage"]:
+            action = "watch"
+            reasons.append("close call: watching instead of skipping")
+    return BidDecision(job_id=job["id"], action=action, bid=bid, confidence=round(conf, 3), reasons=reasons)
+
+
+def skip_status(d: BidDecision, risk, autonomy: str) -> str:
+    """Scams always close. Other skips close only if the user allowed auto-skip; otherwise they wait
+    in the inbox as a suggestion the user confirms. Nothing in GigBid is ever auto-sent."""
+    if d.action == "watch":
+        return "watching"
+    if risk.scam_score > section("bid_graph")["decision"]["max_scam_score"]:
+        return "skipped"
+    return "skipped" if autonomy == "auto_skip" else "skip_suggested"
 
 
 @node("decide")
 async def decide(state: dict, ctx: Ctx, usages: list) -> dict:
     d = decide_rules(state)
-    return {"decision": d, **({} if d.bid else {"status": "skipped"})}
+    if d.bid:
+        return {"decision": d}
+    autonomy = state.get("autonomy") or section("autonomy").get("default", "suggest")
+    return {"decision": d, "status": skip_status(d, state["risk"], autonomy)}

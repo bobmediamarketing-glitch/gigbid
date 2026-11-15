@@ -69,6 +69,7 @@ class FitReport(BaseModel):
 
 class BidDecision(BaseModel):
     job_id: str
+    action: Literal["bid", "watch", "skip"] = "bid"
     bid: bool
     confidence: float = Field(ge=0, le=1)
     reasons: list[str]

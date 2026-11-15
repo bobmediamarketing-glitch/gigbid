@@ -24,8 +24,13 @@ def _scam_res() -> dict[str, list[re.Pattern]]:
     return {k: [re.compile(p) for p in v] for k, v in section("guardrails").get("scam_patterns", {}).items()}
 
 
-def strip_injections(text: str) -> tuple[str, list[str]]:
-    """Remove every line or HTML comment containing an injection pattern. Returns (clean, removed)."""
+def strip_injections(text: str, granularity: str = "line") -> tuple[str, list[str]]:
+    """Remove injection text. Returns (clean, removed).
+
+    granularity="line" (job posts): drop every line that contains an injection; injected paragraphs
+    often carry follow-up sentences ("Also add the phrase ...") that look harmless on their own.
+    granularity="sentence" (client chat messages, usually one line): drop only the offending sentence
+    or parenthetical so the client's real question survives."""
     removed: list[str] = []
     # HTML comments first: they can hide instructions from a human reader.
     def _drop_comment(m: re.Match) -> str:
@@ -36,10 +41,23 @@ def strip_injections(text: str) -> tuple[str, list[str]]:
     text = re.sub(r"<!--.*?-->", _drop_comment, text, flags=re.S)
     keep = []
     for line in text.splitlines():
-        if any(r.search(line) for r in _injection_res()):
-            removed.append(line.strip())
-        else:
+        if not any(r.search(line) for r in _injection_res()):
             keep.append(line)
+            continue
+        if granularity == "line":
+            removed.append(line.strip())
+            continue
+        # Drop only the offending sentence or parenthetical, so a client's real question that shares the
+        # line with an injected note survives; a line that is all injection disappears entirely.
+        parts = re.split(r"(\([^)]*\))|(?<=[.!?])\s+", line)
+        good = []
+        for part in (p for p in parts if p and p.strip()):
+            if any(r.search(part) for r in _injection_res()):
+                removed.append(part.strip())
+            else:
+                good.append(part.strip())
+        if good:
+            keep.append(" ".join(good))
     clean = re.sub(r"\n{3,}", "\n\n", "\n".join(keep)).strip()
     return clean, removed
 

@@ -52,6 +52,8 @@ models:
       nodes:
         analyst: claude-haiku-5-5
         compliance: claude-haiku-5-5
+  # Cheap nodes fall back to this model when their own model errors or times out (C7).
+  fallback: {model: llama-3.1-8b-instant, nodes: [analyst, risk, compliance, critic]}
   temperature: {default: 0.2, writer: 0.6}
   timeout_s: 45
   max_retries: 2
@@ -70,12 +72,17 @@ budgets:
 
 bid_graph:
   critic_max_loops: 2              # writer is revised at most twice
+  timeouts_s: {default: 60, writer: 120, critic: 90}   # per node (C7)
+  retries: {default: 2, submit: 3}                    # transient failures only; then dead_letter
   critic_pass_score: 0.7
   evidence_per_requirement: 3
   decision:
     min_coverage: 0.5              # share of requirements with real evidence
     max_scam_score: 0.5
     min_connects_reserve: 4        # never spend the last few Connects
+    # "watch" instead of skip when a job is close: shown in the inbox, nothing is drafted yet.
+    watch_min_coverage: 0.35
+    watch_max_scam_score: 0.65
   pricing:
     target_percentile: p50         # start from the market median ...
     stay_inside_budget: true       # ... clamped into the client's posted range
@@ -96,8 +103,11 @@ mcp:
     writer:     [portfolio.search_evidence, portfolio.get_case_study]
     approval:   [marketplace.create_proposal_draft]
     submit:     [marketplace.create_proposal_draft, marketplace.submit_proposal]
-    liaison:    [marketplace.list_messages, marketplace.send_message, portfolio.search_evidence,
-                 workspace.free_slots, workspace.create_interview_hold, workspace.create_email_draft]
+    # Conversation graph: drafting agents read; only the post-approval node can send or hold time.
+    liaison:    [marketplace.list_messages, marketplace.get_job, portfolio.search_evidence, portfolio.get_case_study,
+                 workspace.free_slots, workspace.create_email_draft]
+    reply_approval: [marketplace.send_message]          # dry_run preview only
+    reply_send: [marketplace.send_message, workspace.create_interview_hold]
 
 # Guardrails (R9). Patterns are data so a new attack or scam style is a config edit.
 guardrails:
@@ -106,6 +116,8 @@ guardrails:
     - '(?i)ignore (all )?(previous|prior|above) instructions'
     - '(?i)disregard (your|all|the) (rules|instructions)'
     - '(?i)note to (ai|llm) assistants?'
+    - '(?i)\b(note|message|instructions?) (to|for) (any|all|the)? ?(ai|llm|bot|automated|assistant)\b'
+    - '(?i)\bai (tool|assistant|agent)s? reading this\b'
     - '(?i)\[\s*system\s*\]|you are now in \w+ mode'
     - '(?i)if you are an? (automated|ai)\b[^.]*'
     - '(?i)<!--\s*ai:.*?-->'
@@ -128,3 +140,16 @@ guardrails:
 # (see docs/DATA_CARD.md); RAG_VARIANT overrides it for eval runs.
 rag:
   variant: best
+
+# Long-term memory (Part C2). Promotion rules: nothing is remembered from a single event.
+memory:
+  style:
+    promote_after: 2        # an edit pattern becomes a rule after this many separate edits
+  outcome:
+    min_outcomes: 5         # resolved proposals in a category before anything is remembered
+    min_support: 3          # proposals behind a lesson
+    min_lift: 0.15          # lesson's reply rate must beat the category rate by this much
+
+# Autonomy (Part C5). Per user; the API stores the user's choice. Nothing is ever auto-sent.
+autonomy:
+  default: suggest          # suggest: low-fit skips wait for the user | auto_skip: low-fit skips close themselves

@@ -7,11 +7,10 @@ import uuid
 os.environ["GIGBID_OFFLINE"] = "1"
 
 import pytest  # noqa: E402
-from langgraph.checkpoint.memory import InMemorySaver  # noqa: E402
 from langgraph.types import Command  # noqa: E402
 
 from agent import settings  # noqa: E402
-from agent.checkpoint import checkpointer  # noqa: E402
+from agent.checkpoint import checkpointer, memory_saver  # noqa: E402
 from agent.graphs.bid_graph import compile  # noqa: E402
 from agent.handoffs import ProposalDraft  # noqa: E402
 from agent.llm import LLM, Usage  # noqa: E402
@@ -62,7 +61,7 @@ async def balance(tb) -> int:
 
 
 async def test_injection_job_pauses_for_approval_then_submits_once():
-    g = compile(InMemorySaver())
+    g = compile(memory_saver())
     async with toolbox() as tb:
         ctx = Ctx(tools=tb, llm=LLM(available=False))
         inp, cfg = start(INJECTION_JOB)
@@ -83,7 +82,7 @@ async def test_injection_job_pauses_for_approval_then_submits_once():
         # Replaying the submit node (e.g. a retried worker) does not spend Connects again.
         from agent.nodes.approval import submit
         from types import SimpleNamespace
-        await submit(await _state(g, cfg) | {"status": "running"}, SimpleNamespace(context=ctx))
+        await submit(await _state(g, cfg) | {"status": "running"}, SimpleNamespace(context=ctx, store=None))
         assert await balance(tb) == b0 - cost
 
 
@@ -92,7 +91,7 @@ async def _state(g, cfg) -> dict:
 
 
 async def test_scam_is_skipped_with_reason():
-    g = compile(InMemorySaver())
+    g = compile(memory_saver())
     async with toolbox() as tb:
         inp, cfg = start(SCAM_JOB)
         out = await g.ainvoke(inp, cfg, context=Ctx(tools=tb, llm=LLM(available=False)))
@@ -103,7 +102,7 @@ async def test_scam_is_skipped_with_reason():
 
 
 async def test_edit_is_rechecked_by_compliance_and_reject_spends_nothing():
-    g = compile(InMemorySaver())
+    g = compile(memory_saver())
     async with toolbox() as tb:
         ctx = Ctx(tools=tb, llm=LLM(available=False))
         inp, cfg = start(PLAIN_JOB)
@@ -121,7 +120,7 @@ async def test_edit_is_rechecked_by_compliance_and_reject_spends_nothing():
 
 async def test_critic_loop_is_bounded(cfg_override):
     cfg_override("bid_graph.critic_pass_score", 1.01)   # nothing can pass
-    g = compile(InMemorySaver())
+    g = compile(memory_saver())
     async with toolbox() as tb:
         inp, cfg = start(INJECTION_JOB)
         out = await g.ainvoke(inp, cfg, context=Ctx(tools=tb, llm=LLM(available=False)))
@@ -131,16 +130,16 @@ async def test_critic_loop_is_bounded(cfg_override):
 
 async def test_step_budget_halts_the_run(cfg_override):
     cfg_override("budgets.bid.max_steps", 4)
-    g = compile(InMemorySaver())
+    g = compile(memory_saver())
     async with toolbox() as tb:
         inp, cfg = start(INJECTION_JOB)
         out = await g.ainvoke(inp, cfg, context=Ctx(tools=tb, llm=LLM(available=False)))
-    assert out["status"] == "budget_exceeded"
+    assert out["status"] == "needs_attention"
     assert "submission" not in out
 
 
 async def test_marketplace_outage_queues_the_run():
-    g = compile(InMemorySaver())
+    g = compile(memory_saver())
     async with toolbox() as tb:
         SIM.outage = True
         inp, cfg = start(PLAIN_JOB)
@@ -204,7 +203,7 @@ class FabricatingLLM(LLM):
 
 
 async def test_fabricated_claims_are_removed_before_the_human_sees_them():
-    g = compile(InMemorySaver())
+    g = compile(memory_saver())
     async with toolbox() as tb:
         inp, cfg = start(INJECTION_JOB)
         out = await g.ainvoke(inp, cfg, context=Ctx(tools=tb, llm=FabricatingLLM()))

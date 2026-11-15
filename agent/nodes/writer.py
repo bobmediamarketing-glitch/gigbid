@@ -11,6 +11,8 @@ import re
 from agent import prompts
 from agent.guards import fence
 from agent.handoffs import Claim, ProposalDraft
+from agent.memory import outcomes as outcome_memory
+from agent.memory import style as style_memory
 from agent.nodes.base import Ctx, node
 
 
@@ -121,6 +123,11 @@ async def writer(state: dict, ctx: Ctx, usages: list) -> dict:
         notes += "Revise the previous draft. Fix: " + "; ".join(c.issues + c.suggestions)
     if state.get("compliance") and not state["compliance"].allowed:
         notes += " Remove these policy violations: " + "; ".join(v["rule"] for v in state["compliance"].violations)
+    # Long-term memory: learned style rules and what got replies in this category.
+    who = state.get("user_id") or "local"
+    srules = await style_memory.rules(ctx.store, who)
+    oentry = await outcome_memory.lessons(ctx.store, who, spec.category)
+    notes += " " + style_memory.as_instructions(srules) + " " + outcome_memory.notes(oentry)
     rc = (f"Start the cover letter with the word '{spec.read_check_word}'." if spec.read_check_word
           else "Do not start with any special word.")
     tmpl, version = prompts.load("writer")
@@ -139,7 +146,13 @@ async def writer(state: dict, ctx: Ctx, usages: list) -> dict:
     else:
         draft = draft.model_copy(update={"job_id": spec.job_id, "revision": revision, "model": u.model,
                                          "prompt_version": version})
+    if srules:  # learned rules hold on both paths, not just when the model follows instructions
+        draft = draft.model_copy(update={"cover_letter": style_memory.apply(draft.cover_letter, srules,
+                                                                            spec.read_check_word)})
     out = {"draft": draft, "evidence": evidence}
+    if srules or oentry:
+        out["trace"] = [{"node": "writer", "ms": 0.0,
+                         "note": f"memory: {len(srules)} style rule(s), outcome lessons: {bool(oentry)}"}]
     if revision:
         out["revisions"] = 1
     return out

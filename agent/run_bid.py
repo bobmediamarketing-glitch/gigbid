@@ -17,6 +17,7 @@ import uuid
 from langgraph.types import Command
 
 from agent.checkpoint import checkpointer
+from agent.memory.store import memory_store
 from agent.graphs.bid_graph import compile
 from agent.nodes.base import Ctx
 from agent.tools import connect
@@ -27,8 +28,8 @@ async def main(a) -> None:
     os.environ.setdefault("GIGSIM_TOKEN", f"gigsim-{a.persona}-token")
     thread = a.thread or f"{a.persona}-{a.job}"
     cfg = {"configurable": {"thread_id": thread}}
-    async with checkpointer() as saver, connect() as tools:
-        g = compile(saver)
+    async with checkpointer() as saver, memory_store() as store, connect() as tools:
+        g = compile(saver, store=store)
         ctx = Ctx(tools=tools)
         if a.resume:
             out = await g.ainvoke(Command(resume={"action": a.resume}), cfg, context=ctx)
