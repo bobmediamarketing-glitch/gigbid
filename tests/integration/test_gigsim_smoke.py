@@ -6,7 +6,7 @@ os.environ["GIGSIM_STATE_FILE"] = os.path.join(os.path.dirname(__file__), ".gigs
 
 from fastapi.testclient import TestClient  # noqa: E402
 
-from gigsim.app import SIM, app  # noqa: E402
+from gigsim.app import SIM, _buckets, app  # noqa: E402
 
 H = {"Authorization": "Bearer gigsim-ai_ml-token"}
 A = {"X-Admin-Token": "gigsim-admin"}
@@ -14,6 +14,7 @@ A = {"X-Admin-Token": "gigsim-admin"}
 
 def setup_function():
     SIM.reset()
+    _buckets.clear()  # rate-limit windows are per process; other test files may have filled them
     SIM.outage = False
 
 

@@ -26,3 +26,100 @@ marketplace_server:
   # Stay under GigSim's 20 requests / 10 s with headroom for retries.
   rate_limit: {requests: 15, per_seconds: 10, max_wait_s: 20}
   audit_log: data/audit/marketplace.jsonl
+
+# ---------------------------------------------------------------------------
+# Models: routed per node. `open` is the required profile (open-weight models on Groq);
+# `paid` is the comparison profile. Select with GIGBID_MODEL_PROFILE or `models.profile`.
+# A node missing from a profile falls back to that profile's `default`. With no API key
+# the node runs its deterministic rule path instead (CI, offline demos).
+# ---------------------------------------------------------------------------
+models:
+  profile: open
+  profiles:
+    open:
+      provider: groq
+      default: llama-3.3-70b-versatile
+      nodes:
+        analyst: llama-3.1-8b-instant          # extraction: small and fast is enough
+        risk: llama-3.3-70b-versatile
+        writer: llama-3.3-70b-versatile
+        critic: openai/gpt-oss-120b            # judge from a different family than the writer
+        compliance: llama-3.1-8b-instant
+        liaison: llama-3.3-70b-versatile
+    paid:
+      provider: anthropic
+      default: claude-sonnet-5-5
+      nodes:
+        analyst: claude-haiku-5-5
+        compliance: claude-haiku-5-5
+  temperature: {default: 0.2, writer: 0.6}
+  timeout_s: 45
+  max_retries: 2
+  # USD per 1M tokens (input, output) for cost reporting in evals/results.
+  prices:
+    llama-3.1-8b-instant: [0.05, 0.08]
+    llama-3.3-70b-versatile: [0.59, 0.79]
+    openai/gpt-oss-120b: [0.15, 0.75]
+    claude-haiku-5-5: [1.0, 5.0]
+    claude-sonnet-5-5: [3.0, 15.0]
+
+# Per-run budgets (R8). Exceeding one halts the run with status budget_exceeded.
+budgets:
+  bid:  {max_steps: 30, max_tokens: 60000, max_usd: 0.10}
+  conversation: {max_steps: 15, max_tokens: 20000, max_usd: 0.03}
+
+bid_graph:
+  critic_max_loops: 2              # writer is revised at most twice
+  critic_pass_score: 0.7
+  evidence_per_requirement: 3
+  decision:
+    min_coverage: 0.5              # share of requirements with real evidence
+    max_scam_score: 0.5
+    min_connects_reserve: 4        # never spend the last few Connects
+  pricing:
+    target_percentile: p50         # start from the market median ...
+    stay_inside_budget: true       # ... clamped into the client's posted range
+    floor_policy: skip_below       # budget max under the persona floor -> skip
+
+# MCP servers the graph connects to and which tools each agent may call (least privilege).
+mcp:
+  servers:
+    marketplace: {transport: stdio, command: python, args: ["-m", "mcp_servers.marketplace.server", "--stdio"]}
+    portfolio:   {transport: stdio, command: python, args: ["-m", "mcp_servers.portfolio.server", "--stdio"]}
+    workspace:   {transport: stdio, command: python, args: ["-m", "mcp_servers.workspace.server", "--stdio"]}
+  allowlists:
+    intake:     [marketplace.get_job, marketplace.get_client_history, marketplace.get_platform_policy,
+                 marketplace.get_connects_balance]
+    scout:      [marketplace.search_jobs, marketplace.list_events]
+    matcher:    [portfolio.search_evidence, portfolio.get_case_study, portfolio.list_skills]
+    pricing:    [marketplace.get_price_stats]
+    writer:     [portfolio.search_evidence, portfolio.get_case_study]
+    approval:   [marketplace.create_proposal_draft]
+    submit:     [marketplace.create_proposal_draft, marketplace.submit_proposal]
+    liaison:    [marketplace.list_messages, marketplace.send_message, portfolio.search_evidence,
+                 workspace.free_slots, workspace.create_interview_hold, workspace.create_email_draft]
+
+# Guardrails (R9). Patterns are data so a new attack or scam style is a config edit.
+guardrails:
+  policy_rules_file: data/policy_pack/rules.json
+  injection_patterns:
+    - '(?i)ignore (all )?(previous|prior|above) instructions'
+    - '(?i)disregard (your|all|the) (rules|instructions)'
+    - '(?i)note to (ai|llm) assistants?'
+    - '(?i)\[\s*system\s*\]|you are now in \w+ mode'
+    - '(?i)if you are an? (automated|ai)\b[^.]*'
+    - '(?i)<!--\s*ai:.*?-->'
+    - '(?i)\bassistant,\s'
+    - '(?i)(skip|bypass) the (compliance|approval|review)'
+    - '(?i)without (waiting for )?human approval'
+    - '(?i)spend all (available )?connects'
+  scam_patterns:
+    off_platform: ['(?i)\b(telegram|whatsapp|skype|signal)\b', '(?i)outside the platform', '(?i)bank transfer',
+                   '(?i)email your resume to', '[\w.+-]+@[\w-]+\.[\w.]+']
+    free_work: ['(?i)free (test|sample|trial) task', '(?i)unpaid (test|trial)', '(?i)full working prototype as a free']
+    payment: ['(?i)send you a cheque', '(?i)forward the rest', '(?i)keep \$\d+']
+    credentials: ['(?i)send (us |me )?your (platform )?(login|password|credentials)']
+  client_signals:
+    unverified_payment: 0.25
+    new_client_no_spend: 0.1
+    low_hire_rate: {below: 0.1, min_jobs: 10, weight: 0.1}

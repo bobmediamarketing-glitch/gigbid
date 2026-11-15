@@ -14,10 +14,18 @@ dependencies = [
   "httpx==0.28.*",
   "pyyaml==6.*",
   "reportlab==4.*",
+  "langgraph==1.2.*",
+  "langgraph-checkpoint-postgres==3.*",
+  "langgraph-checkpoint-sqlite==3.*",
+  "langchain-core==1.*",
+  "langchain-groq==1.*",
+  "langchain-mcp-adapters==0.3.*",
+  "psycopg[binary]==3.*",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest==8.*", "anyio>=4"]
+paid = ["langchain-anthropic"]  # only for the comparison "paid" model profile
 
 [tool.pytest.ini_options]
 testpaths = ["tests", "mcp_servers"]
